@@ -32,6 +32,7 @@ for line in sys.stdin:
             beam_size=1,
             vad_filter=False,
             condition_on_previous_text=False,
+            no_speech_threshold=None,
             initial_prompt=req.get("initial_prompt"),
         )
         text = " ".join(s.text.strip() for s in list(segments)).strip()
@@ -41,5 +42,7 @@ for line in sys.stdin:
             "inference_ms": (time.perf_counter() - started) * 1000,
         }, ensure_ascii=False), flush=True)
     except Exception as exc:
-        print(json.dumps({"id": req.get("id") if 'req' in locals() else None,
-                          "error": str(exc)}, ensure_ascii=False), flush=True)
+        print(json.dumps({
+            "id": req.get("id") if 'req' in locals() else None,
+            "error": str(exc)
+        }, ensure_ascii=False), flush=True)

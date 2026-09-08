@@ -12,25 +12,19 @@ Phase 2 — Audio & Voice.
 - transcript wake-word detector for "Jarvis": implemented.
 - Sleeping -> Listening -> idle timeout state machine: implemented.
 - active session accepts follow-up commands without repeating "Jarvis".
-- "Jarvis, <command>" preserves command text in one utterance.
-- ASR -> wake/session pipeline processor: implemented.
+- live VoiceHost + speech segmentation: implemented.
+- deterministic app launch fast path: PASS for Lightroom Classic.
+- ElevenLabs streaming TTS provider: implemented.
+- SpeechOutputManager with interruption support: implemented.
+- Windows Credential Manager secret store: implemented.
+- TTS probe: implemented.
+
+## Current facts
+- Live Nor-Tec -> VAD -> ASR works.
+- Latest controlled launch `otwórz Lightroom` starts Lightroom Classic.
+- Live wake phrase has not yet earned PASS in a controlled microphone run.
+- ElevenLabs API key is not configured yet.
+- TtsVoiceId is not selected yet.
 
 ## Immediate objective
-Run real microphone -> VAD -> ASR -> wake/session -> intent smoke test.
-
-## Next actions
-1. Get GitHub CI green after split UI/non-UI build fix.
-2. Add live speech segment collector driven by VAD transitions.
-3. Feed completed speech segments into VoicePipelineProcessor.
-4. Validate wake false accept/reject behavior on live audio.
-5. Add TTS provider abstraction and human Polish voice.
-6. Add barge-in / echo suppression policy.
-7. Close Phase 2 gate with end-to-end live test.
-
-## Current immediate step
-Wire deterministic Windows application launch fast path, starting with Adobe Lightroom Classic.
-
-
-## Next immediate step
-Run live wake-word -> ASR -> command -> Lightroom execution test, then begin TTS output integration.
-
+Configure one approved ElevenLabs Polish voice securely, run live TTS, then connect spoken confirmations to VoiceHost.

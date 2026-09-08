@@ -30,6 +30,7 @@
     <Project Path="tools/Jarvis.AsrProbe/Jarvis.AsrProbe.csproj" />
     <Project Path="tools/Jarvis.AsrSampleRecorder/Jarvis.AsrSampleRecorder.csproj" />
     <Project Path="tools/Jarvis.AudioProbe/Jarvis.AudioProbe.csproj" />
+    <Project Path="tools/Jarvis.TtsProbe/Jarvis.TtsProbe.csproj" />
     <Project Path="tools/Jarvis.VadProbe/Jarvis.VadProbe.csproj" />
   </Folder>
 </Solution>
