@@ -65,3 +65,16 @@ Current build status:
 - 22 projects,
 - Release build: 0 errors, 0 warnings,
 - tests: 18 PASS.
+
+## Phase 2 update — VAD and ASR
+- Nor-Tec streaming mic is the required Jarvis input endpoint.
+- Silero VAD official ONNX streaming path implemented with 64-sample context.
+- Silero CPU p50 0.134 ms, p95 0.149 ms, p99 0.182 ms.
+- faster-whisper 1.2.1 benchmarked on CPU int8.
+- base selected for command fast path: persistent worker ~0.51-0.55 s for reference command sample.
+- small rejected: ~1.69-1.73 s with no useful accuracy gain on application proper noun.
+- IAsrEngine + persistent Python worker implemented.
+- KnownEntityResolver corrects predictable ASR distortions of application names.
+- Private microphone WAV files are ignored by Git.
+
+Local caveat: Windows Application Control intermittently blocks newly copied test assemblies under tests/bin. Security policy remains unchanged; GitHub CI is the independent test gate.

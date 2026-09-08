@@ -1,0 +1,58 @@
+[
+  {
+    "model": "base",
+    "load_seconds": 0.8496807999908924,
+    "audio_seconds": 8.955,
+    "runs": [
+      {
+        "seconds": 0.5480319000780582,
+        "rtf": 0.06119842546935324,
+        "text": "Jarvis, otwórz ligh atrom. Włącz YouTube. Jaka jest dzisiaj pogoda? Zamknij przeglądarkę.",
+        "language": "pl",
+        "language_probability": 1
+      },
+      {
+        "seconds": 0.5198503998108208,
+        "rtf": 0.058051412597523264,
+        "text": "Jarvis, otwórz ligh atrom. Włącz YouTube. Jaka jest dzisiaj pogoda? Zamknij przeglądarkę.",
+        "language": "pl",
+        "language_probability": 1
+      },
+      {
+        "seconds": 0.5057855001650751,
+        "rtf": 0.056480792871588505,
+        "text": "Jarvis, otwórz ligh atrom. Włącz YouTube. Jaka jest dzisiaj pogoda? Zamknij przeglądarkę.",
+        "language": "pl",
+        "language_probability": 1
+      }
+    ]
+  },
+  {
+    "model": "small",
+    "load_seconds": 1.151278699748218,
+    "audio_seconds": 8.955,
+    "runs": [
+      {
+        "seconds": 1.777919199783355,
+        "rtf": 0.19853927412432776,
+        "text": "Jarvis. Otwórz link hatroom. Włącz YouTube. Jaka jest dzisiaj pogoda? Zamknij przeglądarkę.",
+        "language": "pl",
+        "language_probability": 1
+      },
+      {
+        "seconds": 1.6948454999364913,
+        "rtf": 0.18926247905488455,
+        "text": "Jarvis. Otwórz link hatroom. Włącz YouTube. Jaka jest dzisiaj pogoda? Zamknij przeglądarkę.",
+        "language": "pl",
+        "language_probability": 1
+      },
+      {
+        "seconds": 1.6975098997354507,
+        "rtf": 0.18956001113740376,
+        "text": "Jarvis. Otwórz link hatroom. Włącz YouTube. Jaka jest dzisiaj pogoda? Zamknij przeglądarkę.",
+        "language": "pl",
+        "language_probability": 1
+      }
+    ]
+  }
+]

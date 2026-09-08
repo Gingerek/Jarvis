@@ -4,22 +4,24 @@
 Phase 2 — Audio & Voice.
 
 ## Completed
-- WASAPI capture foundation: PASS.
-- Nor-Tec streaming mic selected by stable endpoint ID.
+- WASAPI capture + Nor-Tec selection: PASS.
 - 16 kHz mono PCM16 normalization: PASS.
-- Silero VAD streaming implementation: PASS.
-- Silero CPU/live benchmark: PASS.
+- Silero VAD streaming + benchmark: PASS.
+- faster-whisper ASR benchmark: PASS.
+- command fast-path ASR selected: base / CPU int8.
+- persistent C# -> Python ASR worker: PASS.
+- fuzzy known-entity resolver added for application names.
 
 ## Immediate objective
-Benchmark CPU-capable Polish ASR candidates on Ryzen 7 5700G before selecting the production backend.
+Implement and benchmark wake-word strategy, then TTS output and barge-in behavior.
 
-## Required next actions
-1. Capture a controlled Polish speech sample from Nor-Tec.
-2. Benchmark faster-whisper CPU candidates.
-3. Measure warm/cold transcription latency and real-time factor.
-4. Compare accuracy on command-style Polish phrases.
-5. Select backend only from measured results.
-6. Integrate chosen ASR behind Jarvis.ASR interface.
+## Next actions
+1. Resolve wake-word engine/license gate.
+2. Implement wake/listen state machine.
+3. Benchmark false accepts/false rejects for Jarvis trigger.
+4. Implement TTS provider abstraction and local/cloud fallback.
+5. Add echo suppression/barge-in policy.
+6. Run Phase 2 end-to-end microphone -> VAD -> ASR -> intent smoke test.
 
-## Rule
-Do not select final ASR or wake-word engine without benchmark data.
+## Known environment issue
+Local Windows Application Control intermittently blocks freshly built test DLL copies under tests/bin. Do not disable protection; use CI as independent test gate.

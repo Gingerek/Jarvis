@@ -36,3 +36,10 @@ logs/
 
 # Downloaded ML models
 /models/**/*.onnx
+
+# Local ASR runtime and downloaded models
+.venv-asr/
+.models-asr/
+
+# Benchmark audio may contain private microphone recordings
+/benchmarks/asr/*.wav

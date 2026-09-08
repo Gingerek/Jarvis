@@ -117,3 +117,22 @@ Live run, 466 frames:
 - real speech transitions detected: PASS
 
 Note: speech-start wall-clock latency is not claimed because the exact human speech onset timestamp was not instrumented.
+
+## ASR — measured 2026-09-08
+Engine: faster-whisper 1.2.1 / CTranslate2 CPU int8, 8 threads.
+Reference: local Polish TTS, 16 kHz mono PCM16, known command text.
+
+### base
+- runs: 0.565 / 0.536 / 0.532 s without domain prompt
+- persistent C# worker: 0.553 / 0.529 / 0.507 s
+- RTF: ~0.06
+- text: all command semantics correct; Lightroom spelling distorted
+
+### small
+- runs: 1.729 / 1.698 / 1.694 s
+- RTF: ~0.19
+- did not improve Lightroom recognition
+
+Decision for command fast path: faster-whisper base int8.
+Known application names are corrected by local fuzzy entity resolution.
+Larger model remains optional fallback for open-ended dictation, not fast command routing.
