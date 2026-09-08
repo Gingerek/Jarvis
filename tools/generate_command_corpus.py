@@ -145,6 +145,34 @@ for canonical, aliases in folder_aliases.items():
                 for suffix in suffixes:
                     add("OpenFolder", canonical, prefix + template.format(target=alias) + suffix)
 
+settings_pages = {
+    "ms-settings:": ["ustawienia"],
+    "ms-settings:display": ["ekran", "ekranu", "wy?wietlanie"],
+    "ms-settings:sound": ["d?wi?k", "d?wi?ku", "audio"],
+    "ms-settings:apps-volume": ["mikser g?o?no?ci"],
+    "ms-settings:bluetooth": ["Bluetooth"],
+    "ms-settings:network-wifi": ["Wi-Fi", "WiFi"],
+    "ms-settings:network-status": ["sie?", "sieci", "internet", "internetu"],
+    "ms-settings:windowsupdate": ["aktualizacje", "aktualizacji", "Windows Update"],
+    "ms-settings:appsfeatures": ["aplikacje", "aplikacji"],
+    "ms-settings:storagesense": ["pami??", "pami?ci", "miejsce na dysku"],
+    "ms-settings:powersleep": ["zasilanie", "zasilania"],
+    "ms-settings:personalization": ["personalizacja", "personalizacji"],
+    "ms-settings:privacy": ["prywatno??", "prywatno?ci"],
+    "ms-settings:privacy-microphone": ["mikrofon", "mikrofonu"],
+    "ms-settings:privacy-webcam": ["kamera", "kamery"],
+    "ms-settings:notifications": ["powiadomienia", "powiadomie?"],
+    "ms-settings:clipboard": ["schowek", "schowka"],
+    "ms-settings:about": ["informacje o systemie"]
+}
+for uri, aliases in settings_pages.items():
+    for alias in aliases:
+        forms = ["ustawienia"] if uri == "ms-settings:" else [f"otw?rz ustawienia {alias}", f"poka? ustawienia {alias}", f"ustawienia {alias}", f"przejd? do ustawie? {alias}"]
+        for phrase in forms:
+            for prefix in polite_prefixes:
+                for suffix in suffixes:
+                    add("OpenSettings", uri, prefix + phrase + suffix)
+
 ordered = sorted(rows.values(), key=lambda x: (x["intent"], x["argument"] or "", x["utterance"].casefold()))
 with OUT.open("w", encoding="utf-8", newline="\n") as f:
     for row in ordered:

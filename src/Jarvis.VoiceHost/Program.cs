@@ -75,6 +75,9 @@ CommandExecutionOutcome? ExecuteBuiltIn(CommandRequest request)
         case CommandIntent.OpenFolder:
             var folder = folders.Open(request.Argument!);
             return new(folder.Message, folder.Success ? "OpenFolder" : "OpenFolderFailed", folder.DisplayName);
+        case CommandIntent.OpenSettings:
+            OpenUrl(request.Argument!);
+            return new("Otwieram ustawienia Windows.", "OpenSettings", request.Argument);
         case CommandIntent.OpenWebsite:
             OpenUrl(request.Argument!);
             var site = request.Argument!.Contains("youtube", StringComparison.OrdinalIgnoreCase) ? "YouTube" :

@@ -123,3 +123,11 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Lock action is implemented but intentionally not fired by automated smoke tests because it would lock the user's interactive session.
 - Updated faster-whisper initial prompt with system-command vocabulary.
 - Republished single-file VoiceHost and restarted UI + background host successfully.
+
+## Windows settings voice checkpoint - 2026-09-08
+- Added Windows Settings parser backed by documented `ms-settings:` pages.
+- Supports natural Polish case forms for sound, microphone, camera and other settings pages.
+- Direct execution PASS: `otworz ustawienia dzwieku`.
+- Generated command corpus now contains 26,122 utterance variants.
+- Full solution build: PASS, 0 errors, 0 warnings.
+- Persistent UI + VoiceHost restarted successfully after runtime publish.
