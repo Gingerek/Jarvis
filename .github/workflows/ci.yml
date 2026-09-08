@@ -14,12 +14,27 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.400'
-      - name: Restore
-        run: dotnet restore Jarvis.slnx -p:Platform=x86
-      - name: Build
-        run: dotnet build Jarvis.slnx -c Release -p:Platform=x86 --no-restore
+      - name: Restore non-UI projects
+        shell: pwsh
+        run: |
+          Get-ChildItem src,tests,tools -Recurse -Filter *.csproj |
+            Where-Object FullName -NotMatch 'Jarvis.UI' |
+            ForEach-Object { dotnet restore $_.FullName; if ($LASTEXITCODE) { exit $LASTEXITCODE } }
+      - name: Build non-UI projects
+        shell: pwsh
+        run: |
+          Get-ChildItem src,tests,tools -Recurse -Filter *.csproj |
+            Where-Object FullName -NotMatch 'Jarvis.UI' |
+            ForEach-Object { dotnet build $_.FullName -c Release --no-restore; if ($LASTEXITCODE) { exit $LASTEXITCODE } }
+      - name: Restore UI
+        run: dotnet restore src/Jarvis.UI/Jarvis.UI.csproj -r win-x86
+      - name: Build UI
+        run: dotnet build src/Jarvis.UI/Jarvis.UI.csproj -c Release -r win-x86 --no-restore
       - name: Test
-        run: dotnet test Jarvis.slnx -c Release -p:Platform=x86 --no-build
+        shell: pwsh
+        run: |
+          Get-ChildItem tests -Recurse -Filter *.csproj |
+            ForEach-Object { dotnet test $_.FullName -c Release --no-build; if ($LASTEXITCODE) { exit $LASTEXITCODE } }
       - name: Doctor
         shell: powershell
         run: powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\doctor.ps1
