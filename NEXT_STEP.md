@@ -7,21 +7,22 @@ Phase 2 — Audio & Voice.
 - WASAPI capture + Nor-Tec selection: PASS.
 - 16 kHz mono PCM16 normalization: PASS.
 - Silero VAD streaming + benchmark: PASS.
-- faster-whisper ASR benchmark: PASS.
-- command fast-path ASR selected: base / CPU int8.
+- faster-whisper base / CPU int8 fast path: PASS.
 - persistent C# -> Python ASR worker: PASS.
-- fuzzy known-entity resolver added for application names.
+- transcript wake-word detector for "Jarvis": implemented.
+- Sleeping -> Listening -> idle timeout state machine: implemented.
+- active session accepts follow-up commands without repeating "Jarvis".
+- "Jarvis, <command>" preserves command text in one utterance.
+- ASR -> wake/session pipeline processor: implemented.
 
 ## Immediate objective
-Implement and benchmark wake-word strategy, then TTS output and barge-in behavior.
+Run real microphone -> VAD -> ASR -> wake/session -> intent smoke test.
 
 ## Next actions
-1. Resolve wake-word engine/license gate.
-2. Implement wake/listen state machine.
-3. Benchmark false accepts/false rejects for Jarvis trigger.
-4. Implement TTS provider abstraction and local/cloud fallback.
-5. Add echo suppression/barge-in policy.
-6. Run Phase 2 end-to-end microphone -> VAD -> ASR -> intent smoke test.
-
-## Known environment issue
-Local Windows Application Control intermittently blocks freshly built test DLL copies under tests/bin. Do not disable protection; use CI as independent test gate.
+1. Get GitHub CI green after split UI/non-UI build fix.
+2. Add live speech segment collector driven by VAD transitions.
+3. Feed completed speech segments into VoicePipelineProcessor.
+4. Validate wake false accept/reject behavior on live audio.
+5. Add TTS provider abstraction and human Polish voice.
+6. Add barge-in / echo suppression policy.
+7. Close Phase 2 gate with end-to-end live test.
