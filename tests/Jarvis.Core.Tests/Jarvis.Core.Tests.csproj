@@ -23,5 +23,7 @@
     <ProjectReference Include="..\..\src\Jarvis.Intents\Jarvis.Intents.csproj" />
     <ProjectReference Include="..\..\src\Jarvis.WakeWord\Jarvis.WakeWord.csproj" />
     <ProjectReference Include="..\..\src\Jarvis.Brain\Jarvis.Brain.csproj" />
+    <ProjectReference Include="..\..\src\Jarvis.Commands\Jarvis.Commands.csproj" />
+    <ProjectReference Include="..\..\src\Jarvis.Execution\Jarvis.Execution.csproj" />
   </ItemGroup>
 </Project>

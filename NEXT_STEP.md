@@ -30,3 +30,7 @@ Run real microphone -> VAD -> ASR -> wake/session -> intent smoke test.
 ## Current immediate step
 Wire deterministic Windows application launch fast path, starting with Adobe Lightroom Classic.
 
+
+## Next immediate step
+Run live wake-word -> ASR -> command -> Lightroom execution test, then begin TTS output integration.
+

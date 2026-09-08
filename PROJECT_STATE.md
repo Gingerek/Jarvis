@@ -85,3 +85,10 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Local Application Control requires single-file host for runtime smoke tests; protection remains enabled.
 - GitHub CI is green for the previous checkpoint.
 
+
+## Deterministic application execution checkpoint
+- Added OpenApplicationCommandParser and ApplicationLauncher fast path.
+- Verified real command: otwórz Lightroom -> Adobe Lightroom Classic started successfully.
+- Lightroom executable confirmed at C:\Program Files\Adobe\Adobe Lightroom Classic\Lightroom.exe.
+- Parser handles Polish diacritics including ³ -> l.
+

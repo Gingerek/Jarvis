@@ -1,16 +1,44 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 using System.Threading.Channels;
 using Jarvis.Audio;
 using Jarvis.ASR;
 using Jarvis.Brain;
+using Jarvis.Commands;
+using Jarvis.Execution;
+using Jarvis.Intents;
 using Jarvis.VAD;
 using Jarvis.WakeWord;
 
 var root = Directory.GetCurrentDirectory();
+var parser = new OpenApplicationCommandParser();
+var resolver = new KnownEntityResolver();
+var launcher = new ApplicationLauncher();
+foreach (var app in KnownApplications.All)
+    resolver.Add(app.Id, app.Aliases.Append(app.DisplayName).ToArray());
+
+ApplicationLaunchResult? ExecuteCommand(string text)
+{
+    var parsed = parser.Parse(text);
+    if (parsed is null) return null;
+    var match = resolver.Resolve(parsed.RequestedName, 0.55);
+    if (match is null) return null;
+    var target = KnownApplications.All.First(x => x.Id == match.CanonicalName);
+    var result = launcher.Launch(target);
+    Console.WriteLine($"EXECUTE: {target.DisplayName} -> {result.Status}");
+    return result;
+}
+if (args.Length > 1 && args[0].Equals("--command", StringComparison.OrdinalIgnoreCase))
+{
+    var commandText = string.Join(' ', args.Skip(1));
+    var result = ExecuteCommand(commandText);
+    if (result is null)
+        Console.WriteLine($"UNHANDLED COMMAND: {commandText}");
+    return;
+}
+
 var settingsPath = Path.Combine(
     Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
     "Jarvis", "config", "settings.json");
-
 await using var settingsStream = File.OpenRead(settingsPath);
 using var settings = await JsonDocument.ParseAsync(settingsStream);
 var deviceId = settings.RootElement.GetProperty("AudioInputDeviceId").GetString()
@@ -23,7 +51,8 @@ var models = Path.Combine(root, ".models-asr");
 var vadModel = Path.Combine(root, "models", "silero-vad", "silero_vad.onnx");
 
 Console.WriteLine($"Input: {deviceName}");
-Console.WriteLine("Loading ASR worker...");await using var asr = await PythonFasterWhisperAsrEngine.CreateAsync(
+Console.WriteLine("Loading ASR worker...");
+await using var asr = await PythonFasterWhisperAsrEngine.CreateAsync(
     python, worker, models, "base");
 using var vad = new SileroVadEngine(vadModel);
 var segmenter = new SpeechSegmenter(vad, maxSpeechMs: 6000);
@@ -55,7 +84,6 @@ capture.ChunkAvailable += (_, chunk) =>
         rawPeak = Math.Max(rawPeak, Math.Abs(sample / 32768.0));
     audio.Writer.TryWrite(normalized);
 };
-
 using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(30));
 Console.WriteLine("LIVE READY. Say: Jarvis, otworz Lightroom");
 Console.WriteLine("Then say another command without Jarvis.");
@@ -73,10 +101,13 @@ try
             segment.Samples, DateTimeOffset.UtcNow, cts.Token);
         Console.WriteLine($"ASR {result.AsrInferenceMs:F0}ms: {result.Transcript}");
         Console.WriteLine($"Disposition: {result.Disposition}");
-        if (!string.IsNullOrWhiteSpace(result.CommandText))
-            Console.WriteLine($"COMMAND: {result.CommandText}");
+        if (string.IsNullOrWhiteSpace(result.CommandText)) continue;
+
+        Console.WriteLine($"COMMAND: {result.CommandText}");
+        ExecuteCommand(result.CommandText);
     }
-}catch (OperationCanceledException) when (cts.IsCancellationRequested)
+}
+catch (OperationCanceledException) when (cts.IsCancellationRequested)
 {
     Console.WriteLine("Live probe finished.");
 }
@@ -85,4 +116,3 @@ finally
     try { capture.Stop(); } catch { }
     Console.WriteLine($"Audio chunks={chunkCount}, rawPeak={rawPeak:F6}");
 }
-
