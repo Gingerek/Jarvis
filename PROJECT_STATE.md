@@ -23,17 +23,19 @@ Measured machine:
 - Python 3.12.10, Node 24.15.0, Ollama 0.33.3
 
 ## Phase 1 completed so far
-- Installed Git 2.55.0.3 and .NET SDK 10.0.400.
-- Cloned Gingerek/Jarvis locally to C:\Users\rafal\Documents\Jarvis.
-- Created branch phase1/foundation.
-- Created Jarvis.slnx with 20 projects.
-- Created real WinUI 3 Jarvis.UI on Windows App SDK 2.4.0.
-- Added global.json pinned to .NET SDK 10.0.400.
-- Added Directory.Build.props with warnings-as-errors and deterministic build.
-- Added bootstrap.ps1, build.ps1, test.ps1, doctor.ps1 and update.ps1.
+- Git 2.55.0.3 and .NET SDK 10.0.400 installed.
+- Jarvis.slnx contains 20 projects.
+- Real WinUI 3 UI uses Windows App SDK 2.4.0.
 - Release build passes with 0 warnings and 0 errors.
-- Test suite passes 3/3 baseline tests.
-- Doctor passes all current foundation checks.
+- Test suite passes 8 tests.
+- doctor passes all 7 foundation checks.
+- Plugin contracts, registry and filesystem discovery implemented.
+- SQLite learning database implemented using Microsoft.Data.Sqlite 10.0.11.
+- Configuration loading implemented with persisted settings.json.
+- JSONL file logging implemented under LocalAppData/Jarvis/logs.
+- WinUI startup is wired to Core, Diagnostics, Plugins and Learning.
+- UI switched to unpackaged/self-contained mode; no Developer Mode required.
+- Runtime smoke test passed: Jarvis.UI process launched and created settings.json, learning.db and JSONL log.
 
 ## Important architecture consequence
 Parakeet/CUDA cannot be the primary ASR path on this machine because there is no NVIDIA GPU. ASR benchmark must prioritize CPU-capable or AMD/DirectML/ONNX-capable backends.
@@ -48,8 +50,7 @@ Parakeet/CUDA cannot be the primary ASR path on this machine because there is no
 
 ## Latest validation
 - Release build: PASS (20 projects, 0 errors, 0 warnings).
-- Tests: PASS (6 total).
-- doctor: PASS.
+- Tests: PASS (8 total).
+- doctor: PASS (7/7).
+- Runtime UI smoke test: PASS.
 - GitHub branch: phase1/foundation.
-- Persistent learning storage foundation: implemented.
-- Plugin registry foundation: implemented.

@@ -1,30 +1,26 @@
 # Next Step
 
 ## Immediate objective
-Finish the Phase 1 foundation gate before starting audio/ASR implementation.
+Finish the Phase 1 foundation gate, then start Phase 2 audio/voice work.
 
 ## Required next actions
-1. Add CI for restore, Release build and tests.
-2. Verify bootstrap.ps1 is safe to run repeatedly.
-3. Add real architecture tests instead of template placeholder tests.
-4. Add initial project references enforcing Core/Execution/Plugin boundaries.
-5. Add configuration and logging abstractions without application-specific code.
-6. Add SQLite foundation for learning/config metadata.
-7. Add plugin contracts and plugin loader skeleton.
-8. Add diagnostics contracts and health-check model.
-9. Run clean restore/build/test/doctor again.
-10. Commit and push phase1/foundation.
+1. Add startup/runtime smoke test automation where practical.
+2. Extend diagnostics health checks for config, database, plugin directory and logs.
+3. Add plugin manifest/version validation before loading arbitrary plugin assemblies.
+4. Verify bootstrap.cmd/build.cmd/test.cmd/doctor.cmd on a clean shell.
+5. Update CI to use the unpackaged/self-contained WinUI configuration.
+6. Re-run clean restore/build/test/doctor.
+7. Mark Phase 1 gate PASS and merge phase1/foundation.
 
 ## Gate to start Phase 2
 - clean bootstrap on this machine,
-- Release build 0 errors,
-- tests pass,
+- Release build 0 errors and 0 warnings,
+- all tests pass,
 - doctor pass,
+- runtime UI smoke test pass,
+- configuration/logging/database/plugin loader operational,
 - repository state recorded,
-- no Lightroom/OBS/YouTube feature code in foundation.
+- no application-specific Lightroom/OBS/YouTube feature code in foundation.
 
-## Next session rule
-Read PROJECT_STATE.md, ARCHITECTURE.md, NEXT_STEP.md and KNOWN_ISSUES.md before changing code.
-
-## Immediate next implementation
-Implement configuration loading, diagnostics/logging pipeline, plugin discovery/loader, and wire the WinUI application shell to Core without adding application-specific feature plugins yet.
+## Immediate next implementation after gate
+Begin Phase 2 with audio device enumeration, microphone selection, WASAPI capture and latency measurement. Do not select final ASR or wake-word engine until measured benchmarks exist.
