@@ -1,16 +1,21 @@
 # Changelog
 
-## 2026-09-08 — Phase 0 baseline
-- initialized Jarvis repository documentation,
-- defined .NET 10 / WinUI 3 / Windows App SDK 2.4.0 baseline,
-- defined local-first Fast Path architecture,
-- added dependency/license audit,
-- added plugin capability matrix,
-- added command architecture and 10k-corpus strategy,
-- added latency and test plans,
-- added gated roadmap, project state and exact next step,
-- added read-only Windows audit script,
-- added .gitignore protection for raw audit/secrets,
-- recorded known issues and explicit unresolved decisions.
+## 2026-09-08 — Phase 1 foundation started
+- completed live Windows hardware/software audit,
+- installed Git 2.55.0.3 and .NET SDK 10.0.400,
+- cloned repository locally,
+- created phase1/foundation branch,
+- created 20-project .NET 10 solution,
+- created real WinUI 3 UI project on Windows App SDK 2.4.0,
+- added pinned SDK and deterministic shared build settings,
+- added bootstrap/build/test/doctor/update scripts,
+- fixed WinUI Release build ReadyToRun issue for foundation stage,
+- verified Release build: 0 warnings, 0 errors,
+- verified baseline tests: 3 passed, 0 failed,
+- verified doctor: all current checks pass.
 
-No product code has been started. Phase 0 remains open pending live machine audit.
+## 2026-09-08 — Phase 0 baseline
+- created research, architecture, dependency, plugin, latency and test documentation,
+- defined local-first Fast Path architecture,
+- added read-only Windows audit script,
+- recorded unresolved ASR, wake-word, voice and application-integration decisions.

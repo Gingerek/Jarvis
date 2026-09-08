@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, 'phase1/**' ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.400'
+      - name: Restore
+        run: dotnet restore Jarvis.slnx
+      - name: Build
+        run: dotnet build Jarvis.slnx -c Release --no-restore
+      - name: Test
+        run: dotnet test Jarvis.slnx -c Release --no-build

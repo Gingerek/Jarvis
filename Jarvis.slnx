@@ -1,0 +1,28 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Jarvis.ASR/Jarvis.ASR.csproj" />
+    <Project Path="src/Jarvis.Audio/Jarvis.Audio.csproj" />
+    <Project Path="src/Jarvis.Brain/Jarvis.Brain.csproj" />
+    <Project Path="src/Jarvis.Commands/Jarvis.Commands.csproj" />
+    <Project Path="src/Jarvis.Context/Jarvis.Context.csproj" />
+    <Project Path="src/Jarvis.Core/Jarvis.Core.csproj" />
+    <Project Path="src/Jarvis.Diagnostics/Jarvis.Diagnostics.csproj" />
+    <Project Path="src/Jarvis.Execution/Jarvis.Execution.csproj" />
+    <Project Path="src/Jarvis.Intents/Jarvis.Intents.csproj" />
+    <Project Path="src/Jarvis.Learning/Jarvis.Learning.csproj" />
+    <Project Path="src/Jarvis.Plugins/Jarvis.Plugins.csproj" />
+    <Project Path="src/Jarvis.Security/Jarvis.Security.csproj" />
+    <Project Path="src/Jarvis.Speech/Jarvis.Speech.csproj" />
+    <Project Path="src/Jarvis.UI/Jarvis.UI.csproj">
+      <Platform Project="x86" />
+    </Project>
+    <Project Path="src/Jarvis.Updater/Jarvis.Updater.csproj" />
+    <Project Path="src/Jarvis.VAD/Jarvis.VAD.csproj" />
+    <Project Path="src/Jarvis.WakeWord/Jarvis.WakeWord.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Jarvis.Architecture.Tests/Jarvis.Architecture.Tests.csproj" />
+    <Project Path="tests/Jarvis.Core.Tests/Jarvis.Core.Tests.csproj" />
+    <Project Path="tests/Jarvis.Integration.Tests/Jarvis.Integration.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Jarvis.UI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Jarvis.UI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
