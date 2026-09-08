@@ -26,4 +26,5 @@
     <ProjectReference Include="..\..\src\Jarvis.Commands\Jarvis.Commands.csproj" />
     <ProjectReference Include="..\..\src\Jarvis.Execution\Jarvis.Execution.csproj" />
   </ItemGroup>
+  <ItemGroup><ProjectReference Include="../../src/Jarvis.Speech/Jarvis.Speech.csproj" /></ItemGroup>
 </Project>
