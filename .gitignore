@@ -1,0 +1,35 @@
+# Local raw machine audit output
+/audit-output/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+secrets.json
+appsettings.Local.json
+
+# .NET / Visual Studio
+bin/
+obj/
+.vs/
+TestResults/
+*.user
+*.suo
+
+# Python sidecars
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node/browser tooling
+node_modules/
+
+# Local logs / diagnostics
+logs/
+*.log
+*.etl
+*.dmp
