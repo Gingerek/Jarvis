@@ -6,61 +6,93 @@ using Jarvis.Brain;
 using Jarvis.Commands;
 using Jarvis.Execution;
 using Jarvis.Intents;
-using Jarvis.Speech;
 using Jarvis.Security;
+using Jarvis.Speech;
 using Jarvis.VAD;
+using Jarvis.VoiceHost;
 using Jarvis.WakeWord;
 
-var root = Directory.GetCurrentDirectory();
+string? Option(string name)
+{
+    var index = Array.FindIndex(args, x => x.Equals(name, StringComparison.OrdinalIgnoreCase));
+    return index >= 0 && index + 1 < args.Length ? args[index + 1] : null;
+}
+
+var serviceMode = args.Contains("--service", StringComparer.OrdinalIgnoreCase);
+var root = Option("--root") ?? Directory.GetCurrentDirectory();
+var pipeName = Option("--pipe");
+Directory.SetCurrentDirectory(root);
+
 var parser = new OpenApplicationCommandParser();
 var resolver = new KnownEntityResolver();
 var launcher = new ApplicationLauncher();
 foreach (var app in KnownApplications.All)
     resolver.Add(app.Id, app.Aliases.Append(app.DisplayName).ToArray());
-
 ApplicationLaunchResult? ExecuteCommand(string text)
 {
     var parsed = parser.Parse(text);
     if (parsed is null) return null;
     var match = resolver.Resolve(parsed.RequestedName, 0.55);
     if (match is null) return null;
+
     var target = KnownApplications.All.First(x => x.Id == match.CanonicalName);
     var result = launcher.Launch(target);
     Console.WriteLine($"EXECUTE: {target.DisplayName} -> {result.Status}");
     return result;
 }
+
 if (args.Length > 1 && args[0].Equals("--command", StringComparison.OrdinalIgnoreCase))
 {
     var commandText = string.Join(' ', args.Skip(1));
     var result = ExecuteCommand(commandText);
-    if (result is null)
-        Console.WriteLine($"UNHANDLED COMMAND: {commandText}");
+    if (result is null) Console.WriteLine($"UNHANDLED COMMAND: {commandText}");
     return;
 }
 
+using var lifetimeCts = serviceMode
+    ? new CancellationTokenSource()
+    : new CancellationTokenSource(TimeSpan.FromSeconds(45));
+
+Console.CancelKeyPress += (_, e) =>
+{
+    e.Cancel = true;
+    lifetimeCts.Cancel();
+};
+
+await using var events = await HostEventSink.CreateAsync(pipeName, lifetimeCts.Token);
+await events.EmitAsync("state", "STARTING", "Uruchamiam moduły głosowe");
 var settingsPath = Path.Combine(
     Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
     "Jarvis", "config", "settings.json");
 await using var settingsStream = File.OpenRead(settingsPath);
-using var settings = await JsonDocument.ParseAsync(settingsStream);
+using var settings = await JsonDocument.ParseAsync(settingsStream, cancellationToken: lifetimeCts.Token);
+
 var deviceId = settings.RootElement.GetProperty("AudioInputDeviceId").GetString()
     ?? throw new InvalidOperationException("AudioInputDeviceId is not configured.");
-var deviceName = settings.RootElement.GetProperty("AudioInputDeviceName").GetString();
-var ttsVoiceId = settings.RootElement.GetProperty("TtsVoiceId").GetString() ?? throw new InvalidOperationException("TtsVoiceId is not configured.");
-var ttsModelId = settings.RootElement.GetProperty("TtsModelId").GetString() ?? "eleven_flash_v2_5";
-var ttsApiKey = new WindowsCredentialSecretStore().Read("ElevenLabsApiKey") ?? throw new InvalidOperationException("ElevenLabs API key is not configured.");
+var deviceName = settings.RootElement.GetProperty("AudioInputDeviceName").GetString()
+    ?? "Configured microphone";
+var ttsVoiceId = settings.RootElement.GetProperty("TtsVoiceId").GetString()
+    ?? throw new InvalidOperationException("TtsVoiceId is not configured.");
+var ttsModelId = settings.RootElement.GetProperty("TtsModelId").GetString()
+    ?? "eleven_flash_v2_5";
+var ttsApiKey = new WindowsCredentialSecretStore().Read("ElevenLabsApiKey")
+    ?? throw new InvalidOperationException("ElevenLabs API key is not configured.");
 
 var python = Path.Combine(root, ".venv-asr", "Scripts", "python.exe");
 var worker = Path.Combine(root, "tools", "asr_worker.py");
 var models = Path.Combine(root, ".models-asr");
 var vadModel = Path.Combine(root, "models", "silero-vad", "silero_vad.onnx");
 
-Console.WriteLine($"Input: {deviceName}");
-Console.WriteLine("Loading ASR worker...");
+await events.EmitAsync("state", "STARTING", $"Mikrofon: {deviceName}");
 await using var asr = await PythonFasterWhisperAsrEngine.CreateAsync(
-    python, worker, models, "base");
+    python, worker, models, "base", lifetimeCts.Token);
 using var vad = new SileroVadEngine(vadModel);
-var segmenter = new SpeechSegmenter(vad, preRollMs: 480, maxSpeechMs: 6000);
+var vadGate = new VadSpeechGate(
+    startThreshold: 0.40f,
+    endThreshold: 0.25f,
+    minimumSpeechMs: 96,
+    minimumSilenceMs: 480);
+var segmenter = new SpeechSegmenter(vad, vadGate, preRollMs: 480, maxSpeechMs: 6000);
 var detector = new TranscriptWakeWordDetector("Jarvis");
 var session = new VoiceSessionStateMachine(TimeSpan.FromSeconds(20));
 var voice = new VoiceInteractionCoordinator(detector, session);
@@ -71,10 +103,8 @@ await using var speech = new SpeechOutputManager(ttsProvider);
 using var capture = new WasapiCaptureSession(deviceId);
 var format = capture.Format;
 if (format.BitsPerSample != 32)
-    throw new NotSupportedException($"Live probe expects float32 capture, got {format}.");
+    throw new NotSupportedException($"VoiceHost expects float32 capture, got {format}.");
 
-long chunkCount = 0;
-double rawPeak = 0;
 var audio = Channel.CreateBounded<short[]>(new BoundedChannelOptions(256)
 {
     FullMode = BoundedChannelFullMode.DropOldest,
@@ -86,62 +116,87 @@ capture.ChunkAvailable += (_, chunk) =>
 {
     var normalized = Pcm16MonoNormalizer.NormalizeFloat32(
         chunk.Data.Span, format.SampleRate, format.Channels);
-    Interlocked.Increment(ref chunkCount);
-    foreach (var sample in normalized)
-        rawPeak = Math.Max(rawPeak, Math.Abs(sample / 32768.0));
     audio.Writer.TryWrite(normalized);
 };
-using var listenCts = new CancellationTokenSource(TimeSpan.FromSeconds(45));
-Console.WriteLine("LIVE READY. Say: Jarvis, otworz Lightroom");
-Console.WriteLine("Then say another command without Jarvis.");
-capture.Start();
 
+capture.Start();
+await events.EmitAsync("state", "SLEEPING", $"Nasłuch: {deviceName}");
 try
 {
-    await foreach (var chunk in audio.Reader.ReadAllAsync(listenCts.Token))
+    await foreach (var chunk in audio.Reader.ReadAllAsync(lifetimeCts.Token))
     {
+        var tick = voice.Tick(DateTimeOffset.UtcNow);
+        if (tick.Disposition == VoiceInputDisposition.SessionTimedOut)
+            await events.EmitAsync("state", "SLEEPING", "Sesja wygasła");
+
         var segment = segmenter.Push(chunk);
         if (segment is null) continue;
 
-        Console.WriteLine($"Speech segment: {segment.Duration.TotalSeconds:F2}s, VAD peak={segment.PeakProbability:F3}");
+        await events.EmitAsync("state", "PROCESSING", "Rozpoznaję mowę");
         var result = await pipeline.ProcessSpeechAsync(
-            segment.Samples, DateTimeOffset.UtcNow, CancellationToken.None);
-        Console.WriteLine($"ASR {result.AsrInferenceMs:F0}ms: {result.Transcript}");
-        Console.WriteLine($"Disposition: {result.Disposition}");
-        if (string.IsNullOrWhiteSpace(result.CommandText)) continue;
+            segment.Samples, DateTimeOffset.UtcNow, lifetimeCts.Token);
+        await events.EmitAsync("transcript", text: result.Transcript,
+            data: new { result.AsrInferenceMs, disposition = result.Disposition.ToString() });
 
-        Console.WriteLine($"COMMAND: {result.CommandText}");
+        if (result.Disposition == VoiceInputDisposition.IgnoredWhileSleeping)
+        {
+            await events.EmitAsync("state", "SLEEPING", "Czekam na Jarvis");
+            continue;
+        }
+
+        if (result.Disposition == VoiceInputDisposition.WakeDetected &&
+            string.IsNullOrWhiteSpace(result.CommandText))
+        {
+            await events.EmitAsync("state", "LISTENING", "Słucham");
+            continue;
+        }
+
+        if (string.IsNullOrWhiteSpace(result.CommandText)) continue;
+        await events.EmitAsync("command", "PROCESSING", result.CommandText);
         var execution = ExecuteCommand(result.CommandText);
-        if (execution is null) continue;
+        if (execution is null)
+        {
+            await events.EmitAsync("state", "LISTENING", "Nie znam jeszcze tej komendy");
+            continue;
+        }
 
         var reply = execution.Status switch
         {
             ApplicationLaunchStatus.Started => $"Otwieram {execution.Target.DisplayName}.",
-            ApplicationLaunchStatus.AlreadyRunning => $"{execution.Target.DisplayName} jest ju? otwarty.",
-            ApplicationLaunchStatus.ExecutableNotFound => $"Nie znalaz?em programu {execution.Target.DisplayName}.",
-            _ => $"Nie uda?o si? uruchomi? {execution.Target.DisplayName}."
+            ApplicationLaunchStatus.AlreadyRunning => $"{execution.Target.DisplayName} jest już otwarty.",
+            ApplicationLaunchStatus.ExecutableNotFound => $"Nie znalazłem programu {execution.Target.DisplayName}.",
+            _ => $"Nie udało się uruchomić {execution.Target.DisplayName}."
         };
+
+        await events.EmitAsync("execution", text: reply,
+            data: new { status = execution.Status.ToString(), target = execution.Target.DisplayName });
+        await events.EmitAsync("state", "SPEAKING", reply);
 
         try
         {
             capture.Stop();
             segmenter.Reset();
-            await speech.SpeakAsync(reply);
+            await speech.SpeakAsync(reply, lifetimeCts.Token);
         }
         finally
         {
-            if (!listenCts.IsCancellationRequested) capture.Start();
+            if (!lifetimeCts.IsCancellationRequested) capture.Start();
         }
+
+        await events.EmitAsync("state", "LISTENING", "Słucham");
     }
 }
-catch (OperationCanceledException) when (listenCts.IsCancellationRequested)
+catch (OperationCanceledException) when (lifetimeCts.IsCancellationRequested)
 {
-    Console.WriteLine("Live probe finished.");
+    // Normal shutdown.
+}
+catch (Exception ex)
+{
+    await events.EmitAsync("error", "ERROR", ex.Message);
+    throw;
 }
 finally
 {
     try { capture.Stop(); } catch { }
-    Console.WriteLine($"Audio chunks={chunkCount}, rawPeak={rawPeak:F6}");
+    await events.EmitAsync("state", "STOPPED", "Jarvis zatrzymany");
 }
-
-

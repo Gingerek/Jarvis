@@ -76,10 +76,23 @@ static async Task RunLiveAsync(string model, string deviceId)
     var maxProb = probs.Count == 0 ? 0 : probs.Max();
     var meanProb = probs.Count == 0 ? 0 : probs.Average();
     Console.WriteLine($"Frames={infer.Count}, maxProb={maxProb:F3}, meanProb={meanProb:F3}");
+    foreach (var threshold in new[] { 0.20f, 0.30f, 0.35f, 0.40f })
+    {
+        var count = probs.Count(p => p >= threshold);
+        var longest = 0;
+        var run = 0;
+        foreach (var p in probs)
+        {
+            if (p >= threshold) { run++; longest = Math.Max(longest, run); }
+            else run = 0;
+        }
+        Console.WriteLine($"Threshold {threshold:F2}: frames={count}, longestRun={longest} ({longest * 32}ms)");
+    }
     if (infer.Count > 0)
         Console.WriteLine($"Inference: p50={P(infer,0.50):F3}ms p95={P(infer,0.95):F3}ms p99={P(infer,0.99):F3}ms max={infer[^1]:F3}ms");
     Console.WriteLine($"Capture first={captureMetrics.FirstFrameLatencyMs:F1}ms jitter={captureMetrics.MaxCallbackJitterMs:F1}ms");
     if (transitions.Count == 0) Console.WriteLine("Transitions: none");
     else foreach (var item in transitions) Console.WriteLine($"Transition {item.Kind} at {item.Ms} ms");
 }
+
 
