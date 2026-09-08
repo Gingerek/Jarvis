@@ -1,5 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\Jarvis.ASR\Jarvis.ASR.csproj" />
+    <ProjectReference Include="..\Jarvis.WakeWord\Jarvis.WakeWord.csproj" />
+    <ProjectReference Include="..\Jarvis.Intents\Jarvis.Intents.csproj" />
+    <ProjectReference Include="..\Jarvis.Audio\Jarvis.Audio.csproj" />
+    <ProjectReference Include="..\Jarvis.VAD\Jarvis.VAD.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
