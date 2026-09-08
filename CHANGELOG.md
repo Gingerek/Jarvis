@@ -58,4 +58,3 @@
 - Added browser command parser, VoiceHost executor and 27,522-utterance corpus.
 - Added tab/navigation/scroll/media/mute/context actions.
 - Browser protocol simulation PASS; live extension load pending one-time user install.
-

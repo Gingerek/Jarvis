@@ -139,4 +139,3 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Simulated Named Pipe + Native Messaging round-trip PASS.
 - Corpus: 27,522 generated utterance variants.
 - Live Chrome/Edge test still requires one-time Load unpacked because branded Chrome 137+ ignores command-line unpacked extension loading.
-
