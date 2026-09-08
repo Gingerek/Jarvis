@@ -82,3 +82,13 @@ Jarvis runs at normal user integrity. Privileged operations go through a narrow 
 - no secrets in Git/logs/plaintext,
 - no hidden success when execution failed,
 - no next phase before the current gate passes.
+
+## Final UI visual direction
+- The production shell should read visually as a premium futuristic 3D computer motherboard, not a flat dashboard.
+- A central voice core is connected to branching circuit-board traces running in multiple directions.
+- Every visible trace must represent real runtime state or activity; no decorative dead controls or fake telemetry.
+- User speech/listening, processing and Jarvis speech each use clearly different live illumination states so activity is obvious at a glance.
+- Energy/light should visibly travel through the traces during processing and speech, with depth, layered materials and subtle parallax/3D perspective.
+- The visual language stays minimalist: dark surface, restrained labels, high-detail materials, no BIOS/DOS aesthetic and no clutter.
+- UI animation is driven by real VoiceHost events (`SLEEPING`, `LISTENING`, `PROCESSING`, `SPEAKING`, `ERROR`) over IPC.
+- Final rendering quality target is premium/high-fidelity while preserving responsiveness and low GPU/CPU overhead on the current Ryzen 7 5700G integrated Radeon system.

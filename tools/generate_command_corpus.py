@@ -125,6 +125,26 @@ for value in range(0, 101, 10):
         for prefix in polite_prefixes:
             add("SetVolume", str(value), prefix + phrase)
 
+folder_aliases = {
+    "downloads": ["Pobrane", "Pobierane", "Downloads"],
+    "documents": ["Dokumenty", "Moje dokumenty", "Documents"],
+    "pictures": ["Zdj?cia", "Obrazy", "Pictures"],
+    "music": ["Muzyka", "Music"],
+    "videos": ["Wideo", "Filmy", "Videos"],
+    "desktop": ["Pulpit", "Desktop"],
+    "jarvis": ["Jarvis", "folder Jarvis", "projekt Jarvis"]
+}
+folder_templates = [
+    "otw?rz {target}", "poka? {target}", "poka? mi {target}",
+    "przejd? do {target}", "wejd? do {target}", "otw?rz folder {target}"
+]
+for canonical, aliases in folder_aliases.items():
+    for alias in aliases:
+        for template in folder_templates:
+            for prefix in polite_prefixes:
+                for suffix in suffixes:
+                    add("OpenFolder", canonical, prefix + template.format(target=alias) + suffix)
+
 ordered = sorted(rows.values(), key=lambda x: (x["intent"], x["argument"] or "", x["utterance"].casefold()))
 with OUT.open("w", encoding="utf-8", newline="\n") as f:
     for row in ordered:

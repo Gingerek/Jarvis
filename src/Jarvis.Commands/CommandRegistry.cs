@@ -7,6 +7,7 @@ public enum CommandIntent
 {
     OpenApplication,
     CloseApplication,
+    OpenFolder,
     OpenWebsite,
     SearchWeb,
     SearchYouTube,
@@ -34,6 +35,7 @@ public sealed class CommandRegistry
 {
     private readonly OpenApplicationCommandParser _open = new();
     private readonly CloseApplicationCommandParser _close = new();
+    private readonly KnownFolderCommandParser _folder = new();
     private readonly SystemCommandParser _system = new();
     private static readonly HashSet<string> TimePhrases = new(StringComparer.Ordinal)
     {
@@ -73,6 +75,9 @@ public sealed class CommandRegistry
 
         var system = _system.Parse(normalized);
         if (system is not null) return system;
+
+        var folder = _folder.Parse(normalized);
+        if (folder is not null) return folder;
 
         var searchYouTube = ExtractAfterPrefix(normalized,
             "wyszukaj na youtube ", "znajdz na youtube ", "youtube wyszukaj ", "youtube szukaj ");

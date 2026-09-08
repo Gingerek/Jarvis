@@ -29,6 +29,7 @@ var registry = new CommandRegistry();
 var resolver = new KnownEntityResolver();
 var launcher = new ApplicationLauncher();
 var windows = new WindowsSystemController();
+var folders = new KnownFolderExecutor(root);
 foreach (var app in KnownApplications.All)
     resolver.Add(app.Id, app.Aliases.Append(app.DisplayName).ToArray());
 
@@ -71,6 +72,9 @@ CommandExecutionOutcome? ExecuteBuiltIn(CommandRequest request)
     var pl = CultureInfo.GetCultureInfo("pl-PL");
     switch (request.Intent)
     {
+        case CommandIntent.OpenFolder:
+            var folder = folders.Open(request.Argument!);
+            return new(folder.Message, folder.Success ? "OpenFolder" : "OpenFolderFailed", folder.DisplayName);
         case CommandIntent.OpenWebsite:
             OpenUrl(request.Argument!);
             var site = request.Argument!.Contains("youtube", StringComparison.OrdinalIgnoreCase) ? "YouTube" :
