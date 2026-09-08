@@ -56,3 +56,20 @@ Initial candidate: ElevenLabs Flash v2.5 streaming/WebSocket. Record machine-obs
 - Report failure rate alongside latency.
 - Separate Jarvis decision/dispatch time from application cold-start/completion time.
 - Re-run benchmarks after material pipeline changes.
+
+## Audio capture — 2026-09-08
+Measured on preferred Nor-Tec streaming microphone via NAudio/WASAPI.
+
+- native format: 48 kHz stereo 32-bit float,
+- first audio callback: 89.5 ms,
+- mean callback interval: 62.5 ms,
+- maximum callback jitter in scan: 1.6 ms,
+- observed RMS: 0.019478,
+- observed peak: 0.076092.
+
+Comparison during the same scan:
+- USB Audio CODEC: first 98.7 ms, max jitter 2.9 ms, near-silent signal,
+- Focusrite Analogue 1+2: first 61.0 ms, max jitter 1.9 ms, near-silent signal,
+- Nor-Tec: first 89.5 ms, max jitter 1.6 ms, clearly active signal.
+
+These are single scan observations, not percentile benchmark results. Repeat runs are required before declaring a latency gate.

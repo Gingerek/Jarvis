@@ -8,4 +8,6 @@ public sealed class JarvisSettings
     public bool EnableTelemetry { get; set; }
     public string LogLevel { get; set; } = "Information";
     public string PluginDirectory { get; set; } = JarvisPaths.PluginsDirectory;
+    public string? AudioInputDeviceId { get; set; }
+    public string? AudioInputDeviceName { get; set; }
 }

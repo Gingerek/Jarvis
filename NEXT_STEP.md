@@ -4,26 +4,25 @@
 Phase 2 — Audio & Voice foundation.
 
 ## Immediate objective
-Implement reliable microphone discovery and WASAPI capture on this machine before choosing final ASR or wake-word engines.
+Benchmark VAD candidates on the now-stable 16 kHz mono audio path before selecting ASR.
+
+## Completed audio gate
+- NAudio/WASAPI capture: PASS,
+- stable endpoint persistence: PASS,
+- preferred Nor-Tec microphone selected,
+- ring buffer/timestamps: PASS,
+- PCM16 16 kHz mono normalization: PASS,
+- latency/jitter instrumentation: PASS,
+- reconnect/health foundation: PASS.
 
 ## Required next actions
-1. Add NAudio 2.3.0 to Jarvis.Audio.
-2. Enumerate active capture/render endpoints and identify the actual default microphone.
-3. Persist selected microphone by stable device identifier, not friendly name only.
-4. Implement WASAPI capture with cancellation and deterministic disposal.
-5. Add PCM format normalization needed by VAD/ASR.
-6. Add ring buffer and timestamped audio frames.
-7. Measure capture startup latency and frame delivery jitter.
-8. Add device-loss/reconnect handling.
-9. Add audio diagnostics and health checks.
-10. Only after capture is stable, benchmark VAD and ASR candidates on this Ryzen 7 5700G.
+1. Benchmark Silero VAD on Ryzen 7 5700G CPU.
+2. Measure VAD processing time, false starts and speech-end latency.
+3. Compare at least one alternative VAD if licensing/runtime quality justifies it.
+4. Record p50/p90/p95/p99 where sample count is sufficient.
+5. Select VAD only after benchmark evidence.
+6. Then benchmark CPU-capable ASR candidates using the same recorded Polish utterance corpus.
+7. Do not select wake word until its licensing and Polish recognition gate passes.
 
-## Phase 2 rules
-- no final ASR selection without benchmark data,
-- no final wake-word selection without benchmark/license data,
-- no cloud dependency on the fast local command path,
-- no permanent Windows security-policy changes,
-- every visible UI state must represent real runtime state.
-
-## Next session rule
-Read PROJECT_STATE.md, ARCHITECTURE.md, NEXT_STEP.md, LATENCY_PLAN.md and KNOWN_ISSUES.md before changing code.
+## Rules
+No cloud dependency on the fast local command path and no permanent Windows security-policy changes.
