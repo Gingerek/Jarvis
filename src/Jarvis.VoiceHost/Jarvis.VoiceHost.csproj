@@ -7,6 +7,7 @@
     <ProjectReference Include="..\Jarvis.WakeWord\Jarvis.WakeWord.csproj" />
     <ProjectReference Include="..\Jarvis.Brain\Jarvis.Brain.csproj" />
     <ProjectReference Include="..\Jarvis.Commands\Jarvis.Commands.csproj" />
+    <ProjectReference Include="..\Jarvis.Browser\Jarvis.Browser.csproj" />
     <ProjectReference Include="..\Jarvis.Execution\Jarvis.Execution.csproj" />
     <ProjectReference Include="..\Jarvis.Intents\Jarvis.Intents.csproj" />
     <ProjectReference Include="..\Jarvis.Speech\Jarvis.Speech.csproj" />

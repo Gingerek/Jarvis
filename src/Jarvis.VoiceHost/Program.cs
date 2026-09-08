@@ -5,6 +5,7 @@ using System.Threading.Channels;
 using Jarvis.Audio;
 using Jarvis.ASR;
 using Jarvis.Brain;
+using Jarvis.Browser;
 using Jarvis.Commands;
 using Jarvis.Execution;
 using Jarvis.Intents;
@@ -30,10 +31,11 @@ var resolver = new KnownEntityResolver();
 var launcher = new ApplicationLauncher();
 var windows = new WindowsSystemController();
 var folders = new KnownFolderExecutor(root);
+var browserExecutor = new BrowserCommandExecutor(new BrowserCommandClient());
 foreach (var app in KnownApplications.All)
     resolver.Add(app.Id, app.Aliases.Append(app.DisplayName).ToArray());
 
-CommandExecutionOutcome? ExecuteCommand(string text)
+async Task<CommandExecutionOutcome?> ExecuteCommandAsync(string text, CancellationToken cancellationToken = default)
 {
     var request = registry.Parse(text);
     if (request is null) return null;
@@ -64,6 +66,8 @@ CommandExecutionOutcome? ExecuteCommand(string text)
         };
     }
 
+    var browserOutcome = await browserExecutor.ExecuteAsync(request, cancellationToken);
+    if (browserOutcome is not null) return browserOutcome;
     return ExecuteBuiltIn(request);
 }
 
@@ -133,7 +137,7 @@ void OpenUrl(string url)
 if (args.Length > 1 && args[0].Equals("--command", StringComparison.OrdinalIgnoreCase))
 {
     var commandText = string.Join(' ', args.Skip(1));
-    var result = ExecuteCommand(commandText);
+    var result = await ExecuteCommandAsync(commandText);
     if (result is null) Console.WriteLine($"UNHANDLED COMMAND: {commandText}");
     else Console.WriteLine($"EXECUTE: {result.Status} -> {result.Reply}");
     return;
@@ -243,7 +247,7 @@ try
 
         if (string.IsNullOrWhiteSpace(result.CommandText)) continue;
         await events.EmitAsync("command", "PROCESSING", result.CommandText);
-        var execution = ExecuteCommand(result.CommandText);
+        var execution = await ExecuteCommandAsync(result.CommandText, lifetimeCts.Token);
         if (execution is null)
         {
             const string fallbackReply = "Nie zrozumiałem polecenia. Powiedz na przykład: otwórz Lightroom.";

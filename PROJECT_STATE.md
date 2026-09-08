@@ -131,3 +131,12 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Generated command corpus now contains 26,122 utterance variants.
 - Full solution build: PASS, 0 errors, 0 warnings.
 - Persistent UI + VoiceHost restarted successfully after runtime publish.
+
+## Browser bridge checkpoint — 2026-09-08
+- One canonical browser path: VoiceHost -> Jarvis.Browser -> Jarvis.BrowserHost -> MV3 extension.
+- Native host com.jarvis.browser registered per-user for Chrome and Edge under HKCU.
+- Stable extension id: cdlnajihofjpmochnpnkcomdifdjimgd.
+- Simulated Named Pipe + Native Messaging round-trip PASS.
+- Corpus: 27,522 generated utterance variants.
+- Live Chrome/Edge test still requires one-time Load unpacked because branded Chrome 137+ ignores command-line unpacked extension loading.
+

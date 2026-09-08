@@ -25,7 +25,23 @@ public enum CommandIntent
     RestoreWindow,
     CloseWindow,
     ShowDesktop,
-    LockComputer
+    LockComputer,
+    BrowserNewTab,
+    BrowserCloseTab,
+    BrowserNextTab,
+    BrowserPreviousTab,
+    BrowserReload,
+    BrowserBack,
+    BrowserForward,
+    BrowserScrollDown,
+    BrowserScrollUp,
+    BrowserScrollTop,
+    BrowserScrollBottom,
+    BrowserToggleMedia,
+    BrowserMuteTab,
+    BrowserUnmuteTab,
+    BrowserDuplicateTab,
+    BrowserContext
 }
 
 public sealed record CommandRequest(
@@ -39,6 +55,7 @@ public sealed class CommandRegistry
     private readonly KnownFolderCommandParser _folder = new();
     private readonly WindowsSettingsCommandParser _settings = new();
     private readonly SystemCommandParser _system = new();
+    private readonly BrowserCommandParser _browser = new();
     private static readonly HashSet<string> TimePhrases = new(StringComparer.Ordinal)
     {
         "ktora godzina", "jaka jest godzina", "powiedz ktora godzina",
@@ -77,6 +94,9 @@ public sealed class CommandRegistry
 
         var system = _system.Parse(normalized);
         if (system is not null) return system;
+
+        var browser = _browser.Parse(normalized);
+        if (browser is not null) return browser;
 
         var settings = _settings.Parse(normalized);
         if (settings is not null) return settings;
@@ -143,7 +163,7 @@ public sealed class CommandRegistry
         foreach (var ch in formD)
         {
             if (CharUnicodeInfo.GetUnicodeCategory(ch) == UnicodeCategory.NonSpacingMark) continue;
-            var c = ch == 'ł' ? 'l' : ch;
+            var c = ch == '\u0142' ? 'l' : ch;
             sb.Append(char.IsLetterOrDigit(c) ? c : ' ');
         }
         return string.Join(' ', sb.ToString()

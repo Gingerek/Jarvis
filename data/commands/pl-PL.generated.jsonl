@@ -1,3 +1,1403 @@
+{"intent": "BrowserBack", "argument": null, "utterance": "cofnij stronę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "cofnij stronę jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "cofnij stronę od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "cofnij stronę proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "cofnij stronę teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz cofnij stronę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz cofnij stronę jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz cofnij stronę od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz cofnij stronę proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz cofnij stronę teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz wstecz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz wstecz jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz wstecz od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz wstecz proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "czy możesz wstecz teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis cofnij stronę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis cofnij stronę jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis cofnij stronę od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis cofnij stronę proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis cofnij stronę teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis wstecz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis wstecz jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis wstecz od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis wstecz proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "hej Jarvis wstecz teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis cofnij stronę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis cofnij stronę jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis cofnij stronę od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis cofnij stronę proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis cofnij stronę teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę cofnij stronę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę cofnij stronę jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę cofnij stronę od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę cofnij stronę proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę cofnij stronę teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę wstecz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę wstecz jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę wstecz od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę wstecz proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis proszę wstecz teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis wstecz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis wstecz jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis wstecz od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis wstecz proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "Jarvis wstecz teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz cofnij stronę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz cofnij stronę jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz cofnij stronę od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz cofnij stronę proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz cofnij stronę teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz wstecz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz wstecz jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz wstecz od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz wstecz proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "możesz wstecz teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę cofnij stronę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę cofnij stronę jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę cofnij stronę od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę cofnij stronę proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę cofnij stronę teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę wstecz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę wstecz jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę wstecz od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę wstecz proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "proszę wstecz teraz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "wstecz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "wstecz jeśli możesz"}
+{"intent": "BrowserBack", "argument": null, "utterance": "wstecz od razu"}
+{"intent": "BrowserBack", "argument": null, "utterance": "wstecz proszę"}
+{"intent": "BrowserBack", "argument": null, "utterance": "wstecz teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij aktywną kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij aktywną kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij aktywną kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij aktywną kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij aktywną kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij zakładkę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij zakładkę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij zakładkę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij zakładkę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "czy możesz zamknij zakładkę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij aktywną kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij aktywną kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij aktywną kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij aktywną kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij aktywną kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij zakładkę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij zakładkę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij zakładkę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij zakładkę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "hej Jarvis zamknij zakładkę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij aktywną kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij aktywną kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij aktywną kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij aktywną kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij aktywną kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij zakładkę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij zakładkę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij zakładkę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij zakładkę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis proszę zamknij zakładkę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij aktywną kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij aktywną kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij aktywną kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij aktywną kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij aktywną kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij zakładkę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij zakładkę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij zakładkę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij zakładkę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "Jarvis zamknij zakładkę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij aktywną kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij aktywną kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij aktywną kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij aktywną kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij aktywną kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij zakładkę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij zakładkę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij zakładkę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij zakładkę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "możesz zamknij zakładkę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij aktywną kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij aktywną kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij aktywną kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij aktywną kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij aktywną kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij zakładkę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij zakładkę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij zakładkę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij zakładkę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "proszę zamknij zakładkę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij aktywną kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij aktywną kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij aktywną kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij aktywną kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij aktywną kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij kartę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij kartę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij kartę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij kartę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij kartę teraz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij zakładkę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij zakładkę jeśli możesz"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij zakładkę od razu"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij zakładkę proszę"}
+{"intent": "BrowserCloseTab", "argument": null, "utterance": "zamknij zakładkę teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "co mam otwarte w przeglądarce"}
+{"intent": "BrowserContext", "argument": null, "utterance": "co mam otwarte w przeglądarce jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "co mam otwarte w przeglądarce od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "co mam otwarte w przeglądarce proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "co mam otwarte w przeglądarce teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz co mam otwarte w przeglądarce"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz co mam otwarte w przeglądarce jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz co mam otwarte w przeglądarce od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz co mam otwarte w przeglądarce proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz co mam otwarte w przeglądarce teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka jest aktywna karta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka jest aktywna karta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka jest aktywna karta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka jest aktywna karta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka jest aktywna karta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka strona jest otwarta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka strona jest otwarta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka strona jest otwarta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka strona jest otwarta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "czy możesz jaka strona jest otwarta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis co mam otwarte w przeglądarce"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis co mam otwarte w przeglądarce jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis co mam otwarte w przeglądarce od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis co mam otwarte w przeglądarce proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis co mam otwarte w przeglądarce teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka jest aktywna karta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka jest aktywna karta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka jest aktywna karta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka jest aktywna karta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka jest aktywna karta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka strona jest otwarta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka strona jest otwarta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka strona jest otwarta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka strona jest otwarta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "hej Jarvis jaka strona jest otwarta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka jest aktywna karta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka jest aktywna karta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka jest aktywna karta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka jest aktywna karta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka jest aktywna karta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka strona jest otwarta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka strona jest otwarta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka strona jest otwarta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka strona jest otwarta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "jaka strona jest otwarta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis co mam otwarte w przeglądarce"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis co mam otwarte w przeglądarce jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis co mam otwarte w przeglądarce od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis co mam otwarte w przeglądarce proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis co mam otwarte w przeglądarce teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka jest aktywna karta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka jest aktywna karta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka jest aktywna karta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka jest aktywna karta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka jest aktywna karta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka strona jest otwarta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka strona jest otwarta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka strona jest otwarta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka strona jest otwarta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis jaka strona jest otwarta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę co mam otwarte w przeglądarce"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę co mam otwarte w przeglądarce jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę co mam otwarte w przeglądarce od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę co mam otwarte w przeglądarce proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę co mam otwarte w przeglądarce teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka jest aktywna karta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka jest aktywna karta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka jest aktywna karta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka jest aktywna karta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka jest aktywna karta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka strona jest otwarta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka strona jest otwarta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka strona jest otwarta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka strona jest otwarta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "Jarvis proszę jaka strona jest otwarta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz co mam otwarte w przeglądarce"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz co mam otwarte w przeglądarce jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz co mam otwarte w przeglądarce od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz co mam otwarte w przeglądarce proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz co mam otwarte w przeglądarce teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka jest aktywna karta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka jest aktywna karta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka jest aktywna karta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka jest aktywna karta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka jest aktywna karta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka strona jest otwarta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka strona jest otwarta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka strona jest otwarta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka strona jest otwarta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "możesz jaka strona jest otwarta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę co mam otwarte w przeglądarce"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę co mam otwarte w przeglądarce jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę co mam otwarte w przeglądarce od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę co mam otwarte w przeglądarce proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę co mam otwarte w przeglądarce teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka jest aktywna karta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka jest aktywna karta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka jest aktywna karta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka jest aktywna karta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka jest aktywna karta teraz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka strona jest otwarta"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka strona jest otwarta jeśli możesz"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka strona jest otwarta od razu"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka strona jest otwarta proszę"}
+{"intent": "BrowserContext", "argument": null, "utterance": "proszę jaka strona jest otwarta teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj kartę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj kartę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj kartę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj kartę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj kartę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj zakładkę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj zakładkę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj zakładkę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj zakładkę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "czy możesz duplikuj zakładkę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj kartę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj kartę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj kartę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj kartę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj kartę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj zakładkę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj zakładkę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj zakładkę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj zakładkę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "duplikuj zakładkę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj kartę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj kartę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj kartę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj kartę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj kartę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj zakładkę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj zakładkę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj zakładkę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj zakładkę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "hej Jarvis duplikuj zakładkę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj kartę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj kartę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj kartę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj kartę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj kartę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj zakładkę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj zakładkę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj zakładkę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj zakładkę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis duplikuj zakładkę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj kartę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj kartę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj kartę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj kartę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj kartę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj zakładkę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj zakładkę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj zakładkę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj zakładkę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "Jarvis proszę duplikuj zakładkę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj kartę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj kartę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj kartę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj kartę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj kartę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj zakładkę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj zakładkę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj zakładkę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj zakładkę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "możesz duplikuj zakładkę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj kartę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj kartę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj kartę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj kartę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj kartę teraz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj zakładkę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj zakładkę jeśli możesz"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj zakładkę od razu"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj zakładkę proszę"}
+{"intent": "BrowserDuplicateTab", "argument": null, "utterance": "proszę duplikuj zakładkę teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz dalej"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz dalej jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz dalej od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz dalej proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz dalej teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz do przodu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz do przodu jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz do przodu od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz do przodu proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "czy możesz do przodu teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "dalej"}
+{"intent": "BrowserForward", "argument": null, "utterance": "dalej jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "dalej od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "dalej proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "dalej teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "do przodu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "do przodu jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "do przodu od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "do przodu proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "do przodu teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis dalej"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis dalej jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis dalej od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis dalej proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis dalej teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis do przodu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis do przodu jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis do przodu od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis do przodu proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "hej Jarvis do przodu teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis dalej"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis dalej jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis dalej od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis dalej proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis dalej teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis do przodu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis do przodu jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis do przodu od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis do przodu proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis do przodu teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę dalej"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę dalej jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę dalej od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę dalej proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę dalej teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę do przodu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę do przodu jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę do przodu od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę do przodu proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "Jarvis proszę do przodu teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz dalej"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz dalej jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz dalej od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz dalej proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz dalej teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz do przodu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz do przodu jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz do przodu od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz do przodu proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "możesz do przodu teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę dalej"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę dalej jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę dalej od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę dalej proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę dalej teraz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę do przodu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę do przodu jeśli możesz"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę do przodu od razu"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę do przodu proszę"}
+{"intent": "BrowserForward", "argument": null, "utterance": "proszę do przodu teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz kartę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz kartę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz kartę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz kartę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz kartę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz zakładkę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz zakładkę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz zakładkę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz zakładkę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "czy możesz wycisz zakładkę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz kartę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz kartę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz kartę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz kartę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz kartę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz zakładkę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz zakładkę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz zakładkę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz zakładkę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "hej Jarvis wycisz zakładkę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz kartę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz kartę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz kartę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz kartę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz kartę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz zakładkę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz zakładkę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz zakładkę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz zakładkę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis proszę wycisz zakładkę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz kartę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz kartę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz kartę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz kartę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz kartę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz zakładkę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz zakładkę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz zakładkę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz zakładkę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "Jarvis wycisz zakładkę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz kartę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz kartę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz kartę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz kartę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz kartę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz zakładkę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz zakładkę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz zakładkę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz zakładkę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "możesz wycisz zakładkę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz kartę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz kartę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz kartę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz kartę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz kartę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz zakładkę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz zakładkę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz zakładkę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz zakładkę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "proszę wycisz zakładkę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz kartę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz kartę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz kartę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz kartę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz kartę teraz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz zakładkę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz zakładkę jeśli możesz"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz zakładkę od razu"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz zakładkę proszę"}
+{"intent": "BrowserMuteTab", "argument": null, "utterance": "wycisz zakładkę teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa karta"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa karta jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa karta od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa karta proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa karta teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa zakładka"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa zakładka jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa zakładka od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa zakładka proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz nowa zakładka teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz otwórz nową kartę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz otwórz nową kartę jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz otwórz nową kartę od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz otwórz nową kartę proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "czy możesz otwórz nową kartę teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa karta"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa karta jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa karta od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa karta proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa karta teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa zakładka"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa zakładka jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa zakładka od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa zakładka proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis nowa zakładka teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis otwórz nową kartę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis otwórz nową kartę jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis otwórz nową kartę od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis otwórz nową kartę proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "hej Jarvis otwórz nową kartę teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa karta"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa karta jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa karta od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa karta proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa karta teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa zakładka"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa zakładka jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa zakładka od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa zakładka proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis nowa zakładka teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis otwórz nową kartę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis otwórz nową kartę jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis otwórz nową kartę od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis otwórz nową kartę proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis otwórz nową kartę teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa karta"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa karta jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa karta od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa karta proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa karta teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa zakładka"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa zakładka jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa zakładka od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa zakładka proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę nowa zakładka teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę otwórz nową kartę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę otwórz nową kartę jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę otwórz nową kartę od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę otwórz nową kartę proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "Jarvis proszę otwórz nową kartę teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa karta"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa karta jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa karta od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa karta proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa karta teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa zakładka"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa zakładka jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa zakładka od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa zakładka proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz nowa zakładka teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz otwórz nową kartę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz otwórz nową kartę jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz otwórz nową kartę od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz otwórz nową kartę proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "możesz otwórz nową kartę teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa karta"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa karta jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa karta od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa karta proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa karta teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa zakładka"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa zakładka jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa zakładka od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa zakładka proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "nowa zakładka teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "otwórz nową kartę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "otwórz nową kartę jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "otwórz nową kartę od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "otwórz nową kartę proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "otwórz nową kartę teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa karta"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa karta jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa karta od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa karta proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa karta teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa zakładka"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa zakładka jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa zakładka od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa zakładka proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę nowa zakładka teraz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę otwórz nową kartę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę otwórz nową kartę jeśli możesz"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę otwórz nową kartę od razu"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę otwórz nową kartę proszę"}
+{"intent": "BrowserNewTab", "argument": null, "utterance": "proszę otwórz nową kartę teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna karta"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna karta jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna karta od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna karta proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna karta teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna zakładka"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna zakładka jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna zakładka od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna zakładka proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "czy możesz następna zakładka teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna karta"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna karta jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna karta od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna karta proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna karta teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna zakładka"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna zakładka jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna zakładka od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna zakładka proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "hej Jarvis następna zakładka teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna karta"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna karta jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna karta od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna karta proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna karta teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna zakładka"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna zakładka jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna zakładka od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna zakładka proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis następna zakładka teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna karta"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna karta jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna karta od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna karta proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna karta teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna zakładka"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna zakładka jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna zakładka od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna zakładka proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "Jarvis proszę następna zakładka teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna karta"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna karta jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna karta od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna karta proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna karta teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna zakładka"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna zakładka jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna zakładka od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna zakładka proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "możesz następna zakładka teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna karta"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna karta jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna karta od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna karta proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna karta teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna zakładka"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna zakładka jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna zakładka od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna zakładka proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "następna zakładka teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna karta"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna karta jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna karta od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna karta proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna karta teraz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna zakładka"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna zakładka jeśli możesz"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna zakładka od razu"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna zakładka proszę"}
+{"intent": "BrowserNextTab", "argument": null, "utterance": "proszę następna zakładka teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia karta"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia karta jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia karta od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia karta proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia karta teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia zakładka"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia zakładka jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia zakładka od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia zakładka proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "czy możesz poprzednia zakładka teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia karta"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia karta jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia karta od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia karta proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia karta teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia zakładka"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia zakładka jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia zakładka od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia zakładka proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "hej Jarvis poprzednia zakładka teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia karta"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia karta jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia karta od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia karta proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia karta teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia zakładka"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia zakładka jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia zakładka od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia zakładka proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis poprzednia zakładka teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia karta"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia karta jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia karta od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia karta proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia karta teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia zakładka"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia zakładka jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia zakładka od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia zakładka proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "Jarvis proszę poprzednia zakładka teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia karta"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia karta jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia karta od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia karta proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia karta teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia zakładka"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia zakładka jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia zakładka od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia zakładka proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "możesz poprzednia zakładka teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia karta"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia karta jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia karta od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia karta proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia karta teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia zakładka"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia zakładka jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia zakładka od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia zakładka proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "poprzednia zakładka teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia karta"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia karta jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia karta od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia karta proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia karta teraz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia zakładka"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia zakładka jeśli możesz"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia zakładka od razu"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia zakładka proszę"}
+{"intent": "BrowserPreviousTab", "argument": null, "utterance": "proszę poprzednia zakładka teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz odśwież teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz przeładuj stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz przeładuj stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz przeładuj stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz przeładuj stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "czy możesz przeładuj stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis odśwież teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis przeładuj stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis przeładuj stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis przeładuj stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis przeładuj stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "hej Jarvis przeładuj stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis odśwież teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę odśwież teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę przeładuj stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę przeładuj stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę przeładuj stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę przeładuj stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis proszę przeładuj stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis przeładuj stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis przeładuj stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis przeładuj stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis przeładuj stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "Jarvis przeładuj stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz odśwież teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz przeładuj stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz przeładuj stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz przeładuj stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz przeładuj stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "możesz przeładuj stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "odśwież teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę odśwież teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę przeładuj stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę przeładuj stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę przeładuj stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę przeładuj stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "proszę przeładuj stronę teraz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "przeładuj stronę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "przeładuj stronę jeśli możesz"}
+{"intent": "BrowserReload", "argument": null, "utterance": "przeładuj stronę od razu"}
+{"intent": "BrowserReload", "argument": null, "utterance": "przeładuj stronę proszę"}
+{"intent": "BrowserReload", "argument": null, "utterance": "przeładuj stronę teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz koniec strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz koniec strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz koniec strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz koniec strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz koniec strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz na dół strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz na dół strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz na dół strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz na dół strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "czy możesz na dół strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis koniec strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis koniec strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis koniec strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis koniec strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis koniec strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis na dół strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis na dół strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis na dół strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis na dół strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "hej Jarvis na dół strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis koniec strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis koniec strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis koniec strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis koniec strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis koniec strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis na dół strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis na dół strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis na dół strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis na dół strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis na dół strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę koniec strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę koniec strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę koniec strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę koniec strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę koniec strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę na dół strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę na dół strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę na dół strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę na dół strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "Jarvis proszę na dół strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "koniec strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "koniec strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "koniec strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "koniec strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "koniec strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz koniec strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz koniec strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz koniec strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz koniec strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz koniec strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz na dół strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz na dół strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz na dół strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz na dół strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "możesz na dół strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "na dół strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "na dół strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "na dół strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "na dół strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "na dół strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę koniec strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę koniec strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę koniec strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę koniec strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę koniec strony teraz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę na dół strony"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę na dół strony jeśli możesz"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę na dół strony od razu"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę na dół strony proszę"}
+{"intent": "BrowserScrollBottom", "argument": null, "utterance": "proszę na dół strony teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz niżej"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz niżej jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz niżej od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz niżej proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz niżej teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewijaj w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewijaj w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewijaj w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewijaj w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewijaj w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewiń w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewiń w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewiń w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewiń w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "czy możesz przewiń w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis niżej"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis niżej jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis niżej od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis niżej proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis niżej teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewijaj w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewijaj w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewijaj w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewijaj w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewijaj w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewiń w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewiń w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewiń w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewiń w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "hej Jarvis przewiń w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis niżej"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis niżej jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis niżej od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis niżej proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis niżej teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę niżej"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę niżej jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę niżej od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę niżej proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę niżej teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewijaj w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewijaj w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewijaj w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewijaj w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewijaj w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewiń w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewiń w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewiń w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewiń w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis proszę przewiń w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewijaj w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewijaj w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewijaj w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewijaj w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewijaj w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewiń w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewiń w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewiń w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewiń w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "Jarvis przewiń w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz niżej"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz niżej jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz niżej od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz niżej proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz niżej teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewijaj w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewijaj w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewijaj w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewijaj w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewijaj w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewiń w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewiń w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewiń w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewiń w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "możesz przewiń w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "niżej"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "niżej jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "niżej od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "niżej proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "niżej teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę niżej"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę niżej jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę niżej od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę niżej proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę niżej teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewijaj w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewijaj w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewijaj w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewijaj w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewijaj w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewiń w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewiń w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewiń w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewiń w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "proszę przewiń w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewijaj w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewijaj w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewijaj w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewijaj w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewijaj w dół teraz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewiń w dół"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewiń w dół jeśli możesz"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewiń w dół od razu"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewiń w dół proszę"}
+{"intent": "BrowserScrollDown", "argument": null, "utterance": "przewiń w dół teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz na górę strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz na górę strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz na górę strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz na górę strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz na górę strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz początek strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz początek strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz początek strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz początek strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "czy możesz początek strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis na górę strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis na górę strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis na górę strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis na górę strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis na górę strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis początek strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis początek strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis początek strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis początek strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "hej Jarvis początek strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis na górę strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis na górę strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis na górę strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis na górę strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis na górę strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis początek strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis początek strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis początek strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis początek strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis początek strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę na górę strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę na górę strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę na górę strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę na górę strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę na górę strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę początek strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę początek strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę początek strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę początek strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "Jarvis proszę początek strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz na górę strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz na górę strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz na górę strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz na górę strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz na górę strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz początek strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz początek strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz początek strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz początek strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "możesz początek strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "na górę strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "na górę strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "na górę strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "na górę strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "na górę strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "początek strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "początek strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "początek strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "początek strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "początek strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę na górę strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę na górę strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę na górę strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę na górę strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę na górę strony teraz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę początek strony"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę początek strony jeśli możesz"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę początek strony od razu"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę początek strony proszę"}
+{"intent": "BrowserScrollTop", "argument": null, "utterance": "proszę początek strony teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewijaj w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewijaj w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewijaj w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewijaj w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewijaj w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewiń w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewiń w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewiń w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewiń w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz przewiń w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz wyżej"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz wyżej jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz wyżej od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz wyżej proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "czy możesz wyżej teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewijaj w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewijaj w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewijaj w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewijaj w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewijaj w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewiń w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewiń w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewiń w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewiń w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis przewiń w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis wyżej"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis wyżej jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis wyżej od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis wyżej proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "hej Jarvis wyżej teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewijaj w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewijaj w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewijaj w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewijaj w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewijaj w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewiń w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewiń w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewiń w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewiń w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę przewiń w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę wyżej"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę wyżej jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę wyżej od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę wyżej proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis proszę wyżej teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewijaj w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewijaj w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewijaj w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewijaj w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewijaj w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewiń w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewiń w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewiń w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewiń w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis przewiń w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis wyżej"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis wyżej jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis wyżej od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis wyżej proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "Jarvis wyżej teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewijaj w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewijaj w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewijaj w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewijaj w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewijaj w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewiń w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewiń w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewiń w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewiń w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz przewiń w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz wyżej"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz wyżej jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz wyżej od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz wyżej proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "możesz wyżej teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewijaj w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewijaj w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewijaj w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewijaj w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewijaj w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewiń w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewiń w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewiń w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewiń w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę przewiń w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę wyżej"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę wyżej jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę wyżej od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę wyżej proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "proszę wyżej teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewijaj w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewijaj w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewijaj w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewijaj w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewijaj w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewiń w górę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewiń w górę jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewiń w górę od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewiń w górę proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "przewiń w górę teraz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "wyżej"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "wyżej jeśli możesz"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "wyżej od razu"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "wyżej proszę"}
+{"intent": "BrowserScrollUp", "argument": null, "utterance": "wyżej teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz pauza"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz pauza jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz pauza od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz pauza proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz pauza teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz play pause"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz play pause jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz play pause od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz play pause proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz play pause teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz wznów odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz wznów odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz wznów odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz wznów odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz wznów odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz zatrzymaj odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz zatrzymaj odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz zatrzymaj odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz zatrzymaj odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "czy możesz zatrzymaj odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis pauza"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis pauza jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis pauza od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis pauza proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis pauza teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis play pause"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis play pause jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis play pause od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis play pause proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis play pause teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis wznów odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis wznów odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis wznów odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis wznów odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis wznów odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis zatrzymaj odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis zatrzymaj odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis zatrzymaj odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis zatrzymaj odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "hej Jarvis zatrzymaj odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis pauza"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis pauza jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis pauza od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis pauza proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis pauza teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis play pause"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis play pause jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis play pause od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis play pause proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis play pause teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę pauza"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę pauza jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę pauza od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę pauza proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę pauza teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę play pause"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę play pause jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę play pause od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę play pause proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę play pause teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę wznów odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę wznów odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę wznów odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę wznów odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę wznów odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę zatrzymaj odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę zatrzymaj odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę zatrzymaj odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę zatrzymaj odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis proszę zatrzymaj odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis wznów odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis wznów odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis wznów odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis wznów odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis wznów odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis zatrzymaj odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis zatrzymaj odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis zatrzymaj odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis zatrzymaj odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "Jarvis zatrzymaj odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz pauza"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz pauza jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz pauza od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz pauza proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz pauza teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz play pause"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz play pause jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz play pause od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz play pause proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz play pause teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz wznów odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz wznów odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz wznów odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz wznów odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz wznów odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz zatrzymaj odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz zatrzymaj odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz zatrzymaj odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz zatrzymaj odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "możesz zatrzymaj odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "pauza"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "pauza jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "pauza od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "pauza proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "pauza teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "play pause"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "play pause jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "play pause od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "play pause proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "play pause teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę pauza"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę pauza jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę pauza od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę pauza proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę pauza teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę play pause"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę play pause jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę play pause od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę play pause proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę play pause teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę wznów odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę wznów odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę wznów odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę wznów odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę wznów odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę zatrzymaj odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę zatrzymaj odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę zatrzymaj odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę zatrzymaj odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "proszę zatrzymaj odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "wznów odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "wznów odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "wznów odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "wznów odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "wznów odtwarzanie teraz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "zatrzymaj odtwarzanie"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "zatrzymaj odtwarzanie jeśli możesz"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "zatrzymaj odtwarzanie od razu"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "zatrzymaj odtwarzanie proszę"}
+{"intent": "BrowserToggleMedia", "argument": null, "utterance": "zatrzymaj odtwarzanie teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz odcisz kartę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz odcisz kartę jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz odcisz kartę od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz odcisz kartę proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz odcisz kartę teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz włącz dźwięk karty"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz włącz dźwięk karty jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz włącz dźwięk karty od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz włącz dźwięk karty proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "czy możesz włącz dźwięk karty teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis odcisz kartę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis odcisz kartę jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis odcisz kartę od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis odcisz kartę proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis odcisz kartę teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis włącz dźwięk karty"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis włącz dźwięk karty jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis włącz dźwięk karty od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis włącz dźwięk karty proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "hej Jarvis włącz dźwięk karty teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis odcisz kartę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis odcisz kartę jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis odcisz kartę od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis odcisz kartę proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis odcisz kartę teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę odcisz kartę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę odcisz kartę jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę odcisz kartę od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę odcisz kartę proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę odcisz kartę teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę włącz dźwięk karty"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę włącz dźwięk karty jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę włącz dźwięk karty od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę włącz dźwięk karty proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis proszę włącz dźwięk karty teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis włącz dźwięk karty"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis włącz dźwięk karty jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis włącz dźwięk karty od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis włącz dźwięk karty proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "Jarvis włącz dźwięk karty teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz odcisz kartę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz odcisz kartę jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz odcisz kartę od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz odcisz kartę proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz odcisz kartę teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz włącz dźwięk karty"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz włącz dźwięk karty jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz włącz dźwięk karty od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz włącz dźwięk karty proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "możesz włącz dźwięk karty teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "odcisz kartę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "odcisz kartę jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "odcisz kartę od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "odcisz kartę proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "odcisz kartę teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę odcisz kartę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę odcisz kartę jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę odcisz kartę od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę odcisz kartę proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę odcisz kartę teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę włącz dźwięk karty"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę włącz dźwięk karty jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę włącz dźwięk karty od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę włącz dźwięk karty proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "proszę włącz dźwięk karty teraz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "włącz dźwięk karty"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "włącz dźwięk karty jeśli możesz"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "włącz dźwięk karty od razu"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "włącz dźwięk karty proszę"}
+{"intent": "BrowserUnmuteTab", "argument": null, "utterance": "włącz dźwięk karty teraz"}
 {"intent": "CloseApplication", "argument": "chrome", "utterance": "chcę żebyś close Chrome"}
 {"intent": "CloseApplication", "argument": "chrome", "utterance": "chcę żebyś close Chrome jeśli możesz"}
 {"intent": "CloseApplication", "argument": "chrome", "utterance": "chcę żebyś close Chrome od razu"}

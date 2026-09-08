@@ -3,6 +3,8 @@
     <Project Path="src/Jarvis.ASR/Jarvis.ASR.csproj" />
     <Project Path="src/Jarvis.Audio/Jarvis.Audio.csproj" />
     <Project Path="src/Jarvis.Brain/Jarvis.Brain.csproj" />
+    <Project Path="src/Jarvis.Browser/Jarvis.Browser.csproj" />
+    <Project Path="src/Jarvis.BrowserHost/Jarvis.BrowserHost.csproj" />
     <Project Path="src/Jarvis.Commands/Jarvis.Commands.csproj" />
     <Project Path="src/Jarvis.Context/Jarvis.Context.csproj" />
     <Project Path="src/Jarvis.Core/Jarvis.Core.csproj" />
@@ -30,6 +32,7 @@
     <Project Path="tools/Jarvis.AsrProbe/Jarvis.AsrProbe.csproj" />
     <Project Path="tools/Jarvis.AsrSampleRecorder/Jarvis.AsrSampleRecorder.csproj" />
     <Project Path="tools/Jarvis.AudioProbe/Jarvis.AudioProbe.csproj" />
+    <Project Path="tools/Jarvis.BrowserProbe/Jarvis.BrowserProbe.csproj" />
     <Project Path="tools/Jarvis.TtsProbe/Jarvis.TtsProbe.csproj" />
     <Project Path="tools/Jarvis.TtsSetup/Jarvis.TtsSetup.csproj" />
     <Project Path="tools/Jarvis.TtsVoiceCatalog/Jarvis.TtsVoiceCatalog.csproj" />

@@ -51,7 +51,7 @@ public sealed class PythonFasterWhisperAsrEngine : IAsrEngine
         if (ready.RootElement.GetProperty("type").GetString() != "ready")
             throw new InvalidOperationException($"Unexpected ASR worker response: {readyLine}");
 
-        var prompt = "Jarvis. Otwórz. Włącz. Uruchom. Odpal. Zamknij. Wyłącz. Wyszukaj. Znajdź. Głośniej. Ciszej. Wycisz. Odcisz. Głośność. Minimalizuj. Maksymalizuj. Przywróć okno. Pokaż pulpit. Zablokuj komputer. Open. Close. Lightroom. Lightroom Classic. YouTube. Google. Marktplaats. DaVinci Resolve. OBS Studio. Google Chrome. Microsoft Edge. Notatnik. Menedżer zadań. Przykład: Jarvis, otwórz YouTube.";
+        var prompt = "Jarvis. Otwórz. Włącz. Uruchom. Odpal. Zamknij. Wyłącz. Wyszukaj. Znajdź. Głośniej. Ciszej. Wycisz. Odcisz. Głośność. Minimalizuj. Maksymalizuj. Przywróć okno. Pokaż pulpit. Zablokuj komputer. Open. Close. Lightroom. Lightroom Classic. YouTube. Google. Marktplaats. DaVinci Resolve. OBS Studio. Google Chrome. Microsoft Edge. Notatnik. Menedżer zadań.  Karta. Zakładka. Nowa karta. Zamknij kartę. Następna karta. Poprzednia karta. Odśwież stronę. Przewiń w dół. Przewiń w górę. Wycisz kartę. Pauza. Przykład: Jarvis, otwórz YouTube.";
         return new PythonFasterWhisperAsrEngine(process, modelName, prompt);
     }
     public async Task<AsrTranscript> TranscribeAsync(

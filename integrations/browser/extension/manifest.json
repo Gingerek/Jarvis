@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Jarvis Browser Bridge",
+  "version": "0.2.0",
+  "minimum_chrome_version": "105",
+  "description": "Local Jarvis browser control bridge",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0X5/IH4SkoMwepUvO026/Gxk72OwvvleS0og75UE5YMrJTNCbbKjXvhqshfxocA4+XXE9+QQDYTn4BC9ntJmVzVBGCbi//C8anp+Iwhd5vlhn5u0WoqWXRht8NzNVLCn5PiT/Q7Hg1e9Y50C41dcXGmUJBkoiDvqoS4LY+Ycvv6dp/5uSGPEMJ5ZFLdfvqSSdxebA6BcTmt1obmvGIClSOMq/pEOlGlABrsV9hC4R/MaXfUcnOdBDBld5GzrNiQacyJ/jdJQpEm1Quyu0ahvfiM3GXpSqdA7x8SrmkUFKqLkHzS6m+v1zECBt1TGeJEDXievD4175BBKnQocouWp4QIDAQAB",
+  "permissions": ["nativeMessaging", "tabs", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}

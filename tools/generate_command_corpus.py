@@ -173,6 +173,31 @@ for uri, aliases in settings_pages.items():
                 for suffix in suffixes:
                     add("OpenSettings", uri, prefix + phrase + suffix)
 
+
+browser_bases = {
+    "BrowserNewTab": ["nowa karta", "otw\u00f3rz now\u0105 kart\u0119", "nowa zak\u0142adka"],
+    "BrowserCloseTab": ["zamknij kart\u0119", "zamknij zak\u0142adk\u0119", "zamknij aktywn\u0105 kart\u0119"],
+    "BrowserNextTab": ["nast\u0119pna karta", "nast\u0119pna zak\u0142adka"],
+    "BrowserPreviousTab": ["poprzednia karta", "poprzednia zak\u0142adka"],
+    "BrowserReload": ["od\u015bwie\u017c", "od\u015bwie\u017c stron\u0119", "prze\u0142aduj stron\u0119"],
+    "BrowserBack": ["wstecz", "cofnij stron\u0119"],
+    "BrowserForward": ["dalej", "do przodu"],
+    "BrowserDuplicateTab": ["duplikuj kart\u0119", "duplikuj zak\u0142adk\u0119"],
+    "BrowserScrollDown": ["przewi\u0144 w d\u00f3\u0142", "przewijaj w d\u00f3\u0142", "ni\u017cej"],
+    "BrowserScrollUp": ["przewi\u0144 w g\u00f3r\u0119", "przewijaj w g\u00f3r\u0119", "wy\u017cej"],
+    "BrowserScrollTop": ["na g\u00f3r\u0119 strony", "pocz\u0105tek strony"],
+    "BrowserScrollBottom": ["na d\u00f3\u0142 strony", "koniec strony"],
+    "BrowserToggleMedia": ["play pause", "pauza", "wzn\u00f3w odtwarzanie", "zatrzymaj odtwarzanie"],
+    "BrowserMuteTab": ["wycisz kart\u0119", "wycisz zak\u0142adk\u0119"],
+    "BrowserUnmuteTab": ["odcisz kart\u0119", "w\u0142\u0105cz d\u017awi\u0119k karty"],
+    "BrowserContext": ["jaka strona jest otwarta", "co mam otwarte w przegl\u0105darce", "jaka jest aktywna karta"]
+}
+for intent, phrases in browser_bases.items():
+    for phrase in phrases:
+        for prefix in polite_prefixes:
+            for suffix in suffixes:
+                add(intent, None, prefix + phrase + suffix)
+
 ordered = sorted(rows.values(), key=lambda x: (x["intent"], x["argument"] or "", x["utterance"].casefold()))
 with OUT.open("w", encoding="utf-8", newline="\n") as f:
     for row in ordered:

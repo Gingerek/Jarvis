@@ -52,3 +52,10 @@
 - doctor passed 7/7,
 - runtime smoke test passed after clean build,
 - Phase 1 marked PASS; next phase is Audio & Voice.
+
+## 2026-09-08 — Browser voice bridge
+- Added MV3 extension and Native Messaging host for Chrome/Edge.
+- Added browser command parser, VoiceHost executor and 27,522-utterance corpus.
+- Added tab/navigation/scroll/media/mute/context actions.
+- Browser protocol simulation PASS; live extension load pending one-time user install.
+
