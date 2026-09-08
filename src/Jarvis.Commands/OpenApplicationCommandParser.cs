@@ -7,7 +7,9 @@ public sealed record OpenApplicationCommand(string RequestedName);
 
 public sealed class OpenApplicationCommandParser
 {
-    private static readonly string[] Verbs = ["otworz", "wlacz", "uruchom", "start"];
+    // Includes empirically observed ASR confusions from the real Nor-Tec/Whisper pipeline.
+    private static readonly string[] Verbs =
+        ["otworz", "otworzyc", "wlacz", "wlaczyc", "uruchom", "uruchomic", "odpal", "odpalic", "startuj", "start", "open", "rozom"];
 
     public OpenApplicationCommand? Parse(string text)
     {
@@ -17,11 +19,12 @@ public sealed class OpenApplicationCommandParser
         {
             if (!normalized.StartsWith(verb + " ", StringComparison.Ordinal)) continue;
             var requested = normalized[(verb.Length + 1)..].Trim();
+            if (requested.StartsWith("mi ", StringComparison.Ordinal)) requested = requested[3..].Trim();
+            if (requested.StartsWith("dla mnie ", StringComparison.Ordinal)) requested = requested[9..].Trim();
             return requested.Length == 0 ? null : new OpenApplicationCommand(requested);
         }
         return null;
     }
-
     private static string Normalize(string value)
     {
         var formD = value.ToLowerInvariant().Normalize(NormalizationForm.FormD);

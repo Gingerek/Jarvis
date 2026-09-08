@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.Json;
@@ -51,7 +51,7 @@ public sealed class PythonFasterWhisperAsrEngine : IAsrEngine
         if (ready.RootElement.GetProperty("type").GetString() != "ready")
             throw new InvalidOperationException($"Unexpected ASR worker response: {readyLine}");
 
-        var prompt = "Jarvis. Lightroom. YouTube. DaVinci Resolve. Photoshop. OBS Studio. Marktplaats.";
+        var prompt = "Jarvis. Otwórz. Włącz. Uruchom. Odpal. Zamknij. Wyłącz. Wyszukaj. Znajdź. Open. Close. Lightroom. Lightroom Classic. YouTube. Google. Marktplaats. DaVinci Resolve. OBS Studio. Google Chrome. Microsoft Edge. Notatnik. Menedżer zadań. Przykład: Jarvis, otwórz YouTube.";
         return new PythonFasterWhisperAsrEngine(process, modelName, prompt);
     }
     public async Task<AsrTranscript> TranscribeAsync(

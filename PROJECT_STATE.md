@@ -103,3 +103,12 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - VoiceHost now speaks execution confirmations with the selected voice.
 - Capture is paused and VAD state reset while Jarvis speaks to prevent self-triggering.
 - Full Release solution build: PASS, 0 errors, 0 warnings.
+## General Command Registry checkpoint — 2026-09-08
+- Added structured CommandRegistry instead of single Lightroom-only parser path.
+- Added generated `data/commands/pl-PL.generated.jsonl` corpus with 15,741 utterance variants.
+- 12,801 variants do not use English open/close verbs.
+- Added real execution for open/close app, website open, Google search, YouTube search, time, date and day-of-week.
+- Verified installed targets: Lightroom, DaVinci Resolve, OBS, Chrome, Edge, Notatnik, Menedżer zadań.
+- Direct execution checks PASS: `która godzina`, `otwórz YouTube`.
+- Registry tests PASS: 45/45 total Core tests.
+- UI + persistent VoiceHost runtime republished and running.

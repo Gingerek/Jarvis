@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System.Globalization;
 using System.Text.Json;
 using System.Threading.Channels;
 using Jarvis.Audio;
@@ -23,22 +25,76 @@ var root = Option("--root") ?? Directory.GetCurrentDirectory();
 var pipeName = Option("--pipe");
 Directory.SetCurrentDirectory(root);
 
-var parser = new OpenApplicationCommandParser();
+var registry = new CommandRegistry();
 var resolver = new KnownEntityResolver();
 var launcher = new ApplicationLauncher();
 foreach (var app in KnownApplications.All)
     resolver.Add(app.Id, app.Aliases.Append(app.DisplayName).ToArray());
-ApplicationLaunchResult? ExecuteCommand(string text)
-{
-    var parsed = parser.Parse(text);
-    if (parsed is null) return null;
-    var match = resolver.Resolve(parsed.RequestedName, 0.55);
-    if (match is null) return null;
 
-    var target = KnownApplications.All.First(x => x.Id == match.CanonicalName);
-    var result = launcher.Launch(target);
-    Console.WriteLine($"EXECUTE: {target.DisplayName} -> {result.Status}");
-    return result;
+CommandExecutionOutcome? ExecuteCommand(string text)
+{
+    var request = registry.Parse(text);
+    if (request is null) return null;
+
+    if (request.Intent is CommandIntent.OpenApplication or CommandIntent.CloseApplication)
+    {
+        var match = resolver.Resolve(request.Argument ?? string.Empty, 0.55);
+        if (match is null) return null;
+        var target = KnownApplications.All.First(x => x.Id == match.CanonicalName);
+        if (request.Intent == CommandIntent.OpenApplication)
+        {
+            var result = launcher.Launch(target);
+            return result.Status switch
+            {
+                ApplicationLaunchStatus.Started => new($"Otwieram {target.DisplayName}.", result.Status.ToString(), target.DisplayName),
+                ApplicationLaunchStatus.AlreadyRunning => new($"{target.DisplayName} jest już otwarty.", result.Status.ToString(), target.DisplayName),
+                ApplicationLaunchStatus.ExecutableNotFound => new($"Nie znalazłem programu {target.DisplayName}.", result.Status.ToString(), target.DisplayName),
+                _ => new($"Nie udało się uruchomić {target.DisplayName}.", result.Status.ToString(), target.DisplayName)
+            };
+        }
+
+        var close = launcher.Close(target);
+        return close.Status switch
+        {
+            ApplicationCloseStatus.CloseRequested => new($"Zamykam {target.DisplayName}.", close.Status.ToString(), target.DisplayName),
+            ApplicationCloseStatus.NotRunning => new($"{target.DisplayName} nie jest uruchomiony.", close.Status.ToString(), target.DisplayName),
+            _ => new($"Nie udało się zamknąć {target.DisplayName}.", close.Status.ToString(), target.DisplayName)
+        };
+    }
+
+    return ExecuteBuiltIn(request);
+}
+
+CommandExecutionOutcome? ExecuteBuiltIn(CommandRequest request)
+{
+    var pl = CultureInfo.GetCultureInfo("pl-PL");
+    switch (request.Intent)
+    {
+        case CommandIntent.OpenWebsite:
+            OpenUrl(request.Argument!);
+            var site = request.Argument!.Contains("youtube", StringComparison.OrdinalIgnoreCase) ? "YouTube" :
+                request.Argument.Contains("marktplaats", StringComparison.OrdinalIgnoreCase) ? "Marktplaats" : "Google";
+            return new($"Otwieram {site}.", "OpenedWebsite", site);
+        case CommandIntent.SearchWeb:
+            OpenUrl($"https://www.google.com/search?q={Uri.EscapeDataString(request.Argument!)}");
+            return new($"Szukam w Google: {request.Argument}.", "SearchWeb", "Google");
+        case CommandIntent.SearchYouTube:
+            OpenUrl($"https://www.youtube.com/results?search_query={Uri.EscapeDataString(request.Argument!)}");
+            return new($"Szukam na YouTube: {request.Argument}.", "SearchYouTube", "YouTube");
+        case CommandIntent.GetTime:
+            return new($"Jest {DateTime.Now.ToString("HH:mm", pl)}.", "GetTime");
+        case CommandIntent.GetDate:
+            return new($"Dzisiaj jest {DateTime.Now.ToString("d MMMM yyyy", pl)}.", "GetDate");
+        case CommandIntent.GetDayOfWeek:
+            return new($"Dzisiaj jest {DateTime.Now.ToString("dddd", pl)}.", "GetDayOfWeek");
+        default:
+            return null;
+    }
+}
+
+void OpenUrl(string url)
+{
+    Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true });
 }
 
 if (args.Length > 1 && args[0].Equals("--command", StringComparison.OrdinalIgnoreCase))
@@ -46,6 +102,7 @@ if (args.Length > 1 && args[0].Equals("--command", StringComparison.OrdinalIgnor
     var commandText = string.Join(' ', args.Skip(1));
     var result = ExecuteCommand(commandText);
     if (result is null) Console.WriteLine($"UNHANDLED COMMAND: {commandText}");
+    else Console.WriteLine($"EXECUTE: {result.Status} -> {result.Reply}");
     return;
 }
 
@@ -156,20 +213,27 @@ try
         var execution = ExecuteCommand(result.CommandText);
         if (execution is null)
         {
-            await events.EmitAsync("state", "LISTENING", "Nie znam jeszcze tej komendy");
+            const string fallbackReply = "Nie zrozumiałem polecenia. Powiedz na przykład: otwórz Lightroom.";
+            await events.EmitAsync("execution", text: fallbackReply,
+                data: new { status = "Unhandled", command = result.CommandText });
+            await events.EmitAsync("state", "SPEAKING", fallbackReply);
+            try
+            {
+                capture.Stop();
+                segmenter.Reset();
+                await speech.SpeakAsync(fallbackReply, lifetimeCts.Token);
+            }
+            finally
+            {
+                if (!lifetimeCts.IsCancellationRequested) capture.Start();
+            }
+            await events.EmitAsync("state", "LISTENING", "Słucham");
             continue;
         }
 
-        var reply = execution.Status switch
-        {
-            ApplicationLaunchStatus.Started => $"Otwieram {execution.Target.DisplayName}.",
-            ApplicationLaunchStatus.AlreadyRunning => $"{execution.Target.DisplayName} jest już otwarty.",
-            ApplicationLaunchStatus.ExecutableNotFound => $"Nie znalazłem programu {execution.Target.DisplayName}.",
-            _ => $"Nie udało się uruchomić {execution.Target.DisplayName}."
-        };
-
+        var reply = execution.Reply;
         await events.EmitAsync("execution", text: reply,
-            data: new { status = execution.Status.ToString(), target = execution.Target.DisplayName });
+            data: new { status = execution.Status, target = execution.Target });
         await events.EmitAsync("state", "SPEAKING", reply);
 
         try

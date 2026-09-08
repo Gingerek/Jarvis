@@ -1,31 +1,30 @@
 # Next Step
 
 ## Current phase
-Phase 2 — Audio & Voice.
+Phase 2 — Audio, Voice & General Command Registry.
 
 ## Completed
-- WASAPI capture + Nor-Tec selection: PASS.
-- 16 kHz mono PCM16 normalization: PASS.
-- Silero VAD streaming + benchmark: PASS.
-- faster-whisper base / CPU int8 fast path: PASS.
-- persistent C# -> Python ASR worker: PASS.
-- transcript wake-word detector for "Jarvis": implemented.
-- Sleeping -> Listening -> idle timeout state machine: implemented.
-- active session accepts follow-up commands without repeating "Jarvis".
-- live VoiceHost + speech segmentation: implemented.
-- deterministic app launch fast path: PASS for Lightroom Classic.
-- ElevenLabs streaming TTS provider: PASS.
+- Nor-Tec WASAPI capture, PCM normalization and Silero VAD: PASS.
+- persistent faster-whisper CPU int8 ASR: PASS.
+- wake/session state machine for "Jarvis": implemented.
+- persistent VoiceHost + WinUI Named Pipe integration: PASS.
+- ElevenLabs streaming TTS + selected Marcin voice: PASS.
 - Windows Credential Manager secret store: PASS.
-- selected Jarvis voice: Marcin — Deep & Cinematic Polish Narrator.
-- selected voice_id: B5tmTXp0L7DzqmlGqIMJ.
-- TTS live probe: PASS.
-- VoiceHost spoken execution confirmations: implemented.
+- deterministic application execution: implemented.
+- CommandRegistry introduced for general commands.
+- generated command corpus: 15,741 utterance variants; 12,801 non-English-verb variants.
+- real app catalog: Lightroom, DaVinci Resolve, OBS, Chrome, Edge, Notatnik, Menedżer zadań.
+- real website actions: YouTube, Google, Marktplaats.
+- web/YouTube search intents: implemented.
+- local time/date/day-of-week spoken answers: implemented.
+- graceful close-app execution: implemented.
 
 ## Current facts
-- Live Nor-Tec -> VAD -> ASR works.
-- Controlled `otwórz Lightroom` starts Lightroom Classic.
-- VoiceHost now pauses capture while speaking to avoid self-triggering.
-- Live wake phrase still needs a clean controlled PASS.
+- `otwórz YouTube` executes successfully.
+- `która godzina` executes successfully.
+- Core tests: 45/45 PASS after CommandRegistry changes.
+- full solution build: 0 errors, 0 warnings before final runtime publish.
+- Jarvis.UI and Jarvis.VoiceHost are running with the new runtime.
 
 ## Immediate objective
-Run controlled live `Jarvis, otwórz Lightroom` end-to-end with spoken confirmation, then implement barge-in and session hardening.
+Expand registry from the current general-command pack into Windows audio/window/file controls, then browser navigation and OBS, while keeping every registered intent backed by a real executor.

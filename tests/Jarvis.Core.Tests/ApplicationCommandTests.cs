@@ -9,7 +9,9 @@ public sealed class ApplicationCommandTests
     [InlineData("otwórz Lightroom", "lightroom")]
     [InlineData("włącz Lightroom Classic", "lightroom classic")]
     [InlineData("uruchom Adobe Lightroom", "adobe lightroom")]
-    public void Parser_Recognizes_Polish_Open_Verbs(string text, string expected)
+    [InlineData("open Lightroom", "lightroom")]
+    [InlineData("Różom Lightroom", "lightroom")]
+    public void Parser_Recognizes_Open_Verbs_And_Observed_Asr_Confusion(string text, string expected)
     {
         var command = new OpenApplicationCommandParser().Parse(text);
         Assert.NotNull(command);
