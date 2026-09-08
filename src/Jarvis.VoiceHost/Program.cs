@@ -28,6 +28,7 @@ Directory.SetCurrentDirectory(root);
 var registry = new CommandRegistry();
 var resolver = new KnownEntityResolver();
 var launcher = new ApplicationLauncher();
+var windows = new WindowsSystemController();
 foreach (var app in KnownApplications.All)
     resolver.Add(app.Id, app.Aliases.Append(app.DisplayName).ToArray());
 
@@ -87,10 +88,35 @@ CommandExecutionOutcome? ExecuteBuiltIn(CommandRequest request)
             return new($"Dzisiaj jest {DateTime.Now.ToString("d MMMM yyyy", pl)}.", "GetDate");
         case CommandIntent.GetDayOfWeek:
             return new($"Dzisiaj jest {DateTime.Now.ToString("dddd", pl)}.", "GetDayOfWeek");
+        case CommandIntent.VolumeUp:
+            return SystemOutcome(windows.ChangeVolume(10), "VolumeUp");
+        case CommandIntent.VolumeDown:
+            return SystemOutcome(windows.ChangeVolume(-10), "VolumeDown");
+        case CommandIntent.SetVolume:
+            return SystemOutcome(windows.SetVolumePercent(int.Parse(request.Argument!)), "SetVolume");
+        case CommandIntent.Mute:
+            return SystemOutcome(windows.SetMute(true), "Mute");
+        case CommandIntent.Unmute:
+            return SystemOutcome(windows.SetMute(false), "Unmute");
+        case CommandIntent.MinimizeWindow:
+            return SystemOutcome(windows.MinimizeForegroundWindow(), "MinimizeWindow");
+        case CommandIntent.MaximizeWindow:
+            return SystemOutcome(windows.MaximizeForegroundWindow(), "MaximizeWindow");
+        case CommandIntent.RestoreWindow:
+            return SystemOutcome(windows.RestoreForegroundWindow(), "RestoreWindow");
+        case CommandIntent.CloseWindow:
+            return SystemOutcome(windows.CloseForegroundWindow(), "CloseWindow");
+        case CommandIntent.ShowDesktop:
+            return SystemOutcome(windows.ShowDesktop(), "ShowDesktop");
+        case CommandIntent.LockComputer:
+            return SystemOutcome(windows.LockComputer(), "LockComputer");
         default:
             return null;
     }
 }
+
+CommandExecutionOutcome SystemOutcome(SystemActionResult result, string status) =>
+    new(result.Message, result.Success ? status : status + "Failed");
 
 void OpenUrl(string url)
 {

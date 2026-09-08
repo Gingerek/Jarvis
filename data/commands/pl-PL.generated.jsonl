@@ -4158,6 +4158,76 @@
 {"intent": "CloseApplication", "argument": "taskmanager", "utterance": "zamknij Task Manager od razu"}
 {"intent": "CloseApplication", "argument": "taskmanager", "utterance": "zamknij Task Manager proszę"}
 {"intent": "CloseApplication", "argument": "taskmanager", "utterance": "zamknij Task Manager teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij aktywne okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij aktywne okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij aktywne okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij aktywne okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij aktywne okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "czy możesz zamknij okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij aktywne okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij aktywne okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij aktywne okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij aktywne okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij aktywne okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "hej Jarvis zamknij okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij aktywne okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij aktywne okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij aktywne okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij aktywne okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij aktywne okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis proszę zamknij okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij aktywne okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij aktywne okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij aktywne okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij aktywne okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij aktywne okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "Jarvis zamknij okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij aktywne okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij aktywne okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij aktywne okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij aktywne okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij aktywne okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "możesz zamknij okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij aktywne okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij aktywne okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij aktywne okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij aktywne okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij aktywne okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "proszę zamknij okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij aktywne okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij aktywne okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij aktywne okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij aktywne okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij aktywne okno teraz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij okno"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij okno jeśli możesz"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij okno od razu"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij okno proszę"}
+{"intent": "CloseWindow", "argument": null, "utterance": "zamknij okno teraz"}
 {"intent": "GetDate", "argument": null, "utterance": "co dzisiaj za dzień"}
 {"intent": "GetDate", "argument": null, "utterance": "jaka jest data"}
 {"intent": "GetDate", "argument": null, "utterance": "jaki dzisiaj dzień"}
@@ -4179,6 +4249,391 @@
 {"intent": "GetTime", "argument": null, "utterance": "która godzina"}
 {"intent": "GetTime", "argument": null, "utterance": "podaj godzinę"}
 {"intent": "GetTime", "argument": null, "utterance": "powiedz która godzina"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj ekran"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj ekran jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj ekran od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj ekran proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj ekran teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj komputer"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj komputer jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj komputer od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj komputer proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj komputer teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj ekran"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj ekran jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj ekran od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj ekran proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj ekran teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj komputer"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj komputer jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj komputer od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj komputer proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "hej Jarvis zablokuj komputer teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj ekran"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj ekran jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj ekran od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj ekran proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj ekran teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj komputer"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj komputer jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj komputer od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj komputer proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis proszę zablokuj komputer teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj ekran"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj ekran jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj ekran od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj ekran proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj ekran teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj komputer"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj komputer jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj komputer od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj komputer proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "Jarvis zablokuj komputer teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj ekran"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj ekran jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj ekran od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj ekran proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj ekran teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj komputer"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj komputer jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj komputer od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj komputer proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "możesz zablokuj komputer teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj ekran"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj ekran jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj ekran od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj ekran proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj ekran teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj komputer"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj komputer jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj komputer od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj komputer proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "proszę zablokuj komputer teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj ekran"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj ekran jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj ekran od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj ekran proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj ekran teraz"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj komputer"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj komputer jeśli możesz"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj komputer od razu"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj komputer proszę"}
+{"intent": "LockComputer", "argument": null, "utterance": "zablokuj komputer teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz maksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz maksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz maksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz maksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz maksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz powiększ okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz powiększ okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz powiększ okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz powiększ okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz powiększ okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz zmaksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz zmaksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz zmaksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz zmaksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "czy możesz zmaksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis maksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis maksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis maksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis maksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis maksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis powiększ okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis powiększ okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis powiększ okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis powiększ okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis powiększ okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis zmaksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis zmaksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis zmaksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis zmaksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "hej Jarvis zmaksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis maksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis maksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis maksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis maksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis maksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis powiększ okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis powiększ okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis powiększ okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis powiększ okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis powiększ okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę maksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę maksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę maksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę maksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę maksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę powiększ okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę powiększ okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę powiększ okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę powiększ okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę powiększ okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę zmaksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę zmaksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę zmaksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę zmaksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis proszę zmaksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis zmaksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis zmaksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis zmaksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis zmaksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "Jarvis zmaksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "maksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "maksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "maksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "maksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "maksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz maksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz maksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz maksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz maksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz maksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz powiększ okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz powiększ okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz powiększ okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz powiększ okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz powiększ okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz zmaksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz zmaksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz zmaksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz zmaksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "możesz zmaksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "powiększ okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "powiększ okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "powiększ okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "powiększ okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "powiększ okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę maksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę maksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę maksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę maksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę maksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę powiększ okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę powiększ okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę powiększ okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę powiększ okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę powiększ okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę zmaksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę zmaksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę zmaksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę zmaksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "proszę zmaksymalizuj okno teraz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "zmaksymalizuj okno"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "zmaksymalizuj okno jeśli możesz"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "zmaksymalizuj okno od razu"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "zmaksymalizuj okno proszę"}
+{"intent": "MaximizeWindow", "argument": null, "utterance": "zmaksymalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz minimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz minimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz minimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz minimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz minimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz schowaj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz schowaj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz schowaj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz schowaj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz schowaj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz zminimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz zminimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz zminimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz zminimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "czy możesz zminimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis minimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis minimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis minimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis minimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis minimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis schowaj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis schowaj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis schowaj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis schowaj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis schowaj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis zminimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis zminimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis zminimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis zminimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "hej Jarvis zminimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis minimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis minimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis minimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis minimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis minimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę minimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę minimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę minimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę minimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę minimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę schowaj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę schowaj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę schowaj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę schowaj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę schowaj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę zminimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę zminimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę zminimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę zminimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis proszę zminimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis schowaj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis schowaj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis schowaj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis schowaj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis schowaj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis zminimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis zminimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis zminimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis zminimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "Jarvis zminimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "minimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "minimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "minimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "minimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "minimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz minimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz minimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz minimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz minimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz minimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz schowaj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz schowaj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz schowaj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz schowaj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz schowaj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz zminimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz zminimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz zminimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz zminimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "możesz zminimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę minimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę minimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę minimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę minimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę minimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę schowaj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę schowaj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę schowaj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę schowaj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę schowaj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę zminimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę zminimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę zminimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę zminimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "proszę zminimalizuj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "schowaj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "schowaj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "schowaj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "schowaj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "schowaj okno teraz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "zminimalizuj okno"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "zminimalizuj okno jeśli możesz"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "zminimalizuj okno od razu"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "zminimalizuj okno proszę"}
+{"intent": "MinimizeWindow", "argument": null, "utterance": "zminimalizuj okno teraz"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz od razu"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz proszę"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wycisz teraz"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wyłącz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wyłącz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wyłącz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wyłącz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "czy możesz wyłącz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz od razu"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz proszę"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wycisz teraz"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wyłącz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wyłącz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wyłącz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wyłącz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "hej Jarvis wyłącz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz od razu"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz proszę"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wycisz teraz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wyłącz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wyłącz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wyłącz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wyłącz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis proszę wyłącz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz od razu"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz proszę"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wycisz teraz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wyłącz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wyłącz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wyłącz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wyłącz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "Jarvis wyłącz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz od razu"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz proszę"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wycisz teraz"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wyłącz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wyłącz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wyłącz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wyłącz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "możesz wyłącz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz od razu"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz proszę"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wycisz teraz"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wyłącz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wyłącz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wyłącz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wyłącz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "proszę wyłącz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz dźwięk teraz"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz od razu"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz proszę"}
+{"intent": "Mute", "argument": null, "utterance": "wycisz teraz"}
+{"intent": "Mute", "argument": null, "utterance": "wyłącz dźwięk"}
+{"intent": "Mute", "argument": null, "utterance": "wyłącz dźwięk jeśli możesz"}
+{"intent": "Mute", "argument": null, "utterance": "wyłącz dźwięk od razu"}
+{"intent": "Mute", "argument": null, "utterance": "wyłącz dźwięk proszę"}
+{"intent": "Mute", "argument": null, "utterance": "wyłącz dźwięk teraz"}
 {"intent": "OpenApplication", "argument": "chrome", "utterance": "chcę żebyś odpal Chrome"}
 {"intent": "OpenApplication", "argument": "chrome", "utterance": "chcę żebyś odpal Chrome jeśli możesz"}
 {"intent": "OpenApplication", "argument": "chrome", "utterance": "chcę żebyś odpal Chrome od razu"}
@@ -15579,6 +16034,76 @@
 {"intent": "OpenWebsite", "argument": "youtube", "utterance": "włącz YouTube od razu"}
 {"intent": "OpenWebsite", "argument": "youtube", "utterance": "włącz YouTube proszę"}
 {"intent": "OpenWebsite", "argument": "youtube", "utterance": "włącz YouTube teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz normalne okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz normalne okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz normalne okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz normalne okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz normalne okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz przywróć okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz przywróć okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz przywróć okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz przywróć okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "czy możesz przywróć okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis normalne okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis normalne okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis normalne okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis normalne okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis normalne okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis przywróć okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis przywróć okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis przywróć okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis przywróć okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "hej Jarvis przywróć okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis normalne okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis normalne okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis normalne okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis normalne okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis normalne okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę normalne okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę normalne okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę normalne okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę normalne okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę normalne okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę przywróć okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę przywróć okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę przywróć okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę przywróć okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis proszę przywróć okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis przywróć okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis przywróć okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis przywróć okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis przywróć okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "Jarvis przywróć okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz normalne okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz normalne okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz normalne okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz normalne okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz normalne okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz przywróć okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz przywróć okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz przywróć okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz przywróć okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "możesz przywróć okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "normalne okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "normalne okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "normalne okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "normalne okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "normalne okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę normalne okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę normalne okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę normalne okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę normalne okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę normalne okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę przywróć okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę przywróć okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę przywróć okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę przywróć okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "proszę przywróć okno teraz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "przywróć okno"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "przywróć okno jeśli możesz"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "przywróć okno od razu"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "przywróć okno proszę"}
+{"intent": "RestoreWindow", "argument": null, "utterance": "przywróć okno teraz"}
 {"intent": "SearchWeb", "argument": "Canon Selphy CP1500", "utterance": "czy możesz wyszukać w Google Canon Selphy CP1500"}
 {"intent": "SearchWeb", "argument": "Canon Selphy CP1500", "utterance": "Google wyszukaj Canon Selphy CP1500"}
 {"intent": "SearchWeb", "argument": "Canon Selphy CP1500", "utterance": "Jarvis wyszukaj w Google Canon Selphy CP1500"}
@@ -15739,3 +16264,689 @@
 {"intent": "SearchYouTube", "argument": "wiadomości technologiczne", "utterance": "YouTube wyszukaj wiadomości technologiczne"}
 {"intent": "SearchYouTube", "argument": "wiadomości technologiczne", "utterance": "znajdź mi na YouTube wiadomości technologiczne"}
 {"intent": "SearchYouTube", "argument": "wiadomości technologiczne", "utterance": "znajdź na YouTube wiadomości technologiczne"}
+{"intent": "SetVolume", "argument": "0", "utterance": "czy możesz głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "czy możesz ustaw dźwięk na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "czy możesz ustaw głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "hej Jarvis głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "hej Jarvis ustaw dźwięk na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "hej Jarvis ustaw głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "Jarvis głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "Jarvis proszę głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "Jarvis proszę ustaw dźwięk na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "Jarvis proszę ustaw głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "Jarvis ustaw dźwięk na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "Jarvis ustaw głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "możesz głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "możesz ustaw dźwięk na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "możesz ustaw głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "proszę głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "proszę ustaw dźwięk na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "proszę ustaw głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "ustaw dźwięk na 0 procent"}
+{"intent": "SetVolume", "argument": "0", "utterance": "ustaw głośność na 0 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "czy możesz głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "czy możesz ustaw dźwięk na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "czy możesz ustaw głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "hej Jarvis głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "hej Jarvis ustaw dźwięk na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "hej Jarvis ustaw głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "Jarvis głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "Jarvis proszę głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "Jarvis proszę ustaw dźwięk na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "Jarvis proszę ustaw głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "Jarvis ustaw dźwięk na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "Jarvis ustaw głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "możesz głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "możesz ustaw dźwięk na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "możesz ustaw głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "proszę głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "proszę ustaw dźwięk na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "proszę ustaw głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "ustaw dźwięk na 10 procent"}
+{"intent": "SetVolume", "argument": "10", "utterance": "ustaw głośność na 10 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "czy możesz głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "czy możesz ustaw dźwięk na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "czy możesz ustaw głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "hej Jarvis głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "hej Jarvis ustaw dźwięk na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "hej Jarvis ustaw głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "Jarvis głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "Jarvis proszę głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "Jarvis proszę ustaw dźwięk na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "Jarvis proszę ustaw głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "Jarvis ustaw dźwięk na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "Jarvis ustaw głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "możesz głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "możesz ustaw dźwięk na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "możesz ustaw głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "proszę głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "proszę ustaw dźwięk na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "proszę ustaw głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "ustaw dźwięk na 100 procent"}
+{"intent": "SetVolume", "argument": "100", "utterance": "ustaw głośność na 100 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "czy możesz głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "czy możesz ustaw dźwięk na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "czy możesz ustaw głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "hej Jarvis głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "hej Jarvis ustaw dźwięk na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "hej Jarvis ustaw głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "Jarvis głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "Jarvis proszę głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "Jarvis proszę ustaw dźwięk na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "Jarvis proszę ustaw głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "Jarvis ustaw dźwięk na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "Jarvis ustaw głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "możesz głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "możesz ustaw dźwięk na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "możesz ustaw głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "proszę głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "proszę ustaw dźwięk na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "proszę ustaw głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "ustaw dźwięk na 20 procent"}
+{"intent": "SetVolume", "argument": "20", "utterance": "ustaw głośność na 20 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "czy możesz głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "czy możesz ustaw dźwięk na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "czy możesz ustaw głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "hej Jarvis głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "hej Jarvis ustaw dźwięk na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "hej Jarvis ustaw głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "Jarvis głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "Jarvis proszę głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "Jarvis proszę ustaw dźwięk na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "Jarvis proszę ustaw głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "Jarvis ustaw dźwięk na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "Jarvis ustaw głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "możesz głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "możesz ustaw dźwięk na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "możesz ustaw głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "proszę głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "proszę ustaw dźwięk na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "proszę ustaw głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "ustaw dźwięk na 30 procent"}
+{"intent": "SetVolume", "argument": "30", "utterance": "ustaw głośność na 30 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "czy możesz głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "czy możesz ustaw dźwięk na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "czy możesz ustaw głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "hej Jarvis głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "hej Jarvis ustaw dźwięk na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "hej Jarvis ustaw głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "Jarvis głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "Jarvis proszę głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "Jarvis proszę ustaw dźwięk na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "Jarvis proszę ustaw głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "Jarvis ustaw dźwięk na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "Jarvis ustaw głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "możesz głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "możesz ustaw dźwięk na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "możesz ustaw głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "proszę głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "proszę ustaw dźwięk na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "proszę ustaw głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "ustaw dźwięk na 40 procent"}
+{"intent": "SetVolume", "argument": "40", "utterance": "ustaw głośność na 40 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "czy możesz głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "czy możesz ustaw dźwięk na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "czy możesz ustaw głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "hej Jarvis głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "hej Jarvis ustaw dźwięk na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "hej Jarvis ustaw głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "Jarvis głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "Jarvis proszę głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "Jarvis proszę ustaw dźwięk na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "Jarvis proszę ustaw głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "Jarvis ustaw dźwięk na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "Jarvis ustaw głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "możesz głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "możesz ustaw dźwięk na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "możesz ustaw głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "proszę głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "proszę ustaw dźwięk na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "proszę ustaw głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "ustaw dźwięk na 50 procent"}
+{"intent": "SetVolume", "argument": "50", "utterance": "ustaw głośność na 50 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "czy możesz głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "czy możesz ustaw dźwięk na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "czy możesz ustaw głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "hej Jarvis głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "hej Jarvis ustaw dźwięk na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "hej Jarvis ustaw głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "Jarvis głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "Jarvis proszę głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "Jarvis proszę ustaw dźwięk na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "Jarvis proszę ustaw głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "Jarvis ustaw dźwięk na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "Jarvis ustaw głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "możesz głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "możesz ustaw dźwięk na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "możesz ustaw głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "proszę głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "proszę ustaw dźwięk na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "proszę ustaw głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "ustaw dźwięk na 60 procent"}
+{"intent": "SetVolume", "argument": "60", "utterance": "ustaw głośność na 60 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "czy możesz głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "czy możesz ustaw dźwięk na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "czy możesz ustaw głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "hej Jarvis głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "hej Jarvis ustaw dźwięk na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "hej Jarvis ustaw głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "Jarvis głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "Jarvis proszę głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "Jarvis proszę ustaw dźwięk na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "Jarvis proszę ustaw głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "Jarvis ustaw dźwięk na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "Jarvis ustaw głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "możesz głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "możesz ustaw dźwięk na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "możesz ustaw głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "proszę głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "proszę ustaw dźwięk na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "proszę ustaw głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "ustaw dźwięk na 70 procent"}
+{"intent": "SetVolume", "argument": "70", "utterance": "ustaw głośność na 70 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "czy możesz głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "czy możesz ustaw dźwięk na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "czy możesz ustaw głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "hej Jarvis głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "hej Jarvis ustaw dźwięk na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "hej Jarvis ustaw głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "Jarvis głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "Jarvis proszę głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "Jarvis proszę ustaw dźwięk na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "Jarvis proszę ustaw głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "Jarvis ustaw dźwięk na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "Jarvis ustaw głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "możesz głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "możesz ustaw dźwięk na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "możesz ustaw głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "proszę głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "proszę ustaw dźwięk na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "proszę ustaw głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "ustaw dźwięk na 80 procent"}
+{"intent": "SetVolume", "argument": "80", "utterance": "ustaw głośność na 80 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "czy możesz głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "czy możesz ustaw dźwięk na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "czy możesz ustaw głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "hej Jarvis głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "hej Jarvis ustaw dźwięk na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "hej Jarvis ustaw głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "Jarvis głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "Jarvis proszę głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "Jarvis proszę ustaw dźwięk na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "Jarvis proszę ustaw głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "Jarvis ustaw dźwięk na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "Jarvis ustaw głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "możesz głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "możesz ustaw dźwięk na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "możesz ustaw głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "proszę głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "proszę ustaw dźwięk na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "proszę ustaw głośność na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "ustaw dźwięk na 90 procent"}
+{"intent": "SetVolume", "argument": "90", "utterance": "ustaw głośność na 90 procent"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz pokaż pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz pokaż pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz pokaż pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz pokaż pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz pokaż pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz przejdź na pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz przejdź na pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz przejdź na pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz przejdź na pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "czy możesz przejdź na pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis pokaż pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis pokaż pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis pokaż pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis pokaż pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis pokaż pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis przejdź na pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis przejdź na pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis przejdź na pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis przejdź na pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "hej Jarvis przejdź na pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis pokaż pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis pokaż pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis pokaż pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis pokaż pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis pokaż pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę pokaż pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę pokaż pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę pokaż pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę pokaż pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę pokaż pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę przejdź na pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę przejdź na pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę przejdź na pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę przejdź na pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis proszę przejdź na pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis przejdź na pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis przejdź na pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis przejdź na pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis przejdź na pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "Jarvis przejdź na pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz pokaż pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz pokaż pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz pokaż pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz pokaż pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz pokaż pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz przejdź na pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz przejdź na pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz przejdź na pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz przejdź na pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "możesz przejdź na pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "pokaż pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "pokaż pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "pokaż pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "pokaż pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "pokaż pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę pokaż pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę pokaż pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę pokaż pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę pokaż pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę pokaż pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę przejdź na pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę przejdź na pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę przejdź na pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę przejdź na pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "proszę przejdź na pulpit teraz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "przejdź na pulpit"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "przejdź na pulpit jeśli możesz"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "przejdź na pulpit od razu"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "przejdź na pulpit proszę"}
+{"intent": "ShowDesktop", "argument": null, "utterance": "przejdź na pulpit teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz odcisz"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz odcisz jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz odcisz od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz odcisz proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz odcisz teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz przywróć dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz przywróć dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz przywróć dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz przywróć dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz przywróć dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz włącz dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz włącz dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz włącz dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz włącz dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "czy możesz włącz dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis odcisz"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis odcisz jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis odcisz od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis odcisz proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis odcisz teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis przywróć dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis przywróć dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis przywróć dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis przywróć dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis przywróć dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis włącz dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis włącz dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis włącz dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis włącz dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "hej Jarvis włącz dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis odcisz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis odcisz jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis odcisz od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis odcisz proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis odcisz teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę odcisz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę odcisz jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę odcisz od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę odcisz proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę odcisz teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę przywróć dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę przywróć dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę przywróć dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę przywróć dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę przywróć dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę włącz dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę włącz dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę włącz dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę włącz dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis proszę włącz dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis przywróć dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis przywróć dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis przywróć dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis przywróć dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis przywróć dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis włącz dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis włącz dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis włącz dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis włącz dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "Jarvis włącz dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz odcisz"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz odcisz jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz odcisz od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz odcisz proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz odcisz teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz przywróć dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz przywróć dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz przywróć dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz przywróć dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz przywróć dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz włącz dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz włącz dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz włącz dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz włącz dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "możesz włącz dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "odcisz"}
+{"intent": "Unmute", "argument": null, "utterance": "odcisz jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "odcisz od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "odcisz proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "odcisz teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę odcisz"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę odcisz jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę odcisz od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę odcisz proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę odcisz teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę przywróć dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę przywróć dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę przywróć dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę przywróć dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę przywróć dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę włącz dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę włącz dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę włącz dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę włącz dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "proszę włącz dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "przywróć dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "przywróć dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "przywróć dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "przywróć dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "przywróć dźwięk teraz"}
+{"intent": "Unmute", "argument": null, "utterance": "włącz dźwięk"}
+{"intent": "Unmute", "argument": null, "utterance": "włącz dźwięk jeśli możesz"}
+{"intent": "Unmute", "argument": null, "utterance": "włącz dźwięk od razu"}
+{"intent": "Unmute", "argument": null, "utterance": "włącz dźwięk proszę"}
+{"intent": "Unmute", "argument": null, "utterance": "włącz dźwięk teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ciszej"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ciszej jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ciszej od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ciszej proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ciszej teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ciszej"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ciszej jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ciszej od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ciszej proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ciszej teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz obniż głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz obniż głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz obniż głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz obniż głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz obniż głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz zmniejsz głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz zmniejsz głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz zmniejsz głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz zmniejsz głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz zmniejsz głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ścisz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ścisz jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ścisz od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ścisz proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "czy możesz ścisz teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ciszej"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ciszej jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ciszej od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ciszej proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ciszej teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis obniż głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis obniż głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis obniż głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis obniż głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis obniż głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis zmniejsz głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis zmniejsz głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis zmniejsz głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis zmniejsz głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis zmniejsz głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ścisz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ścisz jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ścisz od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ścisz proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "hej Jarvis ścisz teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ciszej"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ciszej jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ciszej od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ciszej proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ciszej teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis obniż głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis obniż głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis obniż głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis obniż głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis obniż głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ciszej"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ciszej jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ciszej od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ciszej proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ciszej teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę obniż głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę obniż głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę obniż głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę obniż głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę obniż głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę zmniejsz głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę zmniejsz głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę zmniejsz głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę zmniejsz głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę zmniejsz głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ścisz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ścisz jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ścisz od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ścisz proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis proszę ścisz teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis zmniejsz głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis zmniejsz głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis zmniejsz głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis zmniejsz głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis zmniejsz głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ścisz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ścisz jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ścisz od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ścisz proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "Jarvis ścisz teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ciszej"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ciszej jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ciszej od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ciszej proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ciszej teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz obniż głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz obniż głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz obniż głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz obniż głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz obniż głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz zmniejsz głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz zmniejsz głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz zmniejsz głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz zmniejsz głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz zmniejsz głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ścisz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ścisz jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ścisz od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ścisz proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "możesz ścisz teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "obniż głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "obniż głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "obniż głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "obniż głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "obniż głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ciszej"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ciszej jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ciszej od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ciszej proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ciszej teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę obniż głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę obniż głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę obniż głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę obniż głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę obniż głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę zmniejsz głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę zmniejsz głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę zmniejsz głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę zmniejsz głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę zmniejsz głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ścisz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ścisz jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ścisz od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ścisz proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "proszę ścisz teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "zmniejsz głośność"}
+{"intent": "VolumeDown", "argument": null, "utterance": "zmniejsz głośność jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "zmniejsz głośność od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "zmniejsz głośność proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "zmniejsz głośność teraz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ścisz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ścisz jeśli możesz"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ścisz od razu"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ścisz proszę"}
+{"intent": "VolumeDown", "argument": null, "utterance": "ścisz teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz głośniej"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz głośniej jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz głośniej od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz głośniej proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz głośniej teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podgłoś"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podgłoś jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podgłoś od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podgłoś proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podgłoś teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podnieś głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podnieś głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podnieś głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podnieś głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz podnieś głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz zwiększ głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz zwiększ głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz zwiększ głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz zwiększ głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "czy możesz zwiększ głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "głośniej"}
+{"intent": "VolumeUp", "argument": null, "utterance": "głośniej jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "głośniej od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "głośniej proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "głośniej teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis głośniej"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis głośniej jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis głośniej od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis głośniej proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis głośniej teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podgłoś"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podgłoś jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podgłoś od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podgłoś proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podgłoś teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podnieś głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podnieś głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podnieś głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podnieś głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis podnieś głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis zwiększ głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis zwiększ głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis zwiększ głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis zwiększ głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "hej Jarvis zwiększ głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis głośniej"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis głośniej jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis głośniej od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis głośniej proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis głośniej teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podgłoś"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podgłoś jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podgłoś od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podgłoś proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podgłoś teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podnieś głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podnieś głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podnieś głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podnieś głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis podnieś głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę głośniej"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę głośniej jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę głośniej od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę głośniej proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę głośniej teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podgłoś"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podgłoś jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podgłoś od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podgłoś proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podgłoś teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podnieś głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podnieś głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podnieś głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podnieś głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę podnieś głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę zwiększ głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę zwiększ głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę zwiększ głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę zwiększ głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis proszę zwiększ głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis zwiększ głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis zwiększ głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis zwiększ głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis zwiększ głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "Jarvis zwiększ głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz głośniej"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz głośniej jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz głośniej od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz głośniej proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz głośniej teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podgłoś"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podgłoś jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podgłoś od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podgłoś proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podgłoś teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podnieś głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podnieś głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podnieś głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podnieś głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz podnieś głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz zwiększ głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz zwiększ głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz zwiększ głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz zwiększ głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "możesz zwiększ głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podgłoś"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podgłoś jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podgłoś od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podgłoś proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podgłoś teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podnieś głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podnieś głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podnieś głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podnieś głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "podnieś głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę głośniej"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę głośniej jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę głośniej od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę głośniej proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę głośniej teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podgłoś"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podgłoś jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podgłoś od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podgłoś proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podgłoś teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podnieś głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podnieś głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podnieś głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podnieś głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę podnieś głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę zwiększ głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę zwiększ głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę zwiększ głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę zwiększ głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "proszę zwiększ głośność teraz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "zwiększ głośność"}
+{"intent": "VolumeUp", "argument": null, "utterance": "zwiększ głośność jeśli możesz"}
+{"intent": "VolumeUp", "argument": null, "utterance": "zwiększ głośność od razu"}
+{"intent": "VolumeUp", "argument": null, "utterance": "zwiększ głośność proszę"}
+{"intent": "VolumeUp", "argument": null, "utterance": "zwiększ głośność teraz"}

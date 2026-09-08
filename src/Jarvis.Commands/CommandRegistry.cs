@@ -12,7 +12,18 @@ public enum CommandIntent
     SearchYouTube,
     GetTime,
     GetDate,
-    GetDayOfWeek
+    GetDayOfWeek,
+    VolumeUp,
+    VolumeDown,
+    SetVolume,
+    Mute,
+    Unmute,
+    MinimizeWindow,
+    MaximizeWindow,
+    RestoreWindow,
+    CloseWindow,
+    ShowDesktop,
+    LockComputer
 }
 
 public sealed record CommandRequest(
@@ -23,6 +34,7 @@ public sealed class CommandRegistry
 {
     private readonly OpenApplicationCommandParser _open = new();
     private readonly CloseApplicationCommandParser _close = new();
+    private readonly SystemCommandParser _system = new();
     private static readonly HashSet<string> TimePhrases = new(StringComparer.Ordinal)
     {
         "ktora godzina", "jaka jest godzina", "powiedz ktora godzina",
@@ -58,6 +70,9 @@ public sealed class CommandRegistry
             return new(CommandIntent.GetDayOfWeek);
         if (DatePhrases.Contains(normalized))
             return new(CommandIntent.GetDate);
+
+        var system = _system.Parse(normalized);
+        if (system is not null) return system;
 
         var searchYouTube = ExtractAfterPrefix(normalized,
             "wyszukaj na youtube ", "znajdz na youtube ", "youtube wyszukaj ", "youtube szukaj ");

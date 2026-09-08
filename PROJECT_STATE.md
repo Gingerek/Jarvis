@@ -112,3 +112,14 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Direct execution checks PASS: `która godzina`, `otwórz YouTube`.
 - Registry tests PASS: 45/45 total Core tests.
 - UI + persistent VoiceHost runtime republished and running.
+
+## Windows system command checkpoint — 2026-09-08
+- Added `WindowsSystemController` using Windows Core Audio (NAudio/WASAPI-COM) and user32 APIs.
+- Added real intents for volume up/down/set, mute/unmute, minimize/maximize/restore/close active window, show desktop and lock computer.
+- Added `SystemCommandParser` and corpus variants; generated corpus now contains 16,952 utterances.
+- Core tests PASS: 56/56.
+- Full solution Release build PASS: 0 errors, 0 warnings.
+- Real audio endpoint test PASS: set 56 -> 57 -> 56 and volume-up 56 -> 66 -> 56.
+- Lock action is implemented but intentionally not fired by automated smoke tests because it would lock the user's interactive session.
+- Updated faster-whisper initial prompt with system-command vocabulary.
+- Republished single-file VoiceHost and restarted UI + background host successfully.

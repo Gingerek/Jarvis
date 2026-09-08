@@ -102,6 +102,29 @@ for phrase in time_phrases: add("GetTime", None, phrase)
 for phrase in date_phrases: add("GetDate", None, phrase)
 for phrase in day_phrases: add("GetDayOfWeek", None, phrase)
 
+system_bases = {
+    "VolumeUp": ["głośniej", "podgłoś", "zwiększ głośność", "podnieś głośność"],
+    "VolumeDown": ["ciszej", "ścisz", "zmniejsz głośność", "obniż głośność"],
+    "Mute": ["wycisz", "wycisz dźwięk", "wyłącz dźwięk"],
+    "Unmute": ["odcisz", "włącz dźwięk", "przywróć dźwięk"],
+    "MinimizeWindow": ["minimalizuj okno", "zminimalizuj okno", "schowaj okno"],
+    "MaximizeWindow": ["maksymalizuj okno", "zmaksymalizuj okno", "powiększ okno"],
+    "RestoreWindow": ["przywróć okno", "normalne okno"],
+    "CloseWindow": ["zamknij okno", "zamknij aktywne okno"],
+    "ShowDesktop": ["pokaż pulpit", "przejdź na pulpit"],
+    "LockComputer": ["zablokuj komputer", "zablokuj ekran"]
+}
+polite_prefixes = ["", "Jarvis ", "proszę ", "Jarvis proszę ", "czy możesz ", "możesz ", "hej Jarvis "]
+for intent, phrases in system_bases.items():
+    for phrase in phrases:
+        for prefix in polite_prefixes:
+            for suffix in suffixes:
+                add(intent, None, prefix + phrase + suffix)
+for value in range(0, 101, 10):
+    for phrase in [f"ustaw głośność na {value} procent", f"głośność na {value} procent", f"ustaw dźwięk na {value} procent"]:
+        for prefix in polite_prefixes:
+            add("SetVolume", str(value), prefix + phrase)
+
 ordered = sorted(rows.values(), key=lambda x: (x["intent"], x["argument"] or "", x["utterance"].casefold()))
 with OUT.open("w", encoding="utf-8", newline="\n") as f:
     for row in ordered:
