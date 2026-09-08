@@ -45,3 +45,11 @@ Parakeet/CUDA cannot be the primary ASR path on this machine because there is no
 - final production packaging/signing,
 - verified Lightroom Develop capability matrix,
 - verified DaVinci scripting capability matrix.
+
+## Latest validation
+- Release build: PASS (20 projects, 0 errors, 0 warnings).
+- Tests: PASS (6 total).
+- doctor: PASS.
+- GitHub branch: phase1/foundation.
+- Persistent learning storage foundation: implemented.
+- Plugin registry foundation: implemented.

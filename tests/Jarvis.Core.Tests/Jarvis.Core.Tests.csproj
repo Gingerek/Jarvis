@@ -18,4 +18,10 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Jarvis.Core\Jarvis.Core.csproj" />
+    <ProjectReference Include="..\..\src\Jarvis.Plugins\Jarvis.Plugins.csproj" />
+    <ProjectReference Include="..\..\src\Jarvis.Learning\Jarvis.Learning.csproj" />
+  </ItemGroup>
+
 </Project>

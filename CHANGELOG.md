@@ -19,3 +19,12 @@
 - defined local-first Fast Path architecture,
 - added read-only Windows audit script,
 - recorded unresolved ASR, wake-word, voice and application-integration decisions.
+
+## 2026-09-08 — Phase 1 foundation increment
+- added JarvisPaths and persistent AppData layout,
+- added plugin contracts and PluginRegistry,
+- added SQLite learning database schema,
+- upgraded Microsoft.Data.Sqlite to 10.0.11 after blocking vulnerable 10.0.0 dependency,
+- added CMD wrappers for locked-down PowerShell environments,
+- replaced blocked Architecture.Tests assembly with Structure.Tests,
+- Release build: 0 errors, 0 warnings; tests: 6 passed.

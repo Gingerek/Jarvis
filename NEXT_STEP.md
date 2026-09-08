@@ -25,3 +25,6 @@ Finish the Phase 1 foundation gate before starting audio/ASR implementation.
 
 ## Next session rule
 Read PROJECT_STATE.md, ARCHITECTURE.md, NEXT_STEP.md and KNOWN_ISSUES.md before changing code.
+
+## Immediate next implementation
+Implement configuration loading, diagnostics/logging pipeline, plugin discovery/loader, and wire the WinUI application shell to Core without adding application-specific feature plugins yet.
