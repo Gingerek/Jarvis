@@ -84,7 +84,7 @@ catch (Exception)
 }
 
 var python = Path.Combine(root, ".venv-asr", "Scripts", "python.exe");
-var worker = Path.Combine(root, "tools", "asr_worker.py");
+var worker = Option("--worker") ?? Path.Combine(root, "tools", "asr_worker.py");
 var models = Path.Combine(root, ".models-asr");
 var vadModel = Path.Combine(root, "models", "silero-vad", "silero_vad.onnx");
 

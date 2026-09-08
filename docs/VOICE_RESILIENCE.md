@@ -9,3 +9,7 @@ This patch does not implement barge-in or echo cancellation. Capture remains pau
 The existing PROJECT_STATE.md has mixed text encoding; this checkpoint was appended without rewriting historical content.
 
 CI status: pending publication.
+
+
+## Standard ASR dependency loading
+Removed the fake av module from the ASR worker. The worker now imports the installed faster-whisper dependencies normally and respects dependency loading failures. VoiceHost accepts an optional --worker path so a reviewed worker can use the existing model/runtime directory without modifying that installation. Host Release build passed after this change. End-to-end wake and command acceptance remains pending.

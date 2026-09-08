@@ -1,10 +1,7 @@
-import base64, json, sys, time, types
+import base64, json, sys, time
 from pathlib import Path
 import numpy as np
 
-# PyAV binary is blocked by Windows Application Control on this machine.
-# Jarvis sends normalized PCM directly, so decoding is not required.
-sys.modules.setdefault("av", types.ModuleType("av"))
 from faster_whisper import WhisperModel
 
 model_name = sys.argv[1] if len(sys.argv) > 1 else "base"
