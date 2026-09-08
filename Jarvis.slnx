@@ -18,6 +18,7 @@
     </Project>
     <Project Path="src/Jarvis.Updater/Jarvis.Updater.csproj" />
     <Project Path="src/Jarvis.VAD/Jarvis.VAD.csproj" />
+    <Project Path="src/Jarvis.VoiceHost/Jarvis.VoiceHost.csproj" />
     <Project Path="src/Jarvis.WakeWord/Jarvis.WakeWord.csproj" />
   </Folder>
   <Folder Name="/tests/">

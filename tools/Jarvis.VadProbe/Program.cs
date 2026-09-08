@@ -1,8 +1,8 @@
-using Jarvis.Audio;
+﻿using Jarvis.Audio;
 using Jarvis.VAD;
 using System.Diagnostics;
 
-var root = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", ".."));
+var root = Directory.GetCurrentDirectory();
 var model = Path.Combine(root, "models", "silero-vad", "silero_vad.onnx");
 const string norTecId = "{0.0.1.00000000}.{e40fea3e-eb20-4abb-93c2-ae05d304560b}";
 
@@ -82,3 +82,4 @@ static async Task RunLiveAsync(string model, string deviceId)
     if (transitions.Count == 0) Console.WriteLine("Transitions: none");
     else foreach (var item in transitions) Console.WriteLine($"Transition {item.Kind} at {item.Ms} ms");
 }
+

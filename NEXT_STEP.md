@@ -26,3 +26,7 @@ Run real microphone -> VAD -> ASR -> wake/session -> intent smoke test.
 5. Add TTS provider abstraction and human Polish voice.
 6. Add barge-in / echo suppression policy.
 7. Close Phase 2 gate with end-to-end live test.
+
+## Current immediate step
+Wire deterministic Windows application launch fast path, starting with Adobe Lightroom Classic.
+

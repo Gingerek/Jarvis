@@ -78,3 +78,10 @@ Current build status:
 - Private microphone WAV files are ignored by Git.
 
 Local caveat: Windows Application Control intermittently blocks newly copied test assemblies under tests/bin. Security policy remains unchanged; GitHub CI is the independent test gate.
+
+## Phase 2 live voice host checkpoint
+- Added production-oriented Jarvis.VoiceHost.
+- Nor-Tec capture -> PCM16 -> Silero VAD -> persistent faster-whisper -> wake/session pipeline is wired.
+- Local Application Control requires single-file host for runtime smoke tests; protection remains enabled.
+- GitHub CI is green for the previous checkpoint.
+

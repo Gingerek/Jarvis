@@ -43,3 +43,5 @@ logs/
 
 # Benchmark audio may contain private microphone recordings
 /benchmarks/asr/*.wav
+
+/artifacts/
