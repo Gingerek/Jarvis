@@ -96,3 +96,24 @@ Nor-Tec live background, 10 s:
 - live inference p95: 0.141 ms
 - live inference p99: 0.168 ms
 - live inference max: 0.420 ms
+
+## Silero VAD — measured 2026-09-08
+Machine: Ryzen 7 5700G CPU, Nor-Tec streaming mic.
+Model: official silero_vad.onnx, ONNX Runtime CPU.
+
+CPU inference, 1000 x 512-sample frames:
+- p50: 0.134 ms
+- p95: 0.149 ms
+- p99: 0.182 ms
+- max: 0.614 ms
+
+Live run, 466 frames:
+- max speech probability: 1.000
+- inference p50: 0.379 ms
+- inference p95: 0.482 ms
+- inference p99: 0.531 ms
+- capture first callback: 97.8 ms
+- capture callback max jitter: 12.7 ms
+- real speech transitions detected: PASS
+
+Note: speech-start wall-clock latency is not claimed because the exact human speech onset timestamp was not instrumented.

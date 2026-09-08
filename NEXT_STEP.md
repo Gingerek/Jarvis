@@ -3,26 +3,23 @@
 ## Current phase
 Phase 2 — Audio & Voice.
 
-## Immediate objective
-Validate Silero speech start/end behavior on controlled speech, then benchmark ASR candidates on this Ryzen 7 5700G.
-
 ## Completed
-- WASAPI capture and device persistence,
-- Nor-Tec selected as Jarvis microphone,
-- 16 kHz mono PCM16 normalization,
-- ring buffer, timestamps, reconnect and audio health,
-- Silero VAD ONNX integration,
-- VAD CPU and background false-trigger benchmark,
-- hysteresis speech gate.
+- WASAPI capture foundation: PASS.
+- Nor-Tec streaming mic selected by stable endpoint ID.
+- 16 kHz mono PCM16 normalization: PASS.
+- Silero VAD streaming implementation: PASS.
+- Silero CPU/live benchmark: PASS.
+
+## Immediate objective
+Benchmark CPU-capable Polish ASR candidates on Ryzen 7 5700G before selecting the production backend.
 
 ## Required next actions
-1. Measure speech-start detection latency on controlled speech.
-2. Measure speech-end detection latency with current 480 ms silence gate.
-3. Tune thresholds only from measurements, not intuition.
-4. Benchmark CPU-capable ASR candidates for Polish.
-5. Record WER-like command accuracy and end-to-transcript latency.
-6. Choose ASR backend only after benchmark comparison.
-7. Continue to wake-word benchmark after ASR baseline is stable.
+1. Capture a controlled Polish speech sample from Nor-Tec.
+2. Benchmark faster-whisper CPU candidates.
+3. Measure warm/cold transcription latency and real-time factor.
+4. Compare accuracy on command-style Polish phrases.
+5. Select backend only from measured results.
+6. Integrate chosen ASR behind Jarvis.ASR interface.
 
-## Rules
-No final ASR or wake-word selection without measured data and license review.
+## Rule
+Do not select final ASR or wake-word engine without benchmark data.
