@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 using System.Threading.Channels;
 using Jarvis.Audio;
 using Jarvis.ASR;
@@ -6,6 +6,8 @@ using Jarvis.Brain;
 using Jarvis.Commands;
 using Jarvis.Execution;
 using Jarvis.Intents;
+using Jarvis.Speech;
+using Jarvis.Security;
 using Jarvis.VAD;
 using Jarvis.WakeWord;
 
@@ -44,6 +46,9 @@ using var settings = await JsonDocument.ParseAsync(settingsStream);
 var deviceId = settings.RootElement.GetProperty("AudioInputDeviceId").GetString()
     ?? throw new InvalidOperationException("AudioInputDeviceId is not configured.");
 var deviceName = settings.RootElement.GetProperty("AudioInputDeviceName").GetString();
+var ttsVoiceId = settings.RootElement.GetProperty("TtsVoiceId").GetString() ?? throw new InvalidOperationException("TtsVoiceId is not configured.");
+var ttsModelId = settings.RootElement.GetProperty("TtsModelId").GetString() ?? "eleven_flash_v2_5";
+var ttsApiKey = new WindowsCredentialSecretStore().Read("ElevenLabsApiKey") ?? throw new InvalidOperationException("ElevenLabs API key is not configured.");
 
 var python = Path.Combine(root, ".venv-asr", "Scripts", "python.exe");
 var worker = Path.Combine(root, "tools", "asr_worker.py");
@@ -60,6 +65,8 @@ var detector = new TranscriptWakeWordDetector("Jarvis");
 var session = new VoiceSessionStateMachine(TimeSpan.FromSeconds(20));
 var voice = new VoiceInteractionCoordinator(detector, session);
 var pipeline = new VoicePipelineProcessor(asr, voice);
+var ttsProvider = new ElevenLabsTtsProvider(ttsApiKey, ttsVoiceId, ttsModelId);
+await using var speech = new SpeechOutputManager(ttsProvider);
 
 using var capture = new WasapiCaptureSession(deviceId);
 var format = capture.Format;
@@ -104,7 +111,27 @@ try
         if (string.IsNullOrWhiteSpace(result.CommandText)) continue;
 
         Console.WriteLine($"COMMAND: {result.CommandText}");
-        ExecuteCommand(result.CommandText);
+        var execution = ExecuteCommand(result.CommandText);
+        if (execution is null) continue;
+
+        var reply = execution.Status switch
+        {
+            ApplicationLaunchStatus.Started => $"Otwieram {execution.Target.DisplayName}.",
+            ApplicationLaunchStatus.AlreadyRunning => $"{execution.Target.DisplayName} jest ju? otwarty.",
+            ApplicationLaunchStatus.ExecutableNotFound => $"Nie znalaz?em programu {execution.Target.DisplayName}.",
+            _ => $"Nie uda?o si? uruchomi? {execution.Target.DisplayName}."
+        };
+
+        try
+        {
+            capture.Stop();
+            segmenter.Reset();
+            await speech.SpeakAsync(reply);
+        }
+        finally
+        {
+            if (!listenCts.IsCancellationRequested) capture.Start();
+        }
     }
 }
 catch (OperationCanceledException) when (listenCts.IsCancellationRequested)

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\Jarvis.Audio\Jarvis.Audio.csproj" />
@@ -9,6 +9,8 @@
     <ProjectReference Include="..\Jarvis.Commands\Jarvis.Commands.csproj" />
     <ProjectReference Include="..\Jarvis.Execution\Jarvis.Execution.csproj" />
     <ProjectReference Include="..\Jarvis.Intents\Jarvis.Intents.csproj" />
+    <ProjectReference Include="..\Jarvis.Speech\Jarvis.Speech.csproj" />
+    <ProjectReference Include="..\Jarvis.Security\Jarvis.Security.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

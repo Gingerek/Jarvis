@@ -14,17 +14,18 @@ Phase 2 — Audio & Voice.
 - active session accepts follow-up commands without repeating "Jarvis".
 - live VoiceHost + speech segmentation: implemented.
 - deterministic app launch fast path: PASS for Lightroom Classic.
-- ElevenLabs streaming TTS provider: implemented.
-- SpeechOutputManager with interruption support: implemented.
-- Windows Credential Manager secret store: implemented.
-- TTS probe: implemented.
+- ElevenLabs streaming TTS provider: PASS.
+- Windows Credential Manager secret store: PASS.
+- selected Jarvis voice: Marcin — Deep & Cinematic Polish Narrator.
+- selected voice_id: B5tmTXp0L7DzqmlGqIMJ.
+- TTS live probe: PASS.
+- VoiceHost spoken execution confirmations: implemented.
 
 ## Current facts
 - Live Nor-Tec -> VAD -> ASR works.
-- Latest controlled launch `otwórz Lightroom` starts Lightroom Classic.
-- Live wake phrase has not yet earned PASS in a controlled microphone run.
-- ElevenLabs API key is not configured yet.
-- TtsVoiceId is not selected yet.
+- Controlled `otwórz Lightroom` starts Lightroom Classic.
+- VoiceHost now pauses capture while speaking to avoid self-triggering.
+- Live wake phrase still needs a clean controlled PASS.
 
 ## Immediate objective
-Configure one approved ElevenLabs Polish voice securely, run live TTS, then connect spoken confirmations to VoiceHost.
+Run controlled live `Jarvis, otwórz Lightroom` end-to-end with spoken confirmation, then implement barge-in and session hardening.

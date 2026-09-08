@@ -92,3 +92,14 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Lightroom executable confirmed at C:\Program Files\Adobe\Adobe Lightroom Classic\Lightroom.exe.
 - Parser handles Polish diacritics including ³ -> l.
 
+
+## Phase 2 TTS checkpoint
+- ElevenLabs API authentication validated successfully.
+- Secret stored only in Windows Credential Manager; no API key is stored in repo files.
+- Selected voice: Marcin â€” Deep & Cinematic Polish Narrator.
+- voice_id: B5tmTXp0L7DzqmlGqIMJ.
+- model: eleven_flash_v2_5.
+- Live TTS probe completed successfully.
+- VoiceHost now speaks execution confirmations with the selected voice.
+- Capture is paused and VAD state reset while Jarvis speaks to prevent self-triggering.
+- Full Release solution build: PASS, 0 errors, 0 warnings.
