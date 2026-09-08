@@ -71,12 +71,17 @@ var deviceId = settings.RootElement.GetProperty("AudioInputDeviceId").GetString(
     ?? throw new InvalidOperationException("AudioInputDeviceId is not configured.");
 var deviceName = settings.RootElement.GetProperty("AudioInputDeviceName").GetString()
     ?? "Configured microphone";
-var ttsVoiceId = settings.RootElement.GetProperty("TtsVoiceId").GetString()
-    ?? throw new InvalidOperationException("TtsVoiceId is not configured.");
-var ttsModelId = settings.RootElement.GetProperty("TtsModelId").GetString()
-    ?? "eleven_flash_v2_5";
-var ttsApiKey = new WindowsCredentialSecretStore().Read("ElevenLabsApiKey")
-    ?? throw new InvalidOperationException("ElevenLabs API key is not configured.");
+// Speech is optional: local command execution must also work without cloud credentials.
+var ttsVoiceId = settings.RootElement.TryGetProperty("TtsVoiceId", out var voiceSetting)
+    ? voiceSetting.GetString() : null;
+var ttsModelId = settings.RootElement.TryGetProperty("TtsModelId", out var modelSetting)
+    ? modelSetting.GetString() ?? "eleven_flash_v2_5" : "eleven_flash_v2_5";
+string? ttsApiKey = null;
+try { ttsApiKey = new WindowsCredentialSecretStore().Read("ElevenLabsApiKey"); }
+catch (Exception)
+{
+    await events.EmitAsync("warning", text: "Głos niedostępny. Polecenia lokalne nadal działają.");
+}
 
 var python = Path.Combine(root, ".venv-asr", "Scripts", "python.exe");
 var worker = Path.Combine(root, "tools", "asr_worker.py");
@@ -97,8 +102,11 @@ var detector = new TranscriptWakeWordDetector("Jarvis");
 var session = new VoiceSessionStateMachine(TimeSpan.FromSeconds(20));
 var voice = new VoiceInteractionCoordinator(detector, session);
 var pipeline = new VoicePipelineProcessor(asr, voice);
-var ttsProvider = new ElevenLabsTtsProvider(ttsApiKey, ttsVoiceId, ttsModelId);
-await using var speech = new SpeechOutputManager(ttsProvider);
+await using var speech = !string.IsNullOrWhiteSpace(ttsApiKey) && !string.IsNullOrWhiteSpace(ttsVoiceId)
+    ? new SpeechOutputManager(new ElevenLabsTtsProvider(ttsApiKey, ttsVoiceId, ttsModelId))
+    : null;
+if (speech is null)
+    await events.EmitAsync("warning", text: "Głos nieskonfigurowany. Odpowiedzi będą wyświetlane tekstowo.");
 
 using var capture = new WasapiCaptureSession(deviceId);
 var format = capture.Format;
@@ -170,17 +178,22 @@ try
 
         await events.EmitAsync("execution", text: reply,
             data: new { status = execution.Status.ToString(), target = execution.Target.DisplayName });
-        await events.EmitAsync("state", "SPEAKING", reply);
-
-        try
+        if (speech is not null)
         {
-            capture.Stop();
-            segmenter.Reset();
-            await speech.SpeakAsync(reply, lifetimeCts.Token);
-        }
-        finally
-        {
-            if (!lifetimeCts.IsCancellationRequested) capture.Start();
+            await events.EmitAsync("state", "SPEAKING", reply);
+            try
+            {
+                capture.Stop();
+                segmenter.Reset();
+                var spoken = await SpeechAttempt.TryAsync(
+                    token => speech.SpeakAsync(reply, token), lifetimeCts.Token);
+                if (!spoken)
+                    await events.EmitAsync("warning", text: "Nie udało się odtworzyć głosu. Wynik polecenia jest widoczny w oknie.");
+            }
+            finally
+            {
+                if (!lifetimeCts.IsCancellationRequested) capture.Start();
+            }
         }
 
         await events.EmitAsync("state", "LISTENING", "Słucham");
