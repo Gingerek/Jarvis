@@ -39,3 +39,16 @@
 - verified runtime launch without Developer Mode,
 - verified creation of settings.json, learning.db and JSONL log,
 - validation now passes 20-project Release build, 8 tests and doctor 7/7.
+
+## 2026-09-08 — Phase 1 gate passed
+- added plugin manifest validation,
+- added foundation health checks,
+- added bootstrap.cmd and hardened bootstrap.ps1,
+- updated CI with doctor step,
+- switched clean-gate procedure to fresh bin/obj removal + restore for unpackaged WinUI,
+- clean restore passed,
+- Release build passed with 0 errors and 0 warnings,
+- 9 tests passed,
+- doctor passed 7/7,
+- runtime smoke test passed after clean build,
+- Phase 1 marked PASS; next phase is Audio & Voice.

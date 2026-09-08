@@ -1,26 +1,29 @@
 # Next Step
 
+## Current phase
+Phase 2 — Audio & Voice foundation.
+
 ## Immediate objective
-Finish the Phase 1 foundation gate, then start Phase 2 audio/voice work.
+Implement reliable microphone discovery and WASAPI capture on this machine before choosing final ASR or wake-word engines.
 
 ## Required next actions
-1. Add startup/runtime smoke test automation where practical.
-2. Extend diagnostics health checks for config, database, plugin directory and logs.
-3. Add plugin manifest/version validation before loading arbitrary plugin assemblies.
-4. Verify bootstrap.cmd/build.cmd/test.cmd/doctor.cmd on a clean shell.
-5. Update CI to use the unpackaged/self-contained WinUI configuration.
-6. Re-run clean restore/build/test/doctor.
-7. Mark Phase 1 gate PASS and merge phase1/foundation.
+1. Add NAudio 2.3.0 to Jarvis.Audio.
+2. Enumerate active capture/render endpoints and identify the actual default microphone.
+3. Persist selected microphone by stable device identifier, not friendly name only.
+4. Implement WASAPI capture with cancellation and deterministic disposal.
+5. Add PCM format normalization needed by VAD/ASR.
+6. Add ring buffer and timestamped audio frames.
+7. Measure capture startup latency and frame delivery jitter.
+8. Add device-loss/reconnect handling.
+9. Add audio diagnostics and health checks.
+10. Only after capture is stable, benchmark VAD and ASR candidates on this Ryzen 7 5700G.
 
-## Gate to start Phase 2
-- clean bootstrap on this machine,
-- Release build 0 errors and 0 warnings,
-- all tests pass,
-- doctor pass,
-- runtime UI smoke test pass,
-- configuration/logging/database/plugin loader operational,
-- repository state recorded,
-- no application-specific Lightroom/OBS/YouTube feature code in foundation.
+## Phase 2 rules
+- no final ASR selection without benchmark data,
+- no final wake-word selection without benchmark/license data,
+- no cloud dependency on the fast local command path,
+- no permanent Windows security-policy changes,
+- every visible UI state must represent real runtime state.
 
-## Immediate next implementation after gate
-Begin Phase 2 with audio device enumeration, microphone selection, WASAPI capture and latency measurement. Do not select final ASR or wake-word engine until measured benchmarks exist.
+## Next session rule
+Read PROJECT_STATE.md, ARCHITECTURE.md, NEXT_STEP.md, LATENCY_PLAN.md and KNOWN_ISSUES.md before changing code.

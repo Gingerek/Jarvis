@@ -10,20 +10,27 @@ public sealed class PluginLoader
         if (!Directory.Exists(directory)) return [];
 
         var plugins = new List<IJarvisPlugin>();
-        foreach (var dll in Directory.EnumerateFiles(directory, "*.dll", SearchOption.TopDirectoryOnly))
+        foreach (var manifestPath in Directory.EnumerateFiles(directory, "*.plugin.json", SearchOption.TopDirectoryOnly))
         {
-            try
-            {
-                var assembly = Assembly.LoadFrom(dll);
-                foreach (var type in assembly.GetTypes())
-                {
-                    if (type.IsAbstract || type.IsInterface || !typeof(IJarvisPlugin).IsAssignableFrom(type)) continue;
-                    if (Activator.CreateInstance(type) is IJarvisPlugin plugin) plugins.Add(plugin);
-                }
-            }
-            catch (BadImageFormatException) { }
-            catch (FileLoadException) { }
-            catch (ReflectionTypeLoadException) { }
+            var manifest = PluginManifestReader.Read(manifestPath);
+            var assemblyPath = Path.Combine(directory, manifest.Assembly);
+            if (!File.Exists(assemblyPath)) throw new FileNotFoundException("Plugin assembly was not found.", assemblyPath);
+
+            var assembly = Assembly.LoadFrom(assemblyPath);
+            var instances = assembly.GetTypes()
+                .Where(type => !type.IsAbstract && !type.IsInterface && typeof(IJarvisPlugin).IsAssignableFrom(type))
+                .Select(type => Activator.CreateInstance(type))
+                .OfType<IJarvisPlugin>()
+                .Where(plugin => string.Equals(plugin.Descriptor.Id, manifest.Id, StringComparison.OrdinalIgnoreCase))
+                .ToArray();
+
+            if (instances.Length != 1)
+                throw new InvalidDataException($"Plugin manifest '{manifest.Id}' must resolve to exactly one matching plugin type.");
+
+            if (instances[0].Descriptor.Version != Version.Parse(manifest.Version))
+                throw new InvalidDataException($"Plugin '{manifest.Id}' version does not match its manifest.");
+
+            plugins.Add(instances[0]);
         }
         return plugins;
     }

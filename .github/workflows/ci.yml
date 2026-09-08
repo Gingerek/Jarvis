@@ -20,3 +20,6 @@ jobs:
         run: dotnet build Jarvis.slnx -c Release --no-restore
       - name: Test
         run: dotnet test Jarvis.slnx -c Release --no-build
+      - name: Doctor
+        shell: powershell
+        run: powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\doctor.ps1
