@@ -73,3 +73,26 @@ Comparison during the same scan:
 - Nor-Tec: first 89.5 ms, max jitter 1.6 ms, clearly active signal.
 
 These are single scan observations, not percentile benchmark results. Repeat runs are required before declaring a latency gate.
+
+## Silero VAD benchmark — 2026-09-08
+Machine: Ryzen 7 5700G, CPU execution via ONNX Runtime 1.29.0.
+Model: official Silero VAD ONNX, 16 kHz, 512-sample frames.
+
+Synthetic silence, 1000 measured frames after warm-up:
+- p50: 0.190 ms
+- p90: 0.208 ms
+- p95: 0.227 ms
+- p99: 0.277 ms
+- max: 0.430 ms
+
+Nor-Tec live background, 10 s:
+- 312 frames processed
+- threshold: 0.50
+- frames >= threshold: 0
+- observed false-frame rate: 0.00%
+- mean probability: 0.0005
+- max probability: 0.0006
+- live inference p50: 0.131 ms
+- live inference p95: 0.141 ms
+- live inference p99: 0.168 ms
+- live inference max: 0.420 ms

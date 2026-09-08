@@ -48,3 +48,20 @@ Ryzen 7 5700G, integrated Radeon, no NVIDIA/CUDA. VAD/ASR benchmark must priorit
 - final ASR backend/model,
 - final wake-word engine,
 - final Jarvis voice_id.
+
+## Phase 2 VAD progress
+Silero VAD is now integrated through ONNX Runtime 1.29.0.
+The model schema was inspected directly on this machine before implementation.
+Streaming state is preserved between 512-sample frames at 16 kHz.
+A hysteresis speech gate is implemented with separate start/end thresholds.
+
+Measured result on Nor-Tec:
+- 10 s background test: 0/312 frames above 0.5,
+- VAD inference p50 0.190 ms and p95 0.227 ms on synthetic silence,
+- live p95 0.141 ms,
+- current VAD CPU cost is negligible relative to the 32 ms frame duration.
+
+Current build status:
+- 22 projects,
+- Release build: 0 errors, 0 warnings,
+- tests: 18 PASS.

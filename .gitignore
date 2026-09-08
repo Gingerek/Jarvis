@@ -33,3 +33,6 @@ logs/
 *.log
 *.etl
 *.dmp
+
+# Downloaded ML models
+/models/**/*.onnx

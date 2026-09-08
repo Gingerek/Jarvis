@@ -27,5 +27,6 @@
   </Folder>
   <Folder Name="/tools/">
     <Project Path="tools/Jarvis.AudioProbe/Jarvis.AudioProbe.csproj" />
+    <Project Path="tools/Jarvis.VadProbe/Jarvis.VadProbe.csproj" />
   </Folder>
 </Solution>

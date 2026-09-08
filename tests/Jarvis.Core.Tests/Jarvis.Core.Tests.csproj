@@ -23,6 +23,7 @@
     <ProjectReference Include="..\..\src\Jarvis.Plugins\Jarvis.Plugins.csproj" />
     <ProjectReference Include="..\..\src\Jarvis.Learning\Jarvis.Learning.csproj" />
     <ProjectReference Include="..\..\src\Jarvis.Audio\Jarvis.Audio.csproj" />
+    <ProjectReference Include="..\..\src\Jarvis.VAD\Jarvis.VAD.csproj" />
   </ItemGroup>
 
 </Project>
