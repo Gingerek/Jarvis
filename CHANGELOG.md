@@ -90,3 +90,6 @@
 - Added synchronized rating feedback so spoken responses report the committed new rating.
 - Lightroom parser tests 20/20 PASS; full Core 115/115, Structure 1/1, Integration 1/1 PASS.
 - Release build remains 0 errors / 0 warnings; Polish command corpus now 32,044 variants.
+
+- Global command corpus now contains 32,142 utterance variants.
+- Develop copy/paste and native undo/redo verified live with exact state restoration.

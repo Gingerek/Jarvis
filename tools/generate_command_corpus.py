@@ -284,27 +284,35 @@ for parameter, aliases in lightroom_adjustments.items():
                 add("LightroomSetAdjustment", f"{parameter}|0", prefix + f"wyzeruj {action_alias}")
 
 for prefix in polite_prefixes:
-    for phrase in ["nastÄ™pne zdjÄ™cie", "kolejne zdjÄ™cie", "przejdĹş do nastÄ™pnego zdjÄ™cia"]:
+    for phrase in ["następne zdjęcie", "kolejne zdjęcie", "przejdź do następnego zdjęcia"]:
         add("LightroomNextPhoto", None, prefix + phrase)
-    for phrase in ["poprzednie zdjÄ™cie", "przejdĹş do poprzedniego zdjÄ™cia"]:
+    for phrase in ["poprzednie zdjęcie", "przejdź do poprzedniego zdjęcia"]:
         add("LightroomPreviousPhoto", None, prefix + phrase)
-    for phrase in ["jaka ocena", "podaj ocenÄ™", "ile gwiazdek", "jaka jest ocena"]:
+    for phrase in ["jaka ocena", "podaj ocenę", "ile gwiazdek", "jaka jest ocena"]:
         add("LightroomGetRating", None, prefix + phrase)
     for rating in range(0, 6):
-        for phrase in [f"ustaw ocenÄ™ na {rating}", f"daj {rating} gwiazdek"]:
+        for phrase in [f"ustaw ocenę na {rating}", f"daj {rating} gwiazdek"]:
             add("LightroomSetRating", str(rating), prefix + phrase)
-    for phrase in ["zwiÄ™ksz ocenÄ™", "dodaj gwiazdkÄ™"]:
+    for phrase in ["zwiększ ocenę", "dodaj gwiazdkę"]:
         add("LightroomIncreaseRating", None, prefix + phrase)
-    for phrase in ["zmniejsz ocenÄ™", "odejmij gwiazdkÄ™"]:
+    for phrase in ["zmniejsz ocenę", "odejmij gwiazdkę"]:
         add("LightroomDecreaseRating", None, prefix + phrase)
-    for phrase in ["jaka flaga", "podaj flagÄ™", "status flagi"]:
+    for phrase in ["jaka flaga", "podaj flagę", "status flagi"]:
         add("LightroomGetFlag", None, prefix + phrase)
-    for phrase in ["oznacz jako wybrane", "flaga pick", "ustaw flagÄ™ pick"]:
+    for phrase in ["oznacz jako wybrane", "flaga pick", "ustaw flagę pick"]:
         add("LightroomFlagPick", None, prefix + phrase)
-    for phrase in ["oznacz jako odrzucone", "flaga reject", "ustaw flagÄ™ reject"]:
+    for phrase in ["oznacz jako odrzucone", "flaga reject", "ustaw flagę reject"]:
         add("LightroomFlagReject", None, prefix + phrase)
-    for phrase in ["usuĹ„ flagÄ™", "wyczyĹ›Ä‡ flagÄ™", "bez flagi"]:
+    for phrase in ["usuń flagę", "wyczyść flagę", "bez flagi"]:
         add("LightroomClearFlag", None, prefix + phrase)
+    for phrase in ["kopiuj ustawienia develop", "skopiuj ustawienia develop", "kopiuj ustawienia lightrooma", "skopiuj obróbkę"]:
+        add("LightroomCopyDevelopSettings", None, prefix + phrase)
+    for phrase in ["wklej ustawienia develop", "wklej ustawienia lightrooma", "wklej obróbkę", "zastosuj skopiowane ustawienia"]:
+        add("LightroomPasteDevelopSettings", None, prefix + phrase)
+    for phrase in ["lightroom cofnij", "cofnij w lightroomie", "cofnij ostatnią zmianę w lightroomie"]:
+        add("LightroomUndo", None, prefix + phrase)
+    for phrase in ["lightroom ponów", "ponów w lightroomie", "ponów ostatnią zmianę w lightroomie"]:
+        add("LightroomRedo", None, prefix + phrase)
 
 for prefix in polite_prefixes:
     add("LightroomAutoTone", None, prefix + "auto ton")

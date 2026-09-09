@@ -7,9 +7,11 @@ local LrPathUtils = import 'LrPathUtils'
 local LrSelection = import 'LrSelection'
 local LrSocket = import 'LrSocket'
 local LrTasks = import 'LrTasks'
+local LrUndo = import 'LrUndo'
 
 
 local sender = nil
+local copiedDevelopSettings = nil
 local senderConnected = false
 local receiverConnected = false
 
@@ -184,6 +186,33 @@ local function handleMessage(message)
     elseif command == 'flag_clear' then
         local ok, err = pcall(function() LrSelection.removeFlag() end)
         reply(id, ok and 'ok' or 'error', ok and '0' or err)
+    elseif command == 'develop_copy_settings' then
+        local photo = LrApplication.activeCatalog():getTargetPhoto()
+        if photo == nil then reply(id, 'error', 'no active photo') else
+            local ok, value = LrTasks.pcall(function() return photo:getDevelopSettings() end)
+            if ok and value ~= nil then copiedDevelopSettings = value end
+            reply(id, ok and value ~= nil and 'ok' or 'error', ok and value ~= nil and 'copied' or tostring(value))
+        end
+    elseif command == 'develop_paste_settings' then
+        local catalog = LrApplication.activeCatalog(); local photo = catalog:getTargetPhoto()
+        if copiedDevelopSettings == nil then reply(id, 'error', 'no copied settings')
+        elseif photo == nil then reply(id, 'error', 'no active photo') else
+            local ok, err = LrTasks.pcall(function()
+                catalog:withWriteAccessDo('Jarvis: Paste Develop Settings', function() photo:applyDevelopSettings(copiedDevelopSettings) end)
+            end)
+            if ok then LrTasks.sleep(0.20) end
+            reply(id, ok and 'ok' or 'error', ok and 'pasted' or tostring(err))
+        end
+    elseif command == 'undo' then
+        if not LrUndo.canUndo() then reply(id, 'error', 'nothing to undo') else
+            local ok, err = LrTasks.pcall(function() LrUndo.undo() end); if ok then LrTasks.sleep(0.15) end
+            reply(id, ok and 'ok' or 'error', ok and 'done' or tostring(err))
+        end
+    elseif command == 'redo' then
+        if not LrUndo.canRedo() then reply(id, 'error', 'nothing to redo') else
+            local ok, err = LrTasks.pcall(function() LrUndo.redo() end); if ok then LrTasks.sleep(0.15) end
+            reply(id, ok and 'ok' or 'error', ok and 'done' or tostring(err))
+        end
     else
         reply(id, 'error', 'unknown command')
     end

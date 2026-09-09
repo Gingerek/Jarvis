@@ -180,3 +180,8 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Rating feedback synchronized after SDK mutation so TTS reports the new value.
 - Lightroom parser tests 20/20 PASS; full Core 115/115, Structure 1/1, Integration 1/1 PASS.
 - Global Polish corpus: 32,044 utterance variants.
+
+- Global generated Polish corpus: 32,142 utterance variants.
+- Develop copy/paste LIVE PASS via getDevelopSettings/applyDevelopSettings: Exposure 0 -> copy -> 0.2 -> paste -> 0.
+- LrUndo LIVE PASS: Exposure 0 -> 0.3 -> undo 0 -> redo 0.3 -> restore 0.
+- Current validation: Core 119/119, Structure 1/1, Integration 1/1 PASS.

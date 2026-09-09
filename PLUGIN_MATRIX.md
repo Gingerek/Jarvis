@@ -39,3 +39,5 @@ Legend: VERIFIED = control method verified from vendor/platform documentation; A
 - Fallback level must be visible in diagnostics.
 - Vision/OCR is never silently promoted to primary control.
 - If an app upgrade breaks selectors/API compatibility, the plugin health check must fail closed instead of pretending success.
+
+| Lightroom Classic | next/previous/rating/flag/copy-paste/undo-redo/crop/navigation | documented SDK where available, otherwise shortcut/UIA capability map | controlled input | Adobe + Windows | Adobe/OS | user | interactive | medium-high | VERIFIED live: next/previous/rating/flag/copy-paste/undo-redo |

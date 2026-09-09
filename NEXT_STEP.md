@@ -51,3 +51,6 @@ Phase 2 — Audio, Voice & General Command Registry.
 
 ## Immediate objective
 Browser, OBS, Lightroom Basic and Lightroom navigation/rating/flags are PASS. Continue Lightroom Classic with copy/paste Develop, undo/redo, crop, masks and further SDK-backed capabilities before moving to DaVinci Resolve.
+
+- Core tests: 119/119 PASS; corpus: 32,142 variants.
+- Develop copy/paste and native undo/redo are LIVE PASS with restored state.

@@ -59,6 +59,10 @@ internal sealed class LightroomCommandExecutor
             CommandIntent.LightroomFlagPick => await ActionAsync("flag_pick", "Oznaczam zdjęcie jako wybrane.", "LightroomFlagPick", cancellationToken),
             CommandIntent.LightroomFlagReject => await ActionAsync("flag_reject", "Oznaczam zdjęcie jako odrzucone.", "LightroomFlagReject", cancellationToken),
             CommandIntent.LightroomClearFlag => await ActionAsync("flag_clear", "Usuwam flagę ze zdjęcia.", "LightroomClearFlag", cancellationToken),
+            CommandIntent.LightroomCopyDevelopSettings => await ActionAsync("develop_copy_settings", "Kopiuję ustawienia obróbki.", "LightroomCopyDevelopSettings", cancellationToken),
+            CommandIntent.LightroomPasteDevelopSettings => await ActionAsync("develop_paste_settings", "Wklejam skopiowane ustawienia obróbki.", "LightroomPasteDevelopSettings", cancellationToken),
+            CommandIntent.LightroomUndo => await ActionAsync("undo", "Cofam ostatnią zmianę w Lightroomie.", "LightroomUndo", cancellationToken),
+            CommandIntent.LightroomRedo => await ActionAsync("redo", "Ponawiam ostatnią zmianę w Lightroomie.", "LightroomRedo", cancellationToken),
             _ => null
         };
     }

@@ -58,6 +58,14 @@ public sealed class LightroomCommandParser
             return new(CommandIntent.LightroomFlagReject);
         if (value is "usun flage" or "wyczysc flage" or "bez flagi")
             return new(CommandIntent.LightroomClearFlag);
+        if (value is "kopiuj ustawienia develop" or "skopiuj ustawienia develop" or "kopiuj ustawienia lightrooma" or "skopiuj obrobke")
+            return new(CommandIntent.LightroomCopyDevelopSettings);
+        if (value is "wklej ustawienia develop" or "wklej ustawienia lightrooma" or "wklej obrobke" or "zastosuj skopiowane ustawienia")
+            return new(CommandIntent.LightroomPasteDevelopSettings);
+        if (value is "lightroom cofnij" or "cofnij w lightroomie" or "cofnij ostatnia zmiane w lightroomie")
+            return new(CommandIntent.LightroomUndo);
+        if (value is "lightroom ponow" or "ponow w lightroomie" or "ponow ostatnia zmiane w lightroomie")
+            return new(CommandIntent.LightroomRedo);
 
         var get = Regex.Match(value,
             @"^(?:jaka jest|jaki jest|podaj|ile wynosi) (?<name>.+)$");

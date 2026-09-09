@@ -43,6 +43,10 @@ public sealed class LightroomCommandParserTests
     [InlineData("oznacz jako wybrane", CommandIntent.LightroomFlagPick, null)]
     [InlineData("oznacz jako odrzucone", CommandIntent.LightroomFlagReject, null)]
     [InlineData("usuń flagę", CommandIntent.LightroomClearFlag, null)]
+    [InlineData("kopiuj ustawienia develop", CommandIntent.LightroomCopyDevelopSettings, null)]
+    [InlineData("wklej ustawienia lightrooma", CommandIntent.LightroomPasteDevelopSettings, null)]
+    [InlineData("cofnij w lightroomie", CommandIntent.LightroomUndo, null)]
+    [InlineData("ponów w lightroomie", CommandIntent.LightroomRedo, null)]
     public void Registry_Parses_Lightroom_Selection_Commands(string text, CommandIntent intent, string? argument)
     {
         var request = new CommandRegistry().Parse(text);
