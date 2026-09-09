@@ -120,7 +120,7 @@ public sealed class CommandRegistry
     private readonly ObsCommandParser _obs = new();
     private static readonly HashSet<string> TimePhrases = new(StringComparer.Ordinal)
     {
-        "ktora godzina", "jaka jest godzina", "powiedz ktora godzina",
+        "ktora godzina", "ktora jest godzina", "jaka jest godzina", "powiedz ktora godzina",
         "podaj godzine", "ile jest godzina", "jaki mamy czas"
     };
 

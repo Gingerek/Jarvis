@@ -20,6 +20,7 @@ public sealed class CommandRegistryTests
 
     [Theory]
     [InlineData("która godzina", CommandIntent.GetTime)]
+    [InlineData("która jest godzina", CommandIntent.GetTime)]
     [InlineData("jaka jest data", CommandIntent.GetDate)]
     [InlineData("jaki dziś dzień tygodnia", CommandIntent.GetDayOfWeek)]
     public void Registry_Parses_Local_Info(string text, CommandIntent intent)

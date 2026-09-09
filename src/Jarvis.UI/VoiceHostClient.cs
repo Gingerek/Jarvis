@@ -23,7 +23,7 @@ public sealed class VoiceHostClient : IAsyncDisposable
     {
         _cts = new CancellationTokenSource();
         var local = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-        var hostPath = Path.Combine(local, "Jarvis", "runtime", "Jarvis.VoiceHost.exe");
+        var hostPath = Path.Combine(local, "Jarvis", "runtime", "Jarvis.VoiceHost.dll");
         var repoRoot = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
             "Documents", "Jarvis");
@@ -39,8 +39,8 @@ public sealed class VoiceHostClient : IAsyncDisposable
 
         _process = Process.Start(new ProcessStartInfo
         {
-            FileName = hostPath,
-            Arguments = $"--service --root \"{repoRoot}\" --pipe {PipeName}",
+            FileName = "dotnet",
+            Arguments = $"\"{hostPath}\" --service --root \"{repoRoot}\" --pipe {PipeName}",
             WorkingDirectory = repoRoot,
             UseShellExecute = false,
             CreateNoWindow = true,
