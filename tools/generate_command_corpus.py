@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -253,8 +254,29 @@ lightroom_adjustments = {
     "Saturation": ["nasycenie"],
     "Temperature": ["temperatura"],
     "Tint": ["odcień"],
+    "local_Exposure": ["ekspozycja maski"],
+    "local_Contrast": ["kontrast maski"],
+    "local_Highlights": ["światła maski"],
+    "local_Shadows": ["cienie maski"],
+    "local_Whites": ["biele maski"],
+    "local_Blacks": ["czernie maski"],
+    "local_Texture": ["tekstura maski"],
+    "local_Clarity": ["przejrzystość maski"],
+    "local_Dehaze": ["odmglenie maski"],
+    "local_Saturation": ["nasycenie maski"],
+    "local_Temperature": ["temperatura maski"],
+    "local_Tint": ["odcień maski"],
 }
 
+
+# Keep the generated voice corpus synchronized with the deterministic C# parser.
+_parser_text = (ROOT / "src" / "Jarvis.Commands" / "LightroomCommandParser.cs").read_text(encoding="utf-8")
+_adjustment_block = _parser_text.split("public CommandRequest? Parse", 1)[0]
+for alias, parameter in re.findall(r'\["([^"]+)"\]\s*=\s*"([^"]+)"', _adjustment_block):
+    if parameter not in lightroom_adjustments:
+        lightroom_adjustments[parameter] = []
+    if alias not in lightroom_adjustments[parameter]:
+        lightroom_adjustments[parameter].append(alias)
 
 lightroom_action_names = {
     "Exposure2012": "ekspozycję", "Texture": "teksturę",
@@ -267,10 +289,10 @@ for parameter, aliases in lightroom_adjustments.items():
         for prefix in polite_prefixes:
             for phrase in [f"jaka jest {alias}", f"podaj {alias}", f"ile wynosi {alias}"]:
                 add("LightroomGetAdjustment", parameter, prefix + phrase)
-        set_values = ([ -2, -1, -0.5, 0, 0.5, 1, 2 ] if parameter == "Exposure2012" else
+        set_values = ([ -2, -1, -0.5, 0, 0.5, 1, 2 ] if parameter in ("Exposure2012", "local_Exposure") else
                       [3000, 4000, 5200, 5600, 6500, 8000] if parameter == "Temperature" else
                       [-100, -50, -20, -10, 0, 10, 20, 50, 100])
-        deltas = ([0.1, 0.2, 0.5] if parameter == "Exposure2012" else
+        deltas = ([0.1, 0.2, 0.5] if parameter in ("Exposure2012", "local_Exposure") else
                   [100, 500, 1000] if parameter == "Temperature" else [5, 10, 20])
         for value in set_values:
             for prefix in polite_prefixes:
@@ -279,9 +301,9 @@ for parameter, aliases in lightroom_adjustments.items():
             for prefix in polite_prefixes:
                 add("LightroomAdjustAdjustment", f"{parameter}|{delta}", prefix + f"zwiększ {action_alias} o {str(delta).replace('.', ',')}")
                 add("LightroomAdjustAdjustment", f"{parameter}|-{delta}", prefix + f"zmniejsz {action_alias} o {str(delta).replace('.', ',')}")
-        if parameter != "Temperature":
-            for prefix in polite_prefixes:
-                add("LightroomSetAdjustment", f"{parameter}|0", prefix + f"wyzeruj {action_alias}")
+        for prefix in polite_prefixes:
+            add("LightroomResetAdjustment", parameter, prefix + f"wyzeruj {action_alias}")
+            add("LightroomResetAdjustment", parameter, prefix + f"resetuj {action_alias}")
 
 for prefix in polite_prefixes:
     for phrase in ["następne zdjęcie", "kolejne zdjęcie", "przejdź do następnego zdjęcia"]:
@@ -313,6 +335,41 @@ for prefix in polite_prefixes:
         add("LightroomUndo", None, prefix + phrase)
     for phrase in ["lightroom ponów", "ponów w lightroomie", "ponów ostatnią zmianę w lightroomie"]:
         add("LightroomRedo", None, prefix + phrase)
+
+for prefix in polite_prefixes:
+    for phrase in ["jaki kąt kadrowania", "podaj kąt kadrowania", "jaki kąt crop"]:
+        add("LightroomGetCropAngle", None, prefix + phrase)
+    for angle in [-2, -1, -0.5, 0, 0.5, 1, 2]:
+        for phrase in [f"ustaw kąt kadrowania na {str(angle).replace('.', ',')}", f"kąt crop {str(angle).replace('.', ',')}"]:
+            add("LightroomSetCropAngle", str(angle), prefix + phrase)
+    for phrase in ["resetuj kadrowanie", "wyzeruj kadrowanie", "reset crop"]:
+        add("LightroomResetCrop", None, prefix + phrase)
+    for phrase in ["ile masek", "podaj liczbę masek", "liczba masek"]:
+        add("LightroomGetMaskCount", None, prefix + phrase)
+    for phrase in ["utwórz maskę obiektu", "utwórz maskę subject", "maska obiektu"]:
+        add("LightroomCreateSubjectMask", None, prefix + phrase)
+    for phrase in ["utwórz maskę nieba", "maska nieba"]:
+        add("LightroomCreateSkyMask", None, prefix + phrase)
+    for phrase in ["utwórz maskę tła", "maska tła"]:
+        add("LightroomCreateBackgroundMask", None, prefix + phrase)
+    for phrase in ["pokaż maski", "ukryj maski", "przełącz nakładkę maski"]:
+        add("LightroomToggleMaskOverlay", None, prefix + phrase)
+    for phrase in ["usuń wszystkie maski", "wyczyść wszystkie maski", "resetuj maski"]:
+        add("LightroomResetMasks", None, prefix + phrase)
+    for phrase in ["jakie narzędzie develop", "jakie narzędzie lightrooma", "aktywne narzędzie lightrooma"]: add("LightroomGetDevelopTool", None, prefix + phrase)
+    for phrase,arg in [("otwórz kadrowanie","crop"),("otwórz maskowanie","masking"),("wróć do lupy","loupe"),("otwórz point color","point_color")]: add("LightroomSelectDevelopTool", arg, prefix + phrase)
+    add("LightroomGetColorGradingView", None, prefix + "jaki widok color grading")
+    for phrase,arg in [("ustaw grading trzy koła","3-way"),("ustaw grading cienie","shadow"),("ustaw grading półtony","midtone"),("ustaw grading światła","highlight"),("ustaw grading globalny","global")]: add("LightroomSetColorGradingView", arg, prefix + phrase)
+    add("LightroomGetLensBlurBokeh", None, prefix + "jaki bokeh rozmycia")
+    for phrase,arg in [("bokeh koło","Circle"),("bokeh mydlana bańka","SoapBubble"),("bokeh listki","Blade"),("bokeh pierścień","Ring"),("bokeh anamorficzny","Anamorphic")]: add("LightroomSetLensBlurBokeh", arg, prefix + phrase)
+    for phrase,arg in [("otwórz usuwanie","heal_patchmatch"),("otwórz leczenie","heal"),("otwórz klonowanie","clone")]: add("LightroomOpenRemove", arg, prefix + phrase)
+    for phrase in ["resetuj usuwanie", "wyczyść usuwanie"]: add("LightroomResetRemove", None, prefix + phrase)
+
+for prefix in polite_prefixes:
+    for phrase in ["resetuj całą obróbkę", "wyzeruj całą obróbkę", "resetuj develop"]:
+        add("LightroomResetAllDevelop", None, prefix + phrase)
+    for phrase in ["resetuj transformacje", "wyzeruj transformacje", "reset transform"]:
+        add("LightroomResetTransforms", None, prefix + phrase)
 
 for prefix in polite_prefixes:
     add("LightroomAutoTone", None, prefix + "auto ton")

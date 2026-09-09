@@ -22,7 +22,107 @@ internal sealed class LightroomCommandExecutor
         ["Vibrance"] = "wibracja",
         ["Saturation"] = "nasycenie",
         ["Temperature"] = "temperatura",
-        ["Tint"] = "odcień"
+        ["Tint"] = "odcień",
+        ["local_Exposure"] = "ekspozycja maski",
+        ["local_Contrast"] = "kontrast maski",
+        ["local_Highlights"] = "światła maski",
+        ["local_Shadows"] = "cienie maski",
+        ["local_Whites"] = "biele maski",
+        ["local_Blacks"] = "czernie maski",
+        ["local_Texture"] = "tekstura maski",
+        ["local_Clarity"] = "przejrzystość maski",
+        ["local_Dehaze"] = "odmglenie maski",
+        ["local_Saturation"] = "nasycenie maski",
+        ["local_Temperature"] = "temperatura maski",
+        ["local_Tint"] = "odcień maski",
+        ["ParametricShadows"] = "krzywa cienie",
+        ["ParametricDarks"] = "krzywa ciemne",
+        ["ParametricLights"] = "krzywa jasne",
+        ["ParametricHighlights"] = "krzywa swiatla",
+        ["SaturationAdjustmentRed"] = "nasycenie czerwieni",
+        ["SaturationAdjustmentOrange"] = "nasycenie pomaranczowego",
+        ["SaturationAdjustmentYellow"] = "nasycenie zoltego",
+        ["SaturationAdjustmentGreen"] = "nasycenie zieleni",
+        ["SaturationAdjustmentAqua"] = "nasycenie aqua",
+        ["SaturationAdjustmentBlue"] = "nasycenie niebieskiego",
+        ["SaturationAdjustmentPurple"] = "nasycenie fioletowego",
+        ["SaturationAdjustmentMagenta"] = "nasycenie magenty",
+        ["HueAdjustmentRed"] = "odcien czerwieni",
+        ["HueAdjustmentOrange"] = "odcien pomaranczowego",
+        ["HueAdjustmentYellow"] = "odcien zoltego",
+        ["HueAdjustmentGreen"] = "odcien zieleni",
+        ["HueAdjustmentAqua"] = "odcien aqua",
+        ["HueAdjustmentBlue"] = "odcien niebieskiego",
+        ["HueAdjustmentPurple"] = "odcien fioletowego",
+        ["HueAdjustmentMagenta"] = "odcien magenty",
+        ["LuminanceAdjustmentRed"] = "luminancja czerwieni",
+        ["LuminanceAdjustmentOrange"] = "luminancja pomaranczowego",
+        ["LuminanceAdjustmentYellow"] = "luminancja zoltego",
+        ["LuminanceAdjustmentGreen"] = "luminancja zieleni",
+        ["LuminanceAdjustmentAqua"] = "luminancja aqua",
+        ["LuminanceAdjustmentBlue"] = "luminancja niebieskiego",
+        ["LuminanceAdjustmentPurple"] = "luminancja fioletowego",
+        ["LuminanceAdjustmentMagenta"] = "luminancja magenty",
+        ["SplitToningShadowHue"] = "grading odcien cieni",
+        ["SplitToningShadowSaturation"] = "grading nasycenie cieni",
+        ["ColorGradeShadowLum"] = "grading luminancja cieni",
+        ["SplitToningHighlightHue"] = "grading odcien swiatel",
+        ["SplitToningHighlightSaturation"] = "grading nasycenie swiatel",
+        ["ColorGradeHighlightLum"] = "grading luminancja swiatel",
+        ["ColorGradeMidtoneHue"] = "grading odcien poltonow",
+        ["ColorGradeMidtoneSat"] = "grading nasycenie poltonow",
+        ["ColorGradeMidtoneLum"] = "grading luminancja poltonow",
+        ["ColorGradeGlobalHue"] = "grading odcien globalny",
+        ["ColorGradeGlobalSat"] = "grading nasycenie globalne",
+        ["ColorGradeGlobalLum"] = "grading luminancja globalna",
+        ["SplitToningBalance"] = "grading balans",
+        ["ColorGradeBlending"] = "grading mieszanie",
+        ["Sharpness"] = "wyostrzenie",
+        ["SharpenRadius"] = "promien wyostrzenia",
+        ["SharpenDetail"] = "detal wyostrzenia",
+        ["SharpenEdgeMasking"] = "maskowanie wyostrzenia",
+        ["LuminanceSmoothing"] = "redukcja szumu luminancji",
+        ["LuminanceNoiseReductionDetail"] = "detal redukcji szumu luminancji",
+        ["LuminanceNoiseReductionContrast"] = "kontrast redukcji szumu luminancji",
+        ["ColorNoiseReduction"] = "redukcja szumu koloru",
+        ["ColorNoiseReductionDetail"] = "detal redukcji szumu koloru",
+        ["ColorNoiseReductionSmoothness"] = "gladkosc redukcji szumu koloru",
+        ["PostCropVignetteAmount"] = "winieta",
+        ["PostCropVignetteMidpoint"] = "srodek winiety",
+        ["PostCropVignetteFeather"] = "miekkosc winiety",
+        ["PostCropVignetteRoundness"] = "okrąglosc winiety",
+        ["GrainAmount"] = "ziarno",
+        ["GrainSize"] = "rozmiar ziarna",
+        ["GrainFrequency"] = "nieregularnosc ziarna",
+        ["AutoLateralCA"] = "aberracja chromatyczna",
+        ["LensProfileEnable"] = "profil obiektywu",
+        ["LensProfileDistortionScale"] = "korekcja dystorsji profilu",
+        ["LensProfileVignettingScale"] = "korekcja winiety profilu",
+        ["LensManualDistortionAmount"] = "dystorsja reczna",
+        ["PerspectiveVertical"] = "transformacja pionowa",
+        ["PerspectiveHorizontal"] = "transformacja pozioma",
+        ["PerspectiveRotate"] = "obrot transformacji",
+        ["PerspectiveScale"] = "skala transformacji",
+        ["PerspectiveAspect"] = "proporcje transformacji",
+        ["PerspectiveX"] = "przesuniecie transformacji x",
+        ["PerspectiveY"] = "przesuniecie transformacji y",
+        ["ShadowTint"] = "kalibracja odcien cieni",
+        ["RedHue"] = "kalibracja odcien czerwonego",
+        ["RedSaturation"] = "kalibracja nasycenie czerwonego",
+        ["GreenHue"] = "kalibracja odcien zielonego",
+        ["GreenSaturation"] = "kalibracja nasycenie zielonego",
+        ["BlueHue"] = "kalibracja odcien niebieskiego",
+        ["BlueSaturation"] = "kalibracja nasycenie niebieskiego",
+        ["LensBlurAmount"] = "rozmycie obiektywu",
+        ["LensBlurCatEye"] = "cat eye rozmycia",
+        ["LensBlurHighlightsBoost"] = "wzmocnienie swiatel rozmycia",
+        ["local_Sharpness"] = "wyostrzenie maski",
+        ["local_LuminanceNoise"] = "redukcja szumu maski",
+        ["local_Moire"] = "moire maski",
+        ["local_Defringe"] = "defringe maski",
+        ["local_Hue"] = "odcien maski lokalny",
+        ["local_Grain"] = "ziarno maski",
+        ["local_RefineSaturation"] = "refine saturation maski"
     };
 
     private static string SetLabel(string parameter) => parameter switch
@@ -31,6 +131,9 @@ internal sealed class LightroomCommandExecutor
         "Texture" => "teksturę",
         "Vibrance" => "wibrację",
         "Temperature" => "temperaturę",
+        "local_Exposure" => "ekspozycję maski",
+        "local_Texture" => "teksturę maski",
+        "local_Temperature" => "temperaturę maski",
         _ => Label(parameter)
     };
 
@@ -47,6 +150,9 @@ internal sealed class LightroomCommandExecutor
             CommandIntent.LightroomGetAdjustment => await GetAsync(request.Argument!, cancellationToken),
             CommandIntent.LightroomSetAdjustment => await SetAsync(request.Argument!, cancellationToken),
             CommandIntent.LightroomAdjustAdjustment => await AdjustAsync(request.Argument!, cancellationToken),
+            CommandIntent.LightroomResetAdjustment => await ResetAdjustmentAsync(request.Argument!, cancellationToken),
+            CommandIntent.LightroomResetAllDevelop => await ActionAsync("develop_reset_all", "Resetuję całą obróbkę zdjęcia.", "LightroomResetAllDevelop", cancellationToken),
+            CommandIntent.LightroomResetTransforms => await ActionAsync("develop_reset_transforms", "Resetuję transformacje zdjęcia.", "LightroomResetTransforms", cancellationToken),
             CommandIntent.LightroomAutoTone => await ActionAsync("auto_tone", "Włączam Auto Tone w Lightroomie.", "LightroomAutoTone", cancellationToken),
             CommandIntent.LightroomAutoWhiteBalance => await ActionAsync("auto_wb", "Ustawiam automatyczny balans bieli.", "LightroomAutoWhiteBalance", cancellationToken),
             CommandIntent.LightroomNextPhoto => await ActionAsync("selection_next", "Przechodzę do następnego zdjęcia.", "LightroomNextPhoto", cancellationToken),
@@ -59,6 +165,27 @@ internal sealed class LightroomCommandExecutor
             CommandIntent.LightroomFlagPick => await ActionAsync("flag_pick", "Oznaczam zdjęcie jako wybrane.", "LightroomFlagPick", cancellationToken),
             CommandIntent.LightroomFlagReject => await ActionAsync("flag_reject", "Oznaczam zdjęcie jako odrzucone.", "LightroomFlagReject", cancellationToken),
             CommandIntent.LightroomClearFlag => await ActionAsync("flag_clear", "Usuwam flagę ze zdjęcia.", "LightroomClearFlag", cancellationToken),
+            CommandIntent.LightroomGetCropAngle => await GetCropAngleAsync(cancellationToken),
+            CommandIntent.LightroomSetCropAngle => await SetCropAngleAsync(request.Argument!, cancellationToken),
+            CommandIntent.LightroomResetCrop => await ActionAsync("crop_reset", "Resetuję kadrowanie.", "LightroomResetCrop", cancellationToken),
+            CommandIntent.LightroomGetMaskCount => await GetMaskCountAsync(cancellationToken),
+            CommandIntent.LightroomCreateSubjectMask => await CreateAiMaskAsync("subject", "obiektu", cancellationToken),
+            CommandIntent.LightroomCreateSkyMask => await CreateAiMaskAsync("sky", "nieba", cancellationToken),
+            CommandIntent.LightroomCreateBackgroundMask => await CreateAiMaskAsync("background", "tła", cancellationToken),
+            CommandIntent.LightroomCreateMaskComponent => await MaskComponentAsync("mask_create_component", request.Argument!, "Tworzę nową maskę.", "LightroomCreateMaskComponent", cancellationToken),
+            CommandIntent.LightroomAddMaskComponent => await MaskComponentAsync("mask_add_component", request.Argument!, "Dodaję składnik do maski.", "LightroomAddMaskComponent", cancellationToken),
+            CommandIntent.LightroomSubtractMaskComponent => await MaskComponentAsync("mask_subtract_component", request.Argument!, "Odejmuję składnik od maski.", "LightroomSubtractMaskComponent", cancellationToken),
+            CommandIntent.LightroomIntersectMaskComponent => await MaskComponentAsync("mask_intersect_component", request.Argument!, "Przecinam maskę ze składnikiem.", "LightroomIntersectMaskComponent", cancellationToken),
+            CommandIntent.LightroomToggleMaskOverlay => await ActionAsync("mask_overlay", "Przełączam nakładkę maski.", "LightroomMaskOverlay", cancellationToken),
+            CommandIntent.LightroomResetMasks => await ActionAsync("mask_reset", "Usuwam wszystkie maski.", "LightroomResetMasks", cancellationToken),
+            CommandIntent.LightroomGetDevelopTool => await QueryAsync("develop_get_tool", "Aktywne narzędzie: ", "LightroomGetDevelopTool", cancellationToken),
+            CommandIntent.LightroomSelectDevelopTool => await ActionWithArgAsync("develop_select_tool", request.Argument!, $"Włączam narzędzie {request.Argument}.", "LightroomSelectDevelopTool", cancellationToken),
+            CommandIntent.LightroomGetColorGradingView => await QueryAsync("grading_get_view", "Widok Color Grading: ", "LightroomGetColorGradingView", cancellationToken),
+            CommandIntent.LightroomSetColorGradingView => await ActionWithArgAsync("grading_set_view", request.Argument!, $"Ustawiam widok Color Grading: {request.Argument}.", "LightroomSetColorGradingView", cancellationToken),
+            CommandIntent.LightroomGetLensBlurBokeh => await QueryAsync("lensblur_get_bokeh", "Bokeh Lens Blur: ", "LightroomGetLensBlurBokeh", cancellationToken),
+            CommandIntent.LightroomSetLensBlurBokeh => await ActionWithArgAsync("lensblur_set_bokeh", request.Argument!, $"Ustawiam bokeh {request.Argument}.", "LightroomSetLensBlurBokeh", cancellationToken),
+            CommandIntent.LightroomOpenRemove => await ActionWithArgAsync("remove_open", request.Argument!, "Otwieram narzędzie Remove.", "LightroomOpenRemove", cancellationToken),
+            CommandIntent.LightroomResetRemove => await ActionAsync("remove_reset", "Resetuję poprawki Remove.", "LightroomResetRemove", cancellationToken),
             CommandIntent.LightroomCopyDevelopSettings => await ActionAsync("develop_copy_settings", "Kopiuję ustawienia obróbki.", "LightroomCopyDevelopSettings", cancellationToken),
             CommandIntent.LightroomPasteDevelopSettings => await ActionAsync("develop_paste_settings", "Wklejam skopiowane ustawienia obróbki.", "LightroomPasteDevelopSettings", cancellationToken),
             CommandIntent.LightroomUndo => await ActionAsync("undo", "Cofam ostatnią zmianę w Lightroomie.", "LightroomUndo", cancellationToken),
@@ -106,6 +233,12 @@ internal sealed class LightroomCommandExecutor
             "LightroomAdjustAdjustment", parameter);
     }
 
+    private async Task<CommandExecutionOutcome> ResetAdjustmentAsync(string parameter, CancellationToken ct)
+    {
+        var result = await _client.SendAsync("develop_reset_param", parameter, cancellationToken: ct);
+        return result.Success ? new($"Resetuję {SetLabel(parameter)} do wartości domyślnej.", "LightroomResetAdjustment", parameter) : Failed(result);
+    }
+
     private async Task<CommandExecutionOutcome> GetRatingAsync(CancellationToken ct)
     {
         var result = await _client.SendAsync("rating_get", cancellationToken: ct);
@@ -138,6 +271,51 @@ internal sealed class LightroomCommandExecutor
             _ => "Zdjęcie nie ma flagi."
         };
         return new(text, "LightroomGetFlag", result.Value);
+    }
+
+    private async Task<CommandExecutionOutcome> GetCropAngleAsync(CancellationToken ct)
+    {
+        var result = await _client.SendAsync("crop_get_angle", cancellationToken: ct);
+        return result.Success ? new($"Kąt kadrowania: {Speak(result.Value)} stopnia.", "LightroomGetCropAngle", result.Value) : Failed(result);
+    }
+
+    private async Task<CommandExecutionOutcome> SetCropAngleAsync(string angle, CancellationToken ct)
+    {
+        var result = await _client.SendAsync("crop_set_angle", angle, cancellationToken: ct);
+        return result.Success ? new($"Ustawiam kąt kadrowania na {Speak(result.Value)} stopnia.", "LightroomSetCropAngle", result.Value) : Failed(result);
+    }
+
+    private async Task<CommandExecutionOutcome> GetMaskCountAsync(CancellationToken ct)
+    {
+        var result = await _client.SendAsync("mask_count", cancellationToken: ct);
+        return result.Success ? new($"Liczba masek: {result.Value}.", "LightroomGetMaskCount", result.Value) : Failed(result);
+    }
+
+    private async Task<CommandExecutionOutcome> CreateAiMaskAsync(string subtype, string label, CancellationToken ct)
+    {
+        var result = await _client.SendAsync("mask_create_ai", subtype, cancellationToken: ct);
+        return result.Success ? new($"Tworzę maskę {label}.", "LightroomCreateAiMask", subtype) : Failed(result);
+    }
+
+    private async Task<CommandExecutionOutcome> QueryAsync(string command, string prefix, string status, CancellationToken ct)
+    {
+        var result = await _client.SendAsync(command, cancellationToken: ct);
+        return result.Success ? new($"{prefix}{result.Value}.", status, result.Value) : Failed(result);
+    }
+
+    private async Task<CommandExecutionOutcome> ActionWithArgAsync(string command, string argument, string reply, string status, CancellationToken ct)
+    {
+        var result = await _client.SendAsync(command, argument, cancellationToken: ct);
+        return result.Success ? new(reply, status, result.Value) : Failed(result);
+    }
+
+    private async Task<CommandExecutionOutcome> MaskComponentAsync(string command, string spec, string reply, string status, CancellationToken ct)
+    {
+        var parts = spec.Split('|', 2);
+        var type = parts[0];
+        var subtype = parts.Length > 1 ? parts[1] : string.Empty;
+        var result = await _client.SendAsync(command, type, subtype, ct);
+        return result.Success ? new(reply, status, spec) : Failed(result);
     }
 
     private async Task<CommandExecutionOutcome> ActionAsync(

@@ -30,6 +30,7 @@ local function portPath(index)
     return LrPathUtils.child(bridgeDataPath(), 'bridge.port' .. tostring(index))
 end
 
+
 local function writePort(port, index)
     local file = io.open(portPath(index), 'w+')
     if file then
@@ -66,6 +67,14 @@ local function ensureDevelop()
         LrApplicationView.switchToModule('develop')
         LrTasks.sleep(0.20)
     end
+end
+
+local function ensureMasking()
+    ensureDevelop()
+    local ok, err = pcall(function() LrDevelopController.goToMasking() end)
+    if not ok then return false, err end
+    LrTasks.sleep(0.10)
+    return true
 end
 
 local function safeDevelopGet(param)
@@ -126,6 +135,69 @@ local function handleMessage(message)
             LrApplicationView.switchToModule(arg1)
         end)
         reply(id, ok and 'ok' or 'error', ok and arg1 or err)
+    elseif command == 'crop_get_angle' then
+        local ok, value = safeDevelopGet('straightenAngle')
+        reply(id, ok and 'ok' or 'error', value)
+    elseif command == 'crop_set_angle' then
+        local ok, value = safeDevelopSet('straightenAngle', arg1)
+        reply(id, ok and 'ok' or 'error', value)
+    elseif command == 'crop_reset' then
+        ensureDevelop()
+        local ok, err = pcall(function() LrDevelopController.resetCrop() end)
+        reply(id, ok and 'ok' or 'error', ok and 'done' or err)
+    elseif command == 'mask_count' then
+        ensureDevelop()
+        local ok, masks = pcall(function() return LrDevelopController.getAllMasks() end)
+        if not ok then reply(id, 'error', masks) else
+            local count = 0
+            if type(masks) == 'table' then for _ in pairs(masks) do count = count + 1 end end
+            reply(id, 'ok', tostring(count))
+        end
+    elseif command == 'mask_create_ai' then
+        ensureDevelop()
+        local allowed = { subject=true, sky=true, background=true, objects=true, people=true, landscape=true }
+        if not allowed[arg1] then reply(id, 'error', 'unsupported ai mask subtype') else
+            local ok, err = pcall(function() LrDevelopController.createNewMask('aiSelection', arg1) end)
+            reply(id, ok and 'ok' or 'error', ok and arg1 or err)
+        end
+    elseif command == 'mask_create_component' or command == 'mask_add_component' or command == 'mask_subtract_component' or command == 'mask_intersect_component' then
+        local ready, readyErr = ensureMasking()
+        if not ready then reply(id, 'error', readyErr); return end
+        local subtype = arg2 ~= '' and arg2 or nil
+        local ok, err = pcall(function()
+            if command == 'mask_create_component' then LrDevelopController.createNewMask(arg1, subtype)
+            elseif command == 'mask_add_component' then LrDevelopController.addToCurrentMask(arg1, subtype)
+            elseif command == 'mask_subtract_component' then LrDevelopController.subtractFromCurrentMask(arg1, subtype)
+            else LrDevelopController.intersectWithCurrentMask(arg1, subtype) end
+        end)
+        reply(id, ok and 'ok' or 'error', ok and (arg1 .. ':' .. tostring(subtype or '')) or err)
+    elseif command == 'mask_overlay' then
+        local ready, readyErr = ensureMasking()
+        if not ready then reply(id, 'error', readyErr); return end
+        local ok, err = pcall(function() LrDevelopController.toggleOverlay() end)
+        reply(id, ok and 'ok' or 'error', ok and 'done' or err)
+    elseif command == 'mask_reset' then
+        local ready, readyErr = ensureMasking()
+        if not ready then reply(id, 'error', readyErr); return end
+        local ok, err = pcall(function() LrDevelopController.resetMasking() end)
+        reply(id, ok and 'ok' or 'error', ok and 'done' or err)
+    elseif command == 'develop_get_tool' then
+        ensureDevelop(); local ok, value = pcall(function() return LrDevelopController.getSelectedTool() end); reply(id, ok and 'ok' or 'error', value)
+    elseif command == 'develop_select_tool' then
+        ensureDevelop(); local allowed={loupe=true,crop=true,dust=true,redeye=true,masking=true,upright=true,point_color=true,local_point_color=true,depth_refinement=true}
+        if not allowed[arg1] then reply(id,'error','unsupported develop tool') else local ok, value = pcall(function() return LrDevelopController.selectTool(arg1) end); reply(id, ok and 'ok' or 'error', ok and arg1 or value) end
+    elseif command == 'grading_get_view' then
+        ensureDevelop(); local ok, value = pcall(function() return LrDevelopController.getActiveColorGradingView() end); reply(id, ok and 'ok' or 'error', value)
+    elseif command == 'grading_set_view' then
+        ensureDevelop(); local allowed={['3-way']=true,shadow=true,midtone=true,highlight=true,global=true}; if not allowed[arg1] then reply(id,'error','unsupported grading view') else local ok,err=pcall(function() LrDevelopController.setActiveColorGradingView(arg1) end); reply(id,ok and 'ok' or 'error',ok and arg1 or err) end
+    elseif command == 'lensblur_get_bokeh' then
+        ensureDevelop(); local ok,value=pcall(function() return LrDevelopController.getSelectedLensBlurBokeh() end); reply(id,ok and 'ok' or 'error',value)
+    elseif command == 'lensblur_set_bokeh' then
+        ensureDevelop(); local allowed={Circle=true,SoapBubble=true,Blade=true,Ring=true,Anamorphic=true}; if not allowed[arg1] then reply(id,'error','unsupported bokeh') else local ok,err=pcall(function() LrDevelopController.setLensBlurBokeh(arg1) end); reply(id,ok and 'ok' or 'error',ok and arg1 or err) end
+    elseif command == 'remove_open' then
+        ensureDevelop(); local allowed={heal_patchmatch=true,heal=true,clone=true}; if not allowed[arg1] then reply(id,'error','unsupported remove type') else local ok,err=pcall(function() LrDevelopController.goToRemove(arg1) end); reply(id,ok and 'ok' or 'error',ok and arg1 or err) end
+    elseif command == 'remove_reset' then
+        ensureDevelop(); local ok,err=pcall(function() LrDevelopController.resetHealing() end); reply(id,ok and 'ok' or 'error',ok and 'done' or err)
     elseif command == 'develop_get' then
         local ok, value = safeDevelopGet(arg1)
         reply(id, ok and 'ok' or 'error', value)
@@ -135,6 +207,18 @@ local function handleMessage(message)
     elseif command == 'develop_set' then
         local ok, value = safeDevelopSet(arg1, arg2)
         reply(id, ok and 'ok' or 'error', value)
+    elseif command == 'develop_reset_param' then
+        ensureDevelop()
+        local ok, err = pcall(function() LrDevelopController.resetToDefault(arg1) end)
+        if not ok then reply(id, 'error', err) else local readOk, value = safeDevelopGet(arg1); reply(id, readOk and 'ok' or 'error', value) end
+    elseif command == 'develop_reset_all' then
+        ensureDevelop()
+        local ok, err = pcall(function() LrDevelopController.resetAllDevelopAdjustments() end)
+        reply(id, ok and 'ok' or 'error', ok and 'done' or err)
+    elseif command == 'develop_reset_transforms' then
+        ensureDevelop()
+        local ok, err = pcall(function() LrDevelopController.resetTransforms() end)
+        reply(id, ok and 'ok' or 'error', ok and 'done' or err)
     elseif command == 'auto_tone' then
         ensureDevelop()
         local ok, err = pcall(function()
@@ -218,51 +302,64 @@ local function handleMessage(message)
     end
 end
 
-local function createSender(context)
-    sender = LrSocket.bind {
-        functionContext = context,
-        port = 0,
-        mode = 'send',
-        plugin = _PLUGIN,
-        onConnecting = function(socket, port)
-            writePort(port, 2)
-        end,
-        onConnected = function(socket, port)
-            senderConnected = true
-        end,
-        onClosed = function(socket)
-            senderConnected = false
-        end,
-        onError = function(socket, err)
-            senderConnected = false
-            socket:reconnect()
-        end,
-    }
-end
+local function runSocketSession(context)
+    local running = true
+    local receiver = nil
+    local sessionSender = nil
 
-local function createReceiver(context)
-    return LrSocket.bind {
+    local function stopSession()
+        running = false
+    end
+
+    local function createSender()
+        sessionSender = LrSocket.bind {
+            functionContext = context,
+            port = 0,
+            mode = 'send',
+            plugin = _PLUGIN,
+            onConnecting = function(socket, port)
+                writePort(port, 2)
+            end,            onConnected = function(socket, port)
+                senderConnected = true
+            end,
+            onClosed = function(socket)
+                senderConnected = false
+                stopSession()
+            end,
+            onError = function(socket, err)
+                senderConnected = false
+                if tostring(err) == 'timeout' and running then
+                    socket:reconnect()
+                else
+                    stopSession()
+                end
+            end,
+        }
+        sender = sessionSender
+    end
+
+    receiver = LrSocket.bind {
         functionContext = context,
         port = 0,
         mode = 'receive',
         plugin = _PLUGIN,
         onConnecting = function(socket, port)
             writePort(port, 1)
-        end,
-        onConnected = function(socket, port)
+        end,        onConnected = function(socket, port)
             receiverConnected = true
-            if sender == nil then createSender(context) end
+            if sender == nil then createSender() end
         end,
         onClosed = function(socket)
             receiverConnected = false
-            if sender ~= nil then sender:close() end
-            sender = nil
-            senderConnected = false
-            socket:reconnect()
+            stopSession()
         end,
         onError = function(socket, err)
             receiverConnected = false
-            socket:reconnect()
+            if tostring(err) == 'timeout' and running then
+                socket:reconnect()
+            else
+                stopSession()
+            end
         end,
         onMessage = function(socket, message)
             LrTasks.startAsyncTaskWithoutErrorHandler(function()
@@ -270,14 +367,21 @@ local function createReceiver(context)
             end, 'JarvisLightroomMessage')
         end,
     }
+
+    while running do LrTasks.sleep(0.10) end
+    receiverConnected = false
+    senderConnected = false
+    local oldSender = sender
+    sender = nil
+    if oldSender ~= nil then pcall(function() oldSender:close() end) end
+    if receiver ~= nil then pcall(function() receiver:close() end) end
 end
 
 LrTasks.startAsyncTask(function()
-    LrFunctionContext.callWithContext('JarvisLightroomBridge', function(context)
-        local receiver = createReceiver(context)
-        while true do
-            LrTasks.sleep(1.0)
-        end
-        receiver:close()
-    end)
+    while true do
+        LrFunctionContext.callWithContext('JarvisLightroomBridgeSession', function(context)
+            runSocketSession(context)
+        end)
+        LrTasks.sleep(0.10)
+    end
 end)

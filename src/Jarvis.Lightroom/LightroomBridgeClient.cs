@@ -35,10 +35,15 @@ public sealed class LightroomBridgeClient : IAsyncDisposable
         await _gate.WaitAsync(cancellationToken);
         try
         {
-            using var timeout = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
-            timeout.CancelAfter(TimeSpan.FromSeconds(3));
-            await EnsureConnectedAsync(timeout.Token);
+            if (_commandClient?.Connected != true || _responseClient?.Connected != true)
+            {
+                using var connectTimeout = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+                connectTimeout.CancelAfter(TimeSpan.FromSeconds(12));
+                await EnsureConnectedAsync(connectTimeout.Token);
+            }
 
+            using var timeout = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+            timeout.CancelAfter(TimeoutFor(command));
             var id = Guid.NewGuid().ToString("N");
             var line = string.Join('|', id, Clean(command), Clean(argument1), Clean(argument2));
             await _writer!.WriteLineAsync(line.AsMemory(), timeout.Token);
@@ -78,6 +83,10 @@ public sealed class LightroomBridgeClient : IAsyncDisposable
         Directory.CreateDirectory(_bridgeDirectory);
         var commandPortPath = Path.Combine(_bridgeDirectory, "bridge.port1");
         var responsePortPath = Path.Combine(_bridgeDirectory, "bridge.port2");
+
+        // Response ports are ephemeral per command-channel session. Never trust
+        // a leftover port2 file from a previous Lightroom/plugin connection.
+        try { if (File.Exists(responsePortPath)) File.Delete(responsePortPath); } catch { }
 
         _commandClient = await ConnectFromPortFileAsync(commandPortPath, cancellationToken);
         _responseClient = await ConnectFromPortFileAsync(responsePortPath, cancellationToken);
@@ -120,6 +129,15 @@ public sealed class LightroomBridgeClient : IAsyncDisposable
 
         throw last ?? new TimeoutException($"Lightroom port file unavailable: {path}");
     }
+
+    private static TimeSpan TimeoutFor(string command) => command switch
+    {
+        "mask_create_ai" => TimeSpan.FromSeconds(30),
+        "mask_reset" or "mask_overlay" => TimeSpan.FromSeconds(10),
+        "undo" or "redo" => TimeSpan.FromSeconds(10),
+        "paste_develop" => TimeSpan.FromSeconds(10),
+        _ => TimeSpan.FromSeconds(3)
+    };
 
     private static string Clean(string? value) =>
         (value ?? string.Empty).Replace('|', '/').Replace("\r", " ").Replace("\n", " ");
