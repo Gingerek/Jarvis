@@ -37,6 +37,28 @@ public sealed class LightroomCommandParser
         if (value is "auto balans bieli" or "automatyczny balans bieli" or "auto wb")
             return new(CommandIntent.LightroomAutoWhiteBalance);
 
+        if (value is "nastepne zdjecie" or "kolejne zdjecie" or "przejdz do nastepnego zdjecia")
+            return new(CommandIntent.LightroomNextPhoto);
+        if (value is "poprzednie zdjecie" or "przejdz do poprzedniego zdjecia")
+            return new(CommandIntent.LightroomPreviousPhoto);
+        if (value is "jaka ocena" or "podaj ocene" or "ile gwiazdek" or "jaka jest ocena")
+            return new(CommandIntent.LightroomGetRating);
+        if (value is "zwieksz ocene" or "dodaj gwiazdke")
+            return new(CommandIntent.LightroomIncreaseRating);
+        if (value is "zmniejsz ocene" or "odejmij gwiazdke")
+            return new(CommandIntent.LightroomDecreaseRating);
+        var rating = Regex.Match(value, @"^(?:ustaw )?(?:ocene(?: na)?|daj) (?<num>[0-5])(?: gwiazdek| gwiazdki| gwiazdke)?$");
+        if (rating.Success)
+            return new(CommandIntent.LightroomSetRating, rating.Groups["num"].Value);
+        if (value is "jaka flaga" or "podaj flage" or "status flagi")
+            return new(CommandIntent.LightroomGetFlag);
+        if (value is "oznacz jako wybrane" or "flaga pick" or "ustaw flage pick")
+            return new(CommandIntent.LightroomFlagPick);
+        if (value is "oznacz jako odrzucone" or "flaga reject" or "ustaw flage reject")
+            return new(CommandIntent.LightroomFlagReject);
+        if (value is "usun flage" or "wyczysc flage" or "bez flagi")
+            return new(CommandIntent.LightroomClearFlag);
+
         var get = Regex.Match(value,
             @"^(?:jaka jest|jaki jest|podaj|ile wynosi) (?<name>.+)$");
         if (get.Success && Resolve(get.Groups["name"].Value) is { } getParam)

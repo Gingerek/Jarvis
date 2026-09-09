@@ -35,7 +35,8 @@ Phase 2 — Audio, Voice & General Command Registry.
 - Lightroom Basic controls verified: Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Texture, Clarity, Dehaze, Vibrance, Saturation, Temperature and Tint.
 - Reversible live PASS: Exposure 0 -> 0.1 -> 0.
 - Lightroom corpus/parser validation: 1,848/1,848 PASS.
-- Release build: 0 errors / 0 warnings; corpus: 31,785 variants. Latest xUnit run blocked by Windows Application Control (0x800711C7).
+- Release build: 0 errors / 0 warnings; Core 115/115, Structure 1/1, Integration 1/1 PASS; corpus: 32,044 variants.
+- Lightroom navigation/rating/flags: LIVE PASS with original rating, flag and active photo restored after reversible tests.
 
 ## Verified system facts
 - focused general/system/folder/settings parser tests: PASS; 31/31 latest focused suite.
@@ -49,4 +50,4 @@ Phase 2 — Audio, Voice & General Command Registry.
 - UI + persistent VoiceHost republished and running with the new runtime.
 
 ## Immediate objective
-Browser, OBS and Lightroom Basic live integrations are PASS. Continue Lightroom Classic toward navigation, rating/flags, copy/paste Develop, undo/redo, crop, masks and further SDK-backed capabilities before moving to DaVinci Resolve.
+Browser, OBS, Lightroom Basic and Lightroom navigation/rating/flags are PASS. Continue Lightroom Classic with copy/paste Develop, undo/redo, crop, masks and further SDK-backed capabilities before moving to DaVinci Resolve.

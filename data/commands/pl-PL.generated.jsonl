@@ -6265,6 +6265,83 @@
 {"intent": "LightroomAutoWhiteBalance", "argument": null, "utterance": "możesz automatyczny balans bieli"}
 {"intent": "LightroomAutoWhiteBalance", "argument": null, "utterance": "proszę auto balans bieli"}
 {"intent": "LightroomAutoWhiteBalance", "argument": null, "utterance": "proszę automatyczny balans bieli"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "bez flagi"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "czy możesz bez flagi"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "czy możesz usuĹ„ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "czy możesz wyczyĹ›Ä‡ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "hej Jarvis bez flagi"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "hej Jarvis usuĹ„ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "hej Jarvis wyczyĹ›Ä‡ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "Jarvis bez flagi"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "Jarvis proszę bez flagi"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "Jarvis proszę usuĹ„ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "Jarvis proszę wyczyĹ›Ä‡ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "Jarvis usuĹ„ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "Jarvis wyczyĹ›Ä‡ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "możesz bez flagi"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "możesz usuĹ„ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "możesz wyczyĹ›Ä‡ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "proszę bez flagi"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "proszę usuĹ„ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "proszę wyczyĹ›Ä‡ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "usuĹ„ flagÄ™"}
+{"intent": "LightroomClearFlag", "argument": null, "utterance": "wyczyĹ›Ä‡ flagÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "czy możesz odejmij gwiazdkÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "czy możesz zmniejsz ocenÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "hej Jarvis odejmij gwiazdkÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "hej Jarvis zmniejsz ocenÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "Jarvis odejmij gwiazdkÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "Jarvis proszę odejmij gwiazdkÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "Jarvis proszę zmniejsz ocenÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "Jarvis zmniejsz ocenÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "możesz odejmij gwiazdkÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "możesz zmniejsz ocenÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "odejmij gwiazdkÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "proszę odejmij gwiazdkÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "proszę zmniejsz ocenÄ™"}
+{"intent": "LightroomDecreaseRating", "argument": null, "utterance": "zmniejsz ocenÄ™"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "czy możesz flaga pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "czy możesz oznacz jako wybrane"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "czy możesz ustaw flagÄ™ pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "flaga pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "hej Jarvis flaga pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "hej Jarvis oznacz jako wybrane"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "hej Jarvis ustaw flagÄ™ pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "Jarvis flaga pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "Jarvis oznacz jako wybrane"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "Jarvis proszę flaga pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "Jarvis proszę oznacz jako wybrane"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "Jarvis proszę ustaw flagÄ™ pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "Jarvis ustaw flagÄ™ pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "możesz flaga pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "możesz oznacz jako wybrane"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "możesz ustaw flagÄ™ pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "oznacz jako wybrane"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "proszę flaga pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "proszę oznacz jako wybrane"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "proszę ustaw flagÄ™ pick"}
+{"intent": "LightroomFlagPick", "argument": null, "utterance": "ustaw flagÄ™ pick"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "czy możesz flaga reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "czy możesz oznacz jako odrzucone"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "czy możesz ustaw flagÄ™ reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "flaga reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "hej Jarvis flaga reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "hej Jarvis oznacz jako odrzucone"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "hej Jarvis ustaw flagÄ™ reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "Jarvis flaga reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "Jarvis oznacz jako odrzucone"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "Jarvis proszę flaga reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "Jarvis proszę oznacz jako odrzucone"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "Jarvis proszę ustaw flagÄ™ reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "Jarvis ustaw flagÄ™ reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "możesz flaga reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "możesz oznacz jako odrzucone"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "możesz ustaw flagÄ™ reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "oznacz jako odrzucone"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "proszę flaga reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "proszę oznacz jako odrzucone"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "proszę ustaw flagÄ™ reject"}
+{"intent": "LightroomFlagReject", "argument": null, "utterance": "ustaw flagÄ™ reject"}
 {"intent": "LightroomGetAdjustment", "argument": "Blacks2012", "utterance": "czy możesz ile wynosi czernie"}
 {"intent": "LightroomGetAdjustment", "argument": "Blacks2012", "utterance": "czy możesz jaka jest czernie"}
 {"intent": "LightroomGetAdjustment", "argument": "Blacks2012", "utterance": "czy możesz podaj czernie"}
@@ -6559,6 +6636,104 @@
 {"intent": "LightroomGetAdjustment", "argument": "Whites2012", "utterance": "proszę ile wynosi biele"}
 {"intent": "LightroomGetAdjustment", "argument": "Whites2012", "utterance": "proszę jaka jest biele"}
 {"intent": "LightroomGetAdjustment", "argument": "Whites2012", "utterance": "proszę podaj biele"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "czy możesz jaka flaga"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "czy możesz podaj flagÄ™"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "czy możesz status flagi"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "hej Jarvis jaka flaga"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "hej Jarvis podaj flagÄ™"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "hej Jarvis status flagi"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "jaka flaga"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "Jarvis jaka flaga"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "Jarvis podaj flagÄ™"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "Jarvis proszę jaka flaga"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "Jarvis proszę podaj flagÄ™"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "Jarvis proszę status flagi"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "Jarvis status flagi"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "możesz jaka flaga"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "możesz podaj flagÄ™"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "możesz status flagi"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "podaj flagÄ™"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "proszę jaka flaga"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "proszę podaj flagÄ™"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "proszę status flagi"}
+{"intent": "LightroomGetFlag", "argument": null, "utterance": "status flagi"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "czy możesz ile gwiazdek"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "czy możesz jaka jest ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "czy możesz jaka ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "czy możesz podaj ocenÄ™"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "hej Jarvis ile gwiazdek"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "hej Jarvis jaka jest ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "hej Jarvis jaka ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "hej Jarvis podaj ocenÄ™"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "ile gwiazdek"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "jaka jest ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "jaka ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "Jarvis ile gwiazdek"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "Jarvis jaka jest ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "Jarvis jaka ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "Jarvis podaj ocenÄ™"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "Jarvis proszę ile gwiazdek"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "Jarvis proszę jaka jest ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "Jarvis proszę jaka ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "Jarvis proszę podaj ocenÄ™"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "możesz ile gwiazdek"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "możesz jaka jest ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "możesz jaka ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "możesz podaj ocenÄ™"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "podaj ocenÄ™"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "proszę ile gwiazdek"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "proszę jaka jest ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "proszę jaka ocena"}
+{"intent": "LightroomGetRating", "argument": null, "utterance": "proszę podaj ocenÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "czy możesz dodaj gwiazdkÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "czy możesz zwiÄ™ksz ocenÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "dodaj gwiazdkÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "hej Jarvis dodaj gwiazdkÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "hej Jarvis zwiÄ™ksz ocenÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "Jarvis dodaj gwiazdkÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "Jarvis proszę dodaj gwiazdkÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "Jarvis proszę zwiÄ™ksz ocenÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "Jarvis zwiÄ™ksz ocenÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "możesz dodaj gwiazdkÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "możesz zwiÄ™ksz ocenÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "proszę dodaj gwiazdkÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "proszę zwiÄ™ksz ocenÄ™"}
+{"intent": "LightroomIncreaseRating", "argument": null, "utterance": "zwiÄ™ksz ocenÄ™"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "czy możesz kolejne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "czy możesz nastÄ™pne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "czy możesz przejdĹş do nastÄ™pnego zdjÄ™cia"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "hej Jarvis kolejne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "hej Jarvis nastÄ™pne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "hej Jarvis przejdĹş do nastÄ™pnego zdjÄ™cia"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "Jarvis kolejne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "Jarvis nastÄ™pne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "Jarvis proszę kolejne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "Jarvis proszę nastÄ™pne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "Jarvis proszę przejdĹş do nastÄ™pnego zdjÄ™cia"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "Jarvis przejdĹş do nastÄ™pnego zdjÄ™cia"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "kolejne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "możesz kolejne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "możesz nastÄ™pne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "możesz przejdĹş do nastÄ™pnego zdjÄ™cia"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "nastÄ™pne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "proszę kolejne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "proszę nastÄ™pne zdjÄ™cie"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "proszę przejdĹş do nastÄ™pnego zdjÄ™cia"}
+{"intent": "LightroomNextPhoto", "argument": null, "utterance": "przejdĹş do nastÄ™pnego zdjÄ™cia"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "czy możesz poprzednie zdjÄ™cie"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "czy możesz przejdĹş do poprzedniego zdjÄ™cia"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "hej Jarvis poprzednie zdjÄ™cie"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "hej Jarvis przejdĹş do poprzedniego zdjÄ™cia"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "Jarvis poprzednie zdjÄ™cie"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "Jarvis proszę poprzednie zdjÄ™cie"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "Jarvis proszę przejdĹş do poprzedniego zdjÄ™cia"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "Jarvis przejdĹş do poprzedniego zdjÄ™cia"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "możesz poprzednie zdjÄ™cie"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "możesz przejdĹş do poprzedniego zdjÄ™cia"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "poprzednie zdjÄ™cie"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "proszę poprzednie zdjÄ™cie"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "proszę przejdĹş do poprzedniego zdjÄ™cia"}
+{"intent": "LightroomPreviousPhoto", "argument": null, "utterance": "przejdĹş do poprzedniego zdjÄ™cia"}
 {"intent": "LightroomSetAdjustment", "argument": "Blacks2012|-10", "utterance": "czy możesz ustaw czernie na -10"}
 {"intent": "LightroomSetAdjustment", "argument": "Blacks2012|-10", "utterance": "hej Jarvis ustaw czernie na -10"}
 {"intent": "LightroomSetAdjustment", "argument": "Blacks2012|-10", "utterance": "Jarvis proszę ustaw czernie na -10"}
@@ -7497,6 +7672,90 @@
 {"intent": "LightroomSetAdjustment", "argument": "Whites2012|50", "utterance": "możesz ustaw biele na 50"}
 {"intent": "LightroomSetAdjustment", "argument": "Whites2012|50", "utterance": "proszę ustaw biele na 50"}
 {"intent": "LightroomSetAdjustment", "argument": "Whites2012|50", "utterance": "ustaw biele na 50"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "czy możesz daj 0 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "czy możesz ustaw ocenÄ™ na 0"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "daj 0 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "hej Jarvis daj 0 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "hej Jarvis ustaw ocenÄ™ na 0"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "Jarvis daj 0 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "Jarvis proszę daj 0 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "Jarvis proszę ustaw ocenÄ™ na 0"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "Jarvis ustaw ocenÄ™ na 0"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "możesz daj 0 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "możesz ustaw ocenÄ™ na 0"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "proszę daj 0 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "proszę ustaw ocenÄ™ na 0"}
+{"intent": "LightroomSetRating", "argument": "0", "utterance": "ustaw ocenÄ™ na 0"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "czy możesz daj 1 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "czy możesz ustaw ocenÄ™ na 1"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "daj 1 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "hej Jarvis daj 1 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "hej Jarvis ustaw ocenÄ™ na 1"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "Jarvis daj 1 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "Jarvis proszę daj 1 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "Jarvis proszę ustaw ocenÄ™ na 1"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "Jarvis ustaw ocenÄ™ na 1"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "możesz daj 1 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "możesz ustaw ocenÄ™ na 1"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "proszę daj 1 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "proszę ustaw ocenÄ™ na 1"}
+{"intent": "LightroomSetRating", "argument": "1", "utterance": "ustaw ocenÄ™ na 1"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "czy możesz daj 2 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "czy możesz ustaw ocenÄ™ na 2"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "daj 2 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "hej Jarvis daj 2 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "hej Jarvis ustaw ocenÄ™ na 2"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "Jarvis daj 2 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "Jarvis proszę daj 2 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "Jarvis proszę ustaw ocenÄ™ na 2"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "Jarvis ustaw ocenÄ™ na 2"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "możesz daj 2 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "możesz ustaw ocenÄ™ na 2"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "proszę daj 2 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "proszę ustaw ocenÄ™ na 2"}
+{"intent": "LightroomSetRating", "argument": "2", "utterance": "ustaw ocenÄ™ na 2"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "czy możesz daj 3 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "czy możesz ustaw ocenÄ™ na 3"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "daj 3 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "hej Jarvis daj 3 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "hej Jarvis ustaw ocenÄ™ na 3"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "Jarvis daj 3 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "Jarvis proszę daj 3 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "Jarvis proszę ustaw ocenÄ™ na 3"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "Jarvis ustaw ocenÄ™ na 3"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "możesz daj 3 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "możesz ustaw ocenÄ™ na 3"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "proszę daj 3 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "proszę ustaw ocenÄ™ na 3"}
+{"intent": "LightroomSetRating", "argument": "3", "utterance": "ustaw ocenÄ™ na 3"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "czy możesz daj 4 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "czy możesz ustaw ocenÄ™ na 4"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "daj 4 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "hej Jarvis daj 4 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "hej Jarvis ustaw ocenÄ™ na 4"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "Jarvis daj 4 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "Jarvis proszę daj 4 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "Jarvis proszę ustaw ocenÄ™ na 4"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "Jarvis ustaw ocenÄ™ na 4"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "możesz daj 4 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "możesz ustaw ocenÄ™ na 4"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "proszę daj 4 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "proszę ustaw ocenÄ™ na 4"}
+{"intent": "LightroomSetRating", "argument": "4", "utterance": "ustaw ocenÄ™ na 4"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "czy możesz daj 5 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "czy możesz ustaw ocenÄ™ na 5"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "daj 5 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "hej Jarvis daj 5 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "hej Jarvis ustaw ocenÄ™ na 5"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "Jarvis daj 5 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "Jarvis proszę daj 5 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "Jarvis proszę ustaw ocenÄ™ na 5"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "Jarvis ustaw ocenÄ™ na 5"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "możesz daj 5 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "możesz ustaw ocenÄ™ na 5"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "proszę daj 5 gwiazdek"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "proszę ustaw ocenÄ™ na 5"}
+{"intent": "LightroomSetRating", "argument": "5", "utterance": "ustaw ocenÄ™ na 5"}
 {"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj ekran"}
 {"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj ekran jeśli możesz"}
 {"intent": "LockComputer", "argument": null, "utterance": "czy możesz zablokuj ekran od razu"}

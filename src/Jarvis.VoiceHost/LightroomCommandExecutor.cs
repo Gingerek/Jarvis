@@ -49,6 +49,16 @@ internal sealed class LightroomCommandExecutor
             CommandIntent.LightroomAdjustAdjustment => await AdjustAsync(request.Argument!, cancellationToken),
             CommandIntent.LightroomAutoTone => await ActionAsync("auto_tone", "Włączam Auto Tone w Lightroomie.", "LightroomAutoTone", cancellationToken),
             CommandIntent.LightroomAutoWhiteBalance => await ActionAsync("auto_wb", "Ustawiam automatyczny balans bieli.", "LightroomAutoWhiteBalance", cancellationToken),
+            CommandIntent.LightroomNextPhoto => await ActionAsync("selection_next", "Przechodzę do następnego zdjęcia.", "LightroomNextPhoto", cancellationToken),
+            CommandIntent.LightroomPreviousPhoto => await ActionAsync("selection_previous", "Wracam do poprzedniego zdjęcia.", "LightroomPreviousPhoto", cancellationToken),
+            CommandIntent.LightroomGetRating => await GetRatingAsync(cancellationToken),
+            CommandIntent.LightroomSetRating => await SetRatingAsync(request.Argument!, cancellationToken),
+            CommandIntent.LightroomIncreaseRating => await RatingStepAsync("rating_up", cancellationToken),
+            CommandIntent.LightroomDecreaseRating => await RatingStepAsync("rating_down", cancellationToken),
+            CommandIntent.LightroomGetFlag => await GetFlagAsync(cancellationToken),
+            CommandIntent.LightroomFlagPick => await ActionAsync("flag_pick", "Oznaczam zdjęcie jako wybrane.", "LightroomFlagPick", cancellationToken),
+            CommandIntent.LightroomFlagReject => await ActionAsync("flag_reject", "Oznaczam zdjęcie jako odrzucone.", "LightroomFlagReject", cancellationToken),
+            CommandIntent.LightroomClearFlag => await ActionAsync("flag_clear", "Usuwam flagę ze zdjęcia.", "LightroomClearFlag", cancellationToken),
             _ => null
         };
     }
@@ -90,6 +100,40 @@ internal sealed class LightroomCommandExecutor
         if (!set.Success) return Failed(set);
         return new($"Zmieniam {SetLabel(parameter)} z {Speak(current.Value)} na {Speak(set.Value)}.",
             "LightroomAdjustAdjustment", parameter);
+    }
+
+    private async Task<CommandExecutionOutcome> GetRatingAsync(CancellationToken ct)
+    {
+        var result = await _client.SendAsync("rating_get", cancellationToken: ct);
+        if (!result.Success) return Failed(result);
+        return new($"Ocena zdjęcia: {Speak(result.Value)} z 5.", "LightroomGetRating");
+    }
+
+    private async Task<CommandExecutionOutcome> SetRatingAsync(string rating, CancellationToken ct)
+    {
+        var result = await _client.SendAsync("rating_set", rating, cancellationToken: ct);
+        if (!result.Success) return Failed(result);
+        return new($"Ustawiam ocenę na {Speak(result.Value)} z 5.", "LightroomSetRating", result.Value);
+    }
+
+    private async Task<CommandExecutionOutcome> RatingStepAsync(string command, CancellationToken ct)
+    {
+        var result = await _client.SendAsync(command, cancellationToken: ct);
+        if (!result.Success) return Failed(result);
+        return new($"Ocena zdjęcia: {Speak(result.Value)} z 5.", "LightroomRatingStep", result.Value);
+    }
+
+    private async Task<CommandExecutionOutcome> GetFlagAsync(CancellationToken ct)
+    {
+        var result = await _client.SendAsync("flag_get", cancellationToken: ct);
+        if (!result.Success) return Failed(result);
+        var text = result.Value switch
+        {
+            "1" => "Zdjęcie jest oznaczone jako wybrane.",
+            "-1" => "Zdjęcie jest oznaczone jako odrzucone.",
+            _ => "Zdjęcie nie ma flagi."
+        };
+        return new(text, "LightroomGetFlag", result.Value);
     }
 
     private async Task<CommandExecutionOutcome> ActionAsync(

@@ -43,7 +43,7 @@ Every command entry must define:
 OBS Studio 32.2.2 / obs-websocket 5.7.4: status, record/stream status, scene get/list/set, record start/stop/pause/resume, stream start/stop, input list/mute/unmute and scene-source visibility are implemented. Destructive/live-output commands are not fired automatically in smoke tests; source/input state tests are reversible and restore their initial state.
 
 ## Verified live Lightroom support
-Lightroom Classic 15.5.1: Jarvis Lua plug-in + loopback-only TCP bridge are live. Get/set/relative adjustment commands are verified for Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Texture, Clarity, Dehaze, Vibrance, Saturation, Temperature and Tint. Auto Tone and Auto White Balance are implemented through the SDK but are not fired automatically in smoke tests because they alter multiple develop settings.
+Lightroom Classic 15.5.1: Jarvis Lua plug-in + loopback-only TCP bridge are live. Get/set/relative adjustment commands are verified for Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Texture, Clarity, Dehaze, Vibrance, Saturation, Temperature and Tint. Auto Tone and Auto White Balance are implemented through the SDK but are not fired automatically in smoke tests because they alter multiple develop settings. Navigation next/previous, rating 0-5, rating up/down, and Pick/Reject/clear flags are also verified live through `LrSelection`, with reversible state restoration.
 
 ## Corpus requirement
 The final command corpus must contain at least 10,000 verified Polish utterances distributed across these intent families, including colloquial variants, ASR-confusion variants, numbers, percentages, time expressions and context-elided commands.

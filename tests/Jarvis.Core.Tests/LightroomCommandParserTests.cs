@@ -33,4 +33,22 @@ public sealed class LightroomCommandParserTests
         Assert.NotNull(request);
         Assert.Equal(intent, request.Intent);
     }
+
+    [Theory]
+    [InlineData("następne zdjęcie", CommandIntent.LightroomNextPhoto, null)]
+    [InlineData("poprzednie zdjęcie", CommandIntent.LightroomPreviousPhoto, null)]
+    [InlineData("ustaw ocenę na 4", CommandIntent.LightroomSetRating, "4")]
+    [InlineData("zwiększ ocenę", CommandIntent.LightroomIncreaseRating, null)]
+    [InlineData("zmniejsz ocenę", CommandIntent.LightroomDecreaseRating, null)]
+    [InlineData("oznacz jako wybrane", CommandIntent.LightroomFlagPick, null)]
+    [InlineData("oznacz jako odrzucone", CommandIntent.LightroomFlagReject, null)]
+    [InlineData("usuń flagę", CommandIntent.LightroomClearFlag, null)]
+    public void Registry_Parses_Lightroom_Selection_Commands(string text, CommandIntent intent, string? argument)
+    {
+        var request = new CommandRegistry().Parse(text);
+        Assert.NotNull(request);
+        Assert.Equal(intent, request.Intent);
+        Assert.Equal(argument, request.Argument);
+    }
+
 }

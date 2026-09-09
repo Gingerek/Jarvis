@@ -4,6 +4,7 @@ local LrDevelopController = import 'LrDevelopController'
 local LrFileUtils = import 'LrFileUtils'
 local LrFunctionContext = import 'LrFunctionContext'
 local LrPathUtils = import 'LrPathUtils'
+local LrSelection = import 'LrSelection'
 local LrSocket = import 'LrSocket'
 local LrTasks = import 'LrTasks'
 
@@ -111,6 +112,13 @@ local function handleMessage(message)
         reply(id, 'ok', LrApplication.versionString())
     elseif command == 'module' then
         reply(id, 'ok', LrApplicationView.getCurrentModuleName())
+    elseif command == 'active_photo_uuid' then
+        local photo = LrApplication.activeCatalog():getTargetPhoto()
+        if photo == nil then
+            reply(id, 'error', 'no active photo')
+        else
+            reply(id, 'ok', photo:getRawMetadata('uuid'))
+        end
     elseif command == 'switch_module' then
         local ok, err = pcall(function()
             LrApplicationView.switchToModule(arg1)
@@ -137,6 +145,45 @@ local function handleMessage(message)
             LrDevelopController.setAutoWhiteBalance()
         end)
         reply(id, ok and 'ok' or 'error', ok and 'done' or err)
+    elseif command == 'selection_next' then
+        local ok, err = pcall(function() LrSelection.nextPhoto() end)
+        reply(id, ok and 'ok' or 'error', ok and 'done' or err)
+    elseif command == 'selection_previous' then
+        local ok, err = pcall(function() LrSelection.previousPhoto() end)
+        reply(id, ok and 'ok' or 'error', ok and 'done' or err)
+    elseif command == 'rating_get' then
+        local ok, value = pcall(function() return LrSelection.getRating() end)
+        reply(id, ok and 'ok' or 'error', value)
+    elseif command == 'rating_set' then
+        local rating = tonumber(arg1)
+        if rating == nil or rating < 0 or rating > 5 then
+            reply(id, 'error', 'rating must be 0..5')
+        else
+            local ok, err = pcall(function() LrSelection.setRating(rating) end)
+            reply(id, ok and 'ok' or 'error', ok and tostring(rating) or err)
+        end
+    elseif command == 'rating_up' then
+        local ok, err = pcall(function() LrSelection.increaseRating() end)
+        if ok then LrTasks.sleep(0.10) end
+        local readOk, value = pcall(function() return LrSelection.getRating() end)
+        reply(id, ok and readOk and 'ok' or 'error', ok and readOk and value or err)
+    elseif command == 'rating_down' then
+        local ok, err = pcall(function() LrSelection.decreaseRating() end)
+        if ok then LrTasks.sleep(0.10) end
+        local readOk, value = pcall(function() return LrSelection.getRating() end)
+        reply(id, ok and readOk and 'ok' or 'error', ok and readOk and value or err)
+    elseif command == 'flag_get' then
+        local ok, value = pcall(function() return LrSelection.getFlag() end)
+        reply(id, ok and 'ok' or 'error', value)
+    elseif command == 'flag_pick' then
+        local ok, err = pcall(function() LrSelection.flagAsPick() end)
+        reply(id, ok and 'ok' or 'error', ok and '1' or err)
+    elseif command == 'flag_reject' then
+        local ok, err = pcall(function() LrSelection.flagAsReject() end)
+        reply(id, ok and 'ok' or 'error', ok and '-1' or err)
+    elseif command == 'flag_clear' then
+        local ok, err = pcall(function() LrSelection.removeFlag() end)
+        reply(id, ok and 'ok' or 'error', ok and '0' or err)
     else
         reply(id, 'error', 'unknown command')
     end

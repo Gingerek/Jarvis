@@ -169,6 +169,14 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Verified ranges: Exposure -5..5; main Basic sliders -100..100; Temperature 2000..50000; Tint -150..150.
 - Reversible live PASS: Exposure 0 -> 0.1 -> 0.
 - Lightroom-generated corpus validation: 1,848/1,848 utterances parsed to the expected intent/argument.
-- Full Release build: 0 errors, 0 warnings. Latest xUnit execution was blocked by Windows Application Control (0x800711C7).
+- Full Release build: 0 errors, 0 warnings. Current validation: Core 115/115, Structure 1/1, Integration 1/1 PASS.
 - Global generated Polish corpus: 31,785 utterance variants.
 - Production single-file VoiceHost republished to the local Jarvis runtime. Direct EXE start is currently blocked by Windows Application Control; the Release DLL starts via dotnet and reaches live SLEEPING/listening state alongside Jarvis.UI + Lightroom.
+
+## Lightroom selection checkpoint - 2026-09-09
+- `LrSelection` integrated for next/previous photo, rating 0..5, rating increase/decrease and Pick/Reject/None flags.
+- Reversible live PASS: rating 0 -> 3 -> 0 and 0 -> 1 -> 0; flag 0 -> Pick -> 0 and 0 -> Reject -> 0.
+- Navigation live PASS by photo UUID: A -> next B -> previous A; original active photo restored.
+- Rating feedback synchronized after SDK mutation so TTS reports the new value.
+- Lightroom parser tests 20/20 PASS; full Core 115/115, Structure 1/1, Integration 1/1 PASS.
+- Global Polish corpus: 32,044 utterance variants.

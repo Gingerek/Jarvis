@@ -284,6 +284,29 @@ for parameter, aliases in lightroom_adjustments.items():
                 add("LightroomSetAdjustment", f"{parameter}|0", prefix + f"wyzeruj {action_alias}")
 
 for prefix in polite_prefixes:
+    for phrase in ["nastÄ™pne zdjÄ™cie", "kolejne zdjÄ™cie", "przejdĹş do nastÄ™pnego zdjÄ™cia"]:
+        add("LightroomNextPhoto", None, prefix + phrase)
+    for phrase in ["poprzednie zdjÄ™cie", "przejdĹş do poprzedniego zdjÄ™cia"]:
+        add("LightroomPreviousPhoto", None, prefix + phrase)
+    for phrase in ["jaka ocena", "podaj ocenÄ™", "ile gwiazdek", "jaka jest ocena"]:
+        add("LightroomGetRating", None, prefix + phrase)
+    for rating in range(0, 6):
+        for phrase in [f"ustaw ocenÄ™ na {rating}", f"daj {rating} gwiazdek"]:
+            add("LightroomSetRating", str(rating), prefix + phrase)
+    for phrase in ["zwiÄ™ksz ocenÄ™", "dodaj gwiazdkÄ™"]:
+        add("LightroomIncreaseRating", None, prefix + phrase)
+    for phrase in ["zmniejsz ocenÄ™", "odejmij gwiazdkÄ™"]:
+        add("LightroomDecreaseRating", None, prefix + phrase)
+    for phrase in ["jaka flaga", "podaj flagÄ™", "status flagi"]:
+        add("LightroomGetFlag", None, prefix + phrase)
+    for phrase in ["oznacz jako wybrane", "flaga pick", "ustaw flagÄ™ pick"]:
+        add("LightroomFlagPick", None, prefix + phrase)
+    for phrase in ["oznacz jako odrzucone", "flaga reject", "ustaw flagÄ™ reject"]:
+        add("LightroomFlagReject", None, prefix + phrase)
+    for phrase in ["usuĹ„ flagÄ™", "wyczyĹ›Ä‡ flagÄ™", "bez flagi"]:
+        add("LightroomClearFlag", None, prefix + phrase)
+
+for prefix in polite_prefixes:
     add("LightroomAutoTone", None, prefix + "auto ton")
     add("LightroomAutoTone", None, prefix + "automatyczny ton")
     add("LightroomAutoWhiteBalance", None, prefix + "auto balans bieli")

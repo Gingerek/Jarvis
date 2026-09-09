@@ -83,3 +83,10 @@
 - Added Lightroom ASR vocabulary and 1,848 parser-aligned Lightroom corpus utterances.
 - Final validation: Release build 0 errors / 0 warnings. Latest xUnit execution was blocked by Windows Application Control (0x800711C7), not by a test or compilation failure.
 - Global command corpus now contains 31,785 utterance variants.
+
+## 2026-09-09 - Lightroom selection controls live PASS
+- Added `LrSelection` voice controls for next/previous photo, rating 0-5, rating up/down and Pick/Reject/clear flags.
+- Reversible live checks restored the original rating, flag and active photo UUID.
+- Added synchronized rating feedback so spoken responses report the committed new rating.
+- Lightroom parser tests 20/20 PASS; full Core 115/115, Structure 1/1, Integration 1/1 PASS.
+- Release build remains 0 errors / 0 warnings; Polish command corpus now 32,044 variants.
