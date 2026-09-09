@@ -40,4 +40,4 @@ Phase 2 — Audio, Voice & General Command Registry.
 - UI + persistent VoiceHost republished and running with the new runtime.
 
 ## Immediate objective
-Complete the one-time Chrome/Edge unpacked-extension installation and run the live browser bridge test. The MV3 extension, Native Messaging host, persistent Named Pipe client, browser parser and VoiceHost executor are implemented. After the live bridge PASS, continue with OBS integration. Do not regress to blind keyboard/mouse control when an official browser API can execute the action.
+Browser bridge live test is PASS. Continue with OBS integration using the official OBS WebSocket API; keep browser control on the MV3 + Native Messaging path and do not regress to blind keyboard/mouse control.

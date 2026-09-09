@@ -139,3 +139,11 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Simulated Named Pipe + Native Messaging round-trip PASS.
 - Corpus: 27,522 generated utterance variants.
 - Live Chrome/Edge test still requires one-time Load unpacked because branded Chrome 137+ ignores command-line unpacked extension loading.
+
+## Browser bridge live verification - 2026-09-09
+- Chrome extension loaded with stable id cdlnajihofjpmochnpnkcomdifdjimgd.
+- Direct Native Messaging launch required on this Windows/Application Control setup.
+- Host registration is per-user under HKCU; only the direct-launch policy remains system-level.
+- Live end-to-end PASS: active-tab context, new tab and previous/next tab commands.
+- Jarvis.BrowserHost verified as a child process of chrome.exe.
+- Next integration target: OBS via OBS WebSocket.

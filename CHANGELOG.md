@@ -58,3 +58,9 @@
 - Added browser command parser, VoiceHost executor and 27,522-utterance corpus.
 - Added tab/navigation/scroll/media/mute/context actions.
 - Browser protocol simulation PASS; live extension load pending one-time user install.
+
+## 2026-09-09 - Browser bridge live PASS
+- Verified Chrome MV3 + Native Messaging + Named Pipe path end-to-end.
+- Added direct-launch helper for Windows systems where cmd-mediated native host launch is blocked.
+- Kept native host registration per-user under HKCU.
+- Verified active-tab context and tab creation/navigation through VoiceHost.
