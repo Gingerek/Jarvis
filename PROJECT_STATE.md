@@ -159,3 +159,16 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Core tests: 95/95 PASS. Full Release solution build: 0 errors, 0 warnings.
 - Generated Polish command corpus: 29,937 utterance variants.
 - Next application integration target: Lightroom Classic.
+
+## Lightroom Classic live checkpoint - 2026-09-09
+- Installed Lightroom Classic verified: 15.5.1.
+- Added `Jarvis.lrplugin` using the official Lightroom Classic Lua SDK and `LrSocket` on loopback only.
+- Added `Jarvis.Lightroom`, `Jarvis.LightroomProbe`, VoiceHost executor and idempotent install script.
+- Auto-init issue fixed by adding a real plug-in menu item required with `LrForceInitPlugin`.
+- Live bridge PASS: ping, version, current module and Develop get/range/set.
+- Verified ranges: Exposure -5..5; main Basic sliders -100..100; Temperature 2000..50000; Tint -150..150.
+- Reversible live PASS: Exposure 0 -> 0.1 -> 0.
+- Lightroom-generated corpus validation: 1,848/1,848 utterances parsed to the expected intent/argument.
+- Full Release build: 0 errors, 0 warnings. Latest xUnit execution was blocked by Windows Application Control (0x800711C7).
+- Global generated Polish corpus: 31,785 utterance variants.
+- Production single-file VoiceHost republished to the local Jarvis runtime. Direct EXE start is currently blocked by Windows Application Control; the Release DLL starts via dotnet and reaches live SLEEPING/listening state alongside Jarvis.UI + Lightroom.

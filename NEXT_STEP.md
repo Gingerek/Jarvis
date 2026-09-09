@@ -12,7 +12,7 @@ Phase 2 — Audio, Voice & General Command Registry.
 - Windows Credential Manager secret store: PASS.
 - deterministic application execution: implemented.
 - CommandRegistry introduced for general commands.
-- generated command corpus: 29,937 utterance variants.
+- generated command corpus: 31,785 utterance variants.
 - app catalog: Lightroom, DaVinci Resolve, OBS, Chrome, Edge, Notatnik, Menedżer zadań.
 - website actions: YouTube, Google, Marktplaats.
 - Google/YouTube search intents: implemented.
@@ -31,7 +31,11 @@ Phase 2 — Audio, Voice & General Command Registry.
 - OBS 32.2.2 / obs-websocket 5.7.4 authenticated locally on port 4455.
 - OBS intents: status, recording/stream status, scenes, record start/stop/pause/resume, stream start/stop, input mute/unmute and source visibility.
 - Reversible live control tests restored original microphone/source state.
-- Core tests: 95/95 PASS; corpus: 29,937 variants.
+- Lightroom Classic 15.5.1 Lua SDK bridge: LIVE PASS over loopback-only TCP.
+- Lightroom Basic controls verified: Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Texture, Clarity, Dehaze, Vibrance, Saturation, Temperature and Tint.
+- Reversible live PASS: Exposure 0 -> 0.1 -> 0.
+- Lightroom corpus/parser validation: 1,848/1,848 PASS.
+- Release build: 0 errors / 0 warnings; corpus: 31,785 variants. Latest xUnit run blocked by Windows Application Control (0x800711C7).
 
 ## Verified system facts
 - focused general/system/folder/settings parser tests: PASS; 31/31 latest focused suite.
@@ -45,4 +49,4 @@ Phase 2 — Audio, Voice & General Command Registry.
 - UI + persistent VoiceHost republished and running with the new runtime.
 
 ## Immediate objective
-Browser and OBS live integrations are PASS. Continue with Lightroom Classic capability mapping and implementation, preferring the official Lightroom SDK and documented mechanisms before UIA/controlled-input fallbacks.
+Browser, OBS and Lightroom Basic live integrations are PASS. Continue Lightroom Classic toward navigation, rating/flags, copy/paste Develop, undo/redo, crop, masks and further SDK-backed capabilities before moving to DaVinci Resolve.

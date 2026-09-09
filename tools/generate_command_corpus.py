@@ -128,15 +128,15 @@ for value in range(0, 101, 10):
 folder_aliases = {
     "downloads": ["Pobrane", "Pobierane", "Downloads"],
     "documents": ["Dokumenty", "Moje dokumenty", "Documents"],
-    "pictures": ["Zdj?cia", "Obrazy", "Pictures"],
+    "pictures": ["Zdjęcia", "Obrazy", "Pictures"],
     "music": ["Muzyka", "Music"],
     "videos": ["Wideo", "Filmy", "Videos"],
     "desktop": ["Pulpit", "Desktop"],
     "jarvis": ["Jarvis", "folder Jarvis", "projekt Jarvis"]
 }
 folder_templates = [
-    "otw?rz {target}", "poka? {target}", "poka? mi {target}",
-    "przejd? do {target}", "wejd? do {target}", "otw?rz folder {target}"
+    "otwórz {target}", "pokaż {target}", "pokaż mi {target}",
+    "przejdź do {target}", "wejdź do {target}", "otwórz folder {target}"
 ]
 for canonical, aliases in folder_aliases.items():
     for alias in aliases:
@@ -147,27 +147,27 @@ for canonical, aliases in folder_aliases.items():
 
 settings_pages = {
     "ms-settings:": ["ustawienia"],
-    "ms-settings:display": ["ekran", "ekranu", "wy?wietlanie"],
-    "ms-settings:sound": ["d?wi?k", "d?wi?ku", "audio"],
-    "ms-settings:apps-volume": ["mikser g?o?no?ci"],
+    "ms-settings:display": ["ekran", "ekranu", "wyświetlanie"],
+    "ms-settings:sound": ["dźwięk", "dźwięku", "audio"],
+    "ms-settings:apps-volume": ["mikser głośności"],
     "ms-settings:bluetooth": ["Bluetooth"],
     "ms-settings:network-wifi": ["Wi-Fi", "WiFi"],
-    "ms-settings:network-status": ["sie?", "sieci", "internet", "internetu"],
+    "ms-settings:network-status": ["sieć", "sieci", "internet", "internetu"],
     "ms-settings:windowsupdate": ["aktualizacje", "aktualizacji", "Windows Update"],
     "ms-settings:appsfeatures": ["aplikacje", "aplikacji"],
-    "ms-settings:storagesense": ["pami??", "pami?ci", "miejsce na dysku"],
+    "ms-settings:storagesense": ["pamięć", "pamięci", "miejsce na dysku"],
     "ms-settings:powersleep": ["zasilanie", "zasilania"],
     "ms-settings:personalization": ["personalizacja", "personalizacji"],
-    "ms-settings:privacy": ["prywatno??", "prywatno?ci"],
+    "ms-settings:privacy": ["prywatność", "prywatności"],
     "ms-settings:privacy-microphone": ["mikrofon", "mikrofonu"],
     "ms-settings:privacy-webcam": ["kamera", "kamery"],
-    "ms-settings:notifications": ["powiadomienia", "powiadomie?"],
+    "ms-settings:notifications": ["powiadomienia", "powiadomień"],
     "ms-settings:clipboard": ["schowek", "schowka"],
     "ms-settings:about": ["informacje o systemie"]
 }
 for uri, aliases in settings_pages.items():
     for alias in aliases:
-        forms = ["ustawienia"] if uri == "ms-settings:" else [f"otw?rz ustawienia {alias}", f"poka? ustawienia {alias}", f"ustawienia {alias}", f"przejd? do ustawie? {alias}"]
+        forms = ["ustawienia"] if uri == "ms-settings:" else [f"otwórz ustawienia {alias}", f"pokaż ustawienia {alias}", f"ustawienia {alias}", f"przejdź do ustawień {alias}"]
         for phrase in forms:
             for prefix in polite_prefixes:
                 for suffix in suffixes:
@@ -237,6 +237,57 @@ for scene in ["Scena", "Kamera", "Ekran", "Rozmowa", "Pełny ekran"]:
         for prefix in polite_prefixes:
             for suffix in suffixes:
                 add("ObsSetScene", scene.casefold(), prefix + phrase + suffix)
+
+
+lightroom_adjustments = {
+    "Exposure2012": ["ekspozycja"],
+    "Contrast2012": ["kontrast"],
+    "Highlights2012": ["światła"],
+    "Shadows2012": ["cienie"],
+    "Whites2012": ["biele"],
+    "Blacks2012": ["czernie"],
+    "Texture": ["tekstura"],
+    "Clarity2012": ["przejrzystość", "klarowność"],
+    "Dehaze": ["odmglenie"],
+    "Vibrance": ["wibracja"],
+    "Saturation": ["nasycenie"],
+    "Temperature": ["temperatura"],
+    "Tint": ["odcień"],
+}
+
+
+lightroom_action_names = {
+    "Exposure2012": "ekspozycję", "Texture": "teksturę",
+    "Vibrance": "wibrację", "Temperature": "temperaturę",
+}
+
+for parameter, aliases in lightroom_adjustments.items():
+    for alias in aliases:
+        action_alias = lightroom_action_names.get(parameter, alias)
+        for prefix in polite_prefixes:
+            for phrase in [f"jaka jest {alias}", f"podaj {alias}", f"ile wynosi {alias}"]:
+                add("LightroomGetAdjustment", parameter, prefix + phrase)
+        set_values = ([ -2, -1, -0.5, 0, 0.5, 1, 2 ] if parameter == "Exposure2012" else
+                      [3000, 4000, 5200, 5600, 6500, 8000] if parameter == "Temperature" else
+                      [-100, -50, -20, -10, 0, 10, 20, 50, 100])
+        deltas = ([0.1, 0.2, 0.5] if parameter == "Exposure2012" else
+                  [100, 500, 1000] if parameter == "Temperature" else [5, 10, 20])
+        for value in set_values:
+            for prefix in polite_prefixes:
+                add("LightroomSetAdjustment", f"{parameter}|{value}", prefix + f"ustaw {action_alias} na {str(value).replace('.', ',')}")
+        for delta in deltas:
+            for prefix in polite_prefixes:
+                add("LightroomAdjustAdjustment", f"{parameter}|{delta}", prefix + f"zwiększ {action_alias} o {str(delta).replace('.', ',')}")
+                add("LightroomAdjustAdjustment", f"{parameter}|-{delta}", prefix + f"zmniejsz {action_alias} o {str(delta).replace('.', ',')}")
+        if parameter != "Temperature":
+            for prefix in polite_prefixes:
+                add("LightroomSetAdjustment", f"{parameter}|0", prefix + f"wyzeruj {action_alias}")
+
+for prefix in polite_prefixes:
+    add("LightroomAutoTone", None, prefix + "auto ton")
+    add("LightroomAutoTone", None, prefix + "automatyczny ton")
+    add("LightroomAutoWhiteBalance", None, prefix + "auto balans bieli")
+    add("LightroomAutoWhiteBalance", None, prefix + "automatyczny balans bieli")
 
 ordered = sorted(rows.values(), key=lambda x: (x["intent"], x["argument"] or "", x["utterance"].casefold()))
 with OUT.open("w", encoding="utf-8", newline="\n") as f:

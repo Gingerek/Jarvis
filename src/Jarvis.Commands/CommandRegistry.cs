@@ -26,6 +26,11 @@ public enum CommandIntent
     CloseWindow,
     ShowDesktop,
     LockComputer,
+    LightroomGetAdjustment,
+    LightroomSetAdjustment,
+    LightroomAdjustAdjustment,
+    LightroomAutoTone,
+    LightroomAutoWhiteBalance,
     BrowserNewTab,
     BrowserCloseTab,
     BrowserNextTab,
@@ -72,6 +77,7 @@ public sealed class CommandRegistry
     private readonly KnownFolderCommandParser _folder = new();
     private readonly WindowsSettingsCommandParser _settings = new();
     private readonly SystemCommandParser _system = new();
+    private readonly LightroomCommandParser _lightroom = new();
     private readonly BrowserCommandParser _browser = new();
     private readonly ObsCommandParser _obs = new();
     private static readonly HashSet<string> TimePhrases = new(StringComparer.Ordinal)
@@ -101,6 +107,10 @@ public sealed class CommandRegistry
     public CommandRequest? Parse(string text)
     {
         if (string.IsNullOrWhiteSpace(text)) return null;
+
+        var lightroom = _lightroom.Parse(text);
+        if (lightroom is not null) return lightroom;
+
         var normalized = Simplify(Normalize(text));
 
         if (TimePhrases.Contains(normalized))

@@ -12,6 +12,7 @@
     <Project Path="src/Jarvis.Execution/Jarvis.Execution.csproj" />
     <Project Path="src/Jarvis.Intents/Jarvis.Intents.csproj" />
     <Project Path="src/Jarvis.Learning/Jarvis.Learning.csproj" />
+    <Project Path="src/Jarvis.Lightroom/Jarvis.Lightroom.csproj" />
     <Project Path="src/Jarvis.OBS/Jarvis.OBS.csproj" />
     <Project Path="src/Jarvis.Plugins/Jarvis.Plugins.csproj" />
     <Project Path="src/Jarvis.Security/Jarvis.Security.csproj" />
@@ -34,6 +35,7 @@
     <Project Path="tools/Jarvis.AsrSampleRecorder/Jarvis.AsrSampleRecorder.csproj" />
     <Project Path="tools/Jarvis.AudioProbe/Jarvis.AudioProbe.csproj" />
     <Project Path="tools/Jarvis.BrowserProbe/Jarvis.BrowserProbe.csproj" />
+    <Project Path="tools/Jarvis.LightroomProbe/Jarvis.LightroomProbe.csproj" />
     <Project Path="tools/Jarvis.ObsProbe/Jarvis.ObsProbe.csproj" />
     <Project Path="tools/Jarvis.ObsSetup/Jarvis.ObsSetup.csproj" />
     <Project Path="tools/Jarvis.TtsProbe/Jarvis.TtsProbe.csproj" />

@@ -9,6 +9,7 @@ using Jarvis.Browser;
 using Jarvis.Commands;
 using Jarvis.Execution;
 using Jarvis.Intents;
+using Jarvis.Lightroom;
 using Jarvis.OBS;
 using Jarvis.Security;
 using Jarvis.Speech;
@@ -33,6 +34,8 @@ var launcher = new ApplicationLauncher();
 var windows = new WindowsSystemController();
 var folders = new KnownFolderExecutor(root);
 var browserExecutor = new BrowserCommandExecutor(new BrowserCommandClient());
+await using var lightroomClient = new LightroomBridgeClient();
+var lightroomExecutor = new LightroomCommandExecutor(lightroomClient);
 var obsSecretStore = new WindowsCredentialSecretStore();
 var obsPassword = obsSecretStore.Read("ObsWebSocketPassword");
 await using var obsClient = new ObsWebSocketClient(obsPassword);
@@ -70,6 +73,9 @@ async Task<CommandExecutionOutcome?> ExecuteCommandAsync(string text, Cancellati
             _ => new($"Nie udało się zamknąć {target.DisplayName}.", close.Status.ToString(), target.DisplayName)
         };
     }
+
+    var lightroomOutcome = await lightroomExecutor.ExecuteAsync(request, cancellationToken);
+    if (lightroomOutcome is not null) return lightroomOutcome;
 
     var obsOutcome = await obsExecutor.ExecuteAsync(request, cancellationToken);
     if (obsOutcome is not null) return obsOutcome;

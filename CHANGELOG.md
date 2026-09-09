@@ -73,3 +73,13 @@
 - Added 2 s local WebSocket timeout, parser tests and ASR vocabulary.
 - Core tests 95/95 PASS; generated Polish corpus now 29,937 variants.
 - Production VoiceHost republished and UI/VoiceHost/OBS runtime verified.
+
+## 2026-09-09 - Lightroom Classic SDK bridge live PASS
+- Added auto-loaded `Jarvis Lightroom Bridge` plug-in for Lightroom Classic 15.5.1.
+- Added loopback-only Lua SDK bridge, C# client, probe, parser, VoiceHost executor and installer.
+- Added real Develop get/set/relative control for the verified Basic adjustment set.
+- Preserved decimal comma and signed values in Polish voice parsing.
+- Reversible live check PASS for Exposure: 0 -> 0.1 -> 0; initial value restored.
+- Added Lightroom ASR vocabulary and 1,848 parser-aligned Lightroom corpus utterances.
+- Final validation: Release build 0 errors / 0 warnings. Latest xUnit execution was blocked by Windows Application Control (0x800711C7), not by a test or compilation failure.
+- Global command corpus now contains 31,785 utterance variants.
