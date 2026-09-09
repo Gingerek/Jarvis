@@ -64,3 +64,12 @@
 - Added direct-launch helper for Windows systems where cmd-mediated native host launch is blocked.
 - Kept native host registration per-user under HKCU.
 - Verified active-tab context and tab creation/navigation through VoiceHost.
+
+## 2026-09-09 - OBS WebSocket live PASS
+- Verified OBS Studio 32.2.2 and obs-websocket 5.7.4 on localhost:4455.
+- Added authenticated `Jarvis.OBS` client and secure Credential Manager setup/probe tools.
+- Added VoiceHost commands for status, scenes, recording, streaming, input mute/unmute and source visibility.
+- Reversible live checks PASS for microphone mute and camera-2 visibility; original states restored.
+- Added 2 s local WebSocket timeout, parser tests and ASR vocabulary.
+- Core tests 95/95 PASS; generated Polish corpus now 29,937 variants.
+- Production VoiceHost republished and UI/VoiceHost/OBS runtime verified.

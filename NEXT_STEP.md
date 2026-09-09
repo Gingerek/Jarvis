@@ -12,7 +12,7 @@ Phase 2 — Audio, Voice & General Command Registry.
 - Windows Credential Manager secret store: PASS.
 - deterministic application execution: implemented.
 - CommandRegistry introduced for general commands.
-- generated command corpus: 27,522 utterance variants.
+- generated command corpus: 29,937 utterance variants.
 - app catalog: Lightroom, DaVinci Resolve, OBS, Chrome, Edge, Notatnik, Menedżer zadań.
 - website actions: YouTube, Google, Marktplaats.
 - Google/YouTube search intents: implemented.
@@ -27,6 +27,11 @@ Phase 2 — Audio, Voice & General Command Registry.
 - simulated native bridge round-trip: PASS (BRIDGE_OK=True).
 - Core tests after browser parser: 77/77 PASS.
 - BrowserHost and full solution build: 0 errors, 0 warnings.
+- OBS WebSocket 5.x integration: LIVE PASS.
+- OBS 32.2.2 / obs-websocket 5.7.4 authenticated locally on port 4455.
+- OBS intents: status, recording/stream status, scenes, record start/stop/pause/resume, stream start/stop, input mute/unmute and source visibility.
+- Reversible live control tests restored original microphone/source state.
+- Core tests: 95/95 PASS; corpus: 29,937 variants.
 
 ## Verified system facts
 - focused general/system/folder/settings parser tests: PASS; 31/31 latest focused suite.
@@ -40,4 +45,4 @@ Phase 2 — Audio, Voice & General Command Registry.
 - UI + persistent VoiceHost republished and running with the new runtime.
 
 ## Immediate objective
-Browser bridge live test is PASS. Continue with OBS integration using the official OBS WebSocket API; keep browser control on the MV3 + Native Messaging path and do not regress to blind keyboard/mouse control.
+Browser and OBS live integrations are PASS. Continue with Lightroom Classic capability mapping and implementation, preferring the official Lightroom SDK and documented mechanisms before UIA/controlled-input fallbacks.

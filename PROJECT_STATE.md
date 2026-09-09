@@ -147,3 +147,15 @@ Local caveat: Windows Application Control intermittently blocks newly copied tes
 - Live end-to-end PASS: active-tab context, new tab and previous/next tab commands.
 - Jarvis.BrowserHost verified as a child process of chrome.exe.
 - Next integration target: OBS via OBS WebSocket.
+
+## OBS WebSocket live checkpoint - 2026-09-09
+- Installed OBS Studio verified: 32.2.2; obs-websocket protocol server: 5.7.4 on localhost:4455.
+- OBS WebSocket enabled with authentication; existing password imported once into Windows Credential Manager as `Jarvis/ObsWebSocketPassword` without exposing it in repo/logs.
+- Added `Jarvis.OBS` persistent authenticated client with local 2 s request timeout.
+- Added real VoiceHost intents for OBS status, record/stream status, scene list/current/set, record start/stop/pause/resume, stream start/stop, input list/mute/unmute and scene-source show/hide.
+- Live read-only PASS: version, record status, stream status, current scene, scene list, input list and scene-item list.
+- Reversible live PASS: microphone mute False -> True -> False; camera 2 visibility True -> False -> True.
+- Production single-file VoiceHost republished to `%LOCALAPPDATA%\Jarvis\runtime`; UI + VoiceHost + OBS running together.
+- Core tests: 95/95 PASS. Full Release solution build: 0 errors, 0 warnings.
+- Generated Polish command corpus: 29,937 utterance variants.
+- Next application integration target: Lightroom Classic.

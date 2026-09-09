@@ -198,6 +198,46 @@ for intent, phrases in browser_bases.items():
             for suffix in suffixes:
                 add(intent, None, prefix + phrase + suffix)
 
+
+obs_bases = {
+    "ObsStatus": ["status OBS", "jaki jest status OBS"],
+    "ObsRecordStatus": ["czy OBS nagrywa", "czy nagrywam", "status nagrywania"],
+    "ObsStreamStatus": ["czy OBS streamuje", "czy streamuję", "status streamu"],
+    "ObsCurrentScene": ["jaka scena jest aktywna", "jaka scena jest w OBS"],
+    "ObsListScenes": ["lista scen OBS", "jakie mam sceny w OBS"],
+    "ObsStartRecord": ["zacznij nagrywanie", "rozpocznij nagrywanie", "włącz nagrywanie"],
+    "ObsStopRecord": ["zatrzymaj nagrywanie", "zakończ nagrywanie", "wyłącz nagrywanie"],
+    "ObsStartStream": ["zacznij stream", "rozpocznij stream", "włącz stream", "zacznij transmisję"],
+    "ObsStopStream": ["zatrzymaj stream", "zakończ stream", "wyłącz stream", "zatrzymaj transmisję"],
+    "ObsPauseRecord": ["pauza nagrywania", "wstrzymaj nagrywanie"],
+    "ObsResumeRecord": ["wznów nagrywanie", "kontynuuj nagrywanie"],
+    "ObsListInputs": ["lista wejść OBS", "jakie mam wejścia w OBS"],
+}
+for intent, phrases in obs_bases.items():
+    for phrase in phrases:
+        for prefix in polite_prefixes:
+            for suffix in suffixes:
+                add(intent, None, prefix + phrase + suffix)
+
+
+for input_name in ["mikrofon", "urządzenie audio"]:
+    for intent, verb in [("ObsMuteInput", "wycisz"), ("ObsUnmuteInput", "odcisz")]:
+        for prefix in polite_prefixes:
+            for suffix in suffixes:
+                add(intent, input_name.casefold(), prefix + f"{verb} {input_name} w OBS" + suffix)
+
+for source in ["kamera 1", "kamera 2", "kamera 3", "kamera 4", "kamera 5", "kamera 6", "kamera 7", "kamera 8", "kamera 9"]:
+    for intent, verb in [("ObsShowSource", "pokaż źródło"), ("ObsHideSource", "ukryj źródło")]:
+        for prefix in polite_prefixes:
+            for suffix in suffixes:
+                add(intent, source, prefix + f"{verb} {source}" + suffix)
+
+for scene in ["Scena", "Kamera", "Ekran", "Rozmowa", "Pełny ekran"]:
+    for phrase in [f"przełącz na scenę {scene}", f"ustaw scenę {scene}", f"włącz scenę {scene}"]:
+        for prefix in polite_prefixes:
+            for suffix in suffixes:
+                add("ObsSetScene", scene.casefold(), prefix + phrase + suffix)
+
 ordered = sorted(rows.values(), key=lambda x: (x["intent"], x["argument"] or "", x["utterance"].casefold()))
 with OUT.open("w", encoding="utf-8", newline="\n") as f:
     for row in ordered:

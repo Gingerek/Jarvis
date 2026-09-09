@@ -41,7 +41,24 @@ public enum CommandIntent
     BrowserMuteTab,
     BrowserUnmuteTab,
     BrowserDuplicateTab,
-    BrowserContext
+    BrowserContext,
+    ObsStatus,
+    ObsRecordStatus,
+    ObsStreamStatus,
+    ObsCurrentScene,
+    ObsListScenes,
+    ObsStartRecord,
+    ObsStopRecord,
+    ObsStartStream,
+    ObsStopStream,
+    ObsPauseRecord,
+    ObsResumeRecord,
+    ObsListInputs,
+    ObsMuteInput,
+    ObsUnmuteInput,
+    ObsShowSource,
+    ObsHideSource,
+    ObsSetScene
 }
 
 public sealed record CommandRequest(
@@ -56,6 +73,7 @@ public sealed class CommandRegistry
     private readonly WindowsSettingsCommandParser _settings = new();
     private readonly SystemCommandParser _system = new();
     private readonly BrowserCommandParser _browser = new();
+    private readonly ObsCommandParser _obs = new();
     private static readonly HashSet<string> TimePhrases = new(StringComparer.Ordinal)
     {
         "ktora godzina", "jaka jest godzina", "powiedz ktora godzina",
@@ -94,6 +112,9 @@ public sealed class CommandRegistry
 
         var system = _system.Parse(normalized);
         if (system is not null) return system;
+
+        var obs = _obs.Parse(normalized);
+        if (obs is not null) return obs;
 
         var browser = _browser.Parse(normalized);
         if (browser is not null) return browser;

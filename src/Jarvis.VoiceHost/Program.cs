@@ -9,6 +9,7 @@ using Jarvis.Browser;
 using Jarvis.Commands;
 using Jarvis.Execution;
 using Jarvis.Intents;
+using Jarvis.OBS;
 using Jarvis.Security;
 using Jarvis.Speech;
 using Jarvis.VAD;
@@ -32,6 +33,10 @@ var launcher = new ApplicationLauncher();
 var windows = new WindowsSystemController();
 var folders = new KnownFolderExecutor(root);
 var browserExecutor = new BrowserCommandExecutor(new BrowserCommandClient());
+var obsSecretStore = new WindowsCredentialSecretStore();
+var obsPassword = obsSecretStore.Read("ObsWebSocketPassword");
+await using var obsClient = new ObsWebSocketClient(obsPassword);
+var obsExecutor = new ObsCommandExecutor(obsClient);
 foreach (var app in KnownApplications.All)
     resolver.Add(app.Id, app.Aliases.Append(app.DisplayName).ToArray());
 
@@ -65,6 +70,9 @@ async Task<CommandExecutionOutcome?> ExecuteCommandAsync(string text, Cancellati
             _ => new($"Nie udało się zamknąć {target.DisplayName}.", close.Status.ToString(), target.DisplayName)
         };
     }
+
+    var obsOutcome = await obsExecutor.ExecuteAsync(request, cancellationToken);
+    if (obsOutcome is not null) return obsOutcome;
 
     var browserOutcome = await browserExecutor.ExecuteAsync(request, cancellationToken);
     if (browserOutcome is not null) return browserOutcome;
