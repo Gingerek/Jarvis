@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
@@ -44,6 +45,11 @@ public sealed partial class MainPage : Page
             if (evt.Type == "transcript" && !string.IsNullOrWhiteSpace(evt.Text))
             {
                 TranscriptText.Text = evt.Text;
+                var ignored = evt.Data is JsonElement data &&
+                    data.ValueKind == JsonValueKind.Object &&
+                    data.TryGetProperty("disposition", out var disposition) &&
+                    disposition.GetString() == "IgnoredWhileSleeping";
+                ResponseText.Text = ignored ? "Czekam na słowo „Jarvis”." : "—";
                 return;
             }
 
@@ -70,6 +76,7 @@ public sealed partial class MainPage : Page
         {
             "STARTING" => "URUCHAMIANIE",
             "SLEEPING" => "CZEKAM NA „JARVIS”",
+            "LISTENING" when detail?.Contains("Tryb ciągły", StringComparison.OrdinalIgnoreCase) == true => "TRYB CIĄGŁY",
             "LISTENING" => "SŁUCHAM",
             "PROCESSING" => "PRZETWARZAM",
             "SPEAKING" => "MÓWIĘ",

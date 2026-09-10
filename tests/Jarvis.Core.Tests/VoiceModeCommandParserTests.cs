@@ -7,6 +7,8 @@ public sealed class VoiceModeCommandParserTests
     [Theory]
     [InlineData("obudź się")]
     [InlineData("obudz sie")]
+    [InlineData("obudzi się")]
+    [InlineData("obudzi sie")]
     [InlineData("obróż")]
     [InlineData("nie zasypiaj")]
     [InlineData("bądź aktywny")]
@@ -23,7 +25,6 @@ public sealed class VoiceModeCommandParserTests
     {
         Assert.Equal(VoiceModeCommand.Sleep, VoiceModeCommandParser.Parse(text));
     }
-
     [Theory]
     [InlineData("obróć zdjęcie")]
     [InlineData("obraz")]
