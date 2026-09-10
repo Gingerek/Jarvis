@@ -29,11 +29,12 @@ for line in sys.stdin:
         segments, info = model.transcribe(
             audio,
             language=req.get("language", "pl"),
-            beam_size=1,
+            beam_size=int(req.get("beam_size", 3)),
             vad_filter=False,
             condition_on_previous_text=False,
             no_speech_threshold=None,
             initial_prompt=req.get("initial_prompt"),
+            hotwords=req.get("hotwords"),
         )
         text = " ".join(s.text.strip() for s in list(segments)).strip()
         print(json.dumps({

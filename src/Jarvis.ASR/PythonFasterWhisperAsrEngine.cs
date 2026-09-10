@@ -10,13 +10,15 @@ public sealed class PythonFasterWhisperAsrEngine : IAsrEngine
     private readonly Process _process;
     private readonly SemaphoreSlim _gate = new(1, 1);
     private readonly string _initialPrompt;
+    private readonly string _hotwords;
     private bool _disposed;
 
-    private PythonFasterWhisperAsrEngine(Process process, string modelName, string initialPrompt)
+    private PythonFasterWhisperAsrEngine(Process process, string modelName, string initialPrompt, string hotwords)
     {
         _process = process;
         ModelName = modelName;
         _initialPrompt = initialPrompt;
+        _hotwords = hotwords;
     }
 
     public string ModelName { get; }
@@ -51,8 +53,9 @@ public sealed class PythonFasterWhisperAsrEngine : IAsrEngine
         if (ready.RootElement.GetProperty("type").GetString() != "ready")
             throw new InvalidOperationException($"Unexpected ASR worker response: {readyLine}");
 
-        var prompt = "Jarvis. Otwórz. Włącz. Uruchom. Odpal. Zamknij. Wyłącz. Wyszukaj. Znajdź. Głośniej. Ciszej. Wycisz. Odcisz. Głośność. Minimalizuj. Maksymalizuj. Przywróć okno. Pokaż pulpit. Zablokuj komputer. Open. Close. Lightroom. Lightroom Classic. YouTube. Google. Marktplaats. DaVinci Resolve. OBS Studio. Ekspozycja. Kontrast. Światła. Cienie. Biele. Czernie. Tekstura. Przejrzystość. Odmglenie. Wibracja. Nasycenie. Temperatura. Odcień. Auto Tone. Auto balans bieli. Kąt kadrowania. Crop. Maska. Maski. Maska obiektu. Maska nieba. Maska tła. Nakładka maski. Następne zdjęcie. Poprzednie zdjęcie. Ocena. Gwiazdki. Flaga. Pick. Reject. Kopiuj ustawienia Develop. Wklej ustawienia Develop. Cofnij w Lightroomie. Ponów w Lightroomie. OBS. Nagrywanie. Stream. Transmisja. Scena. Przełącz scenę. Status OBS. Zacznij nagrywanie. Zatrzymaj nagrywanie. Pauza nagrywania. Wznów nagrywanie. Lista wejść OBS. Wycisz mikrofon w OBS. Odcisz mikrofon w OBS. Pokaż źródło. Ukryj źródło. Kamera jeden. Kamera dwa. Google Chrome. Microsoft Edge. Notatnik. Menedżer zadań.  Karta. Zakładka. Nowa karta. Zamknij kartę. Następna karta. Poprzednia karta. Odśwież stronę. Przewiń w dół. Przewiń w górę. Wycisz kartę. Pauza. Przykład: Jarvis, otwórz YouTube.";
-        return new PythonFasterWhisperAsrEngine(process, modelName, prompt);
+        var prompt = "Polskie polecenia głosowe dla asystenta Jarvis.";
+        var hotwords = "Jarvis Lightroom DaVinci OBS YouTube obudź się idź spać otwórz zamknij włącz wyłącz godzina data";
+        return new PythonFasterWhisperAsrEngine(process, modelName, prompt, hotwords);
     }
     public async Task<AsrTranscript> TranscribeAsync(
         ReadOnlyMemory<short> pcm16,
@@ -73,6 +76,8 @@ public sealed class PythonFasterWhisperAsrEngine : IAsrEngine
                 pcm16_b64 = Convert.ToBase64String(bytes),
                 language,
                 initial_prompt = _initialPrompt,
+                hotwords = _hotwords,
+                beam_size = 3,
             });
 
             await _process.StandardInput.WriteLineAsync(request.AsMemory(), cancellationToken);

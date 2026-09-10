@@ -29,6 +29,7 @@ var pipeName = Option("--pipe");
 Directory.SetCurrentDirectory(root);
 
 var registry = new CommandRegistry();
+var corpusCorrector = CommandCorpusCorrector.Load(Path.Combine(root, "data", "commands", "pl-PL.generated.jsonl"));
 var resolver = new KnownEntityResolver();
 var launcher = new ApplicationLauncher();
 var windows = new WindowsSystemController();
@@ -46,6 +47,8 @@ foreach (var app in KnownApplications.All)
 async Task<CommandExecutionOutcome?> ExecuteCommandAsync(string text, CancellationToken cancellationToken = default)
 {
     var request = registry.Parse(text);
+    if (request is null)
+        request = corpusCorrector.Correct(text)?.Request;
     if (request is null) return null;
 
     if (request.Intent is CommandIntent.OpenApplication or CommandIntent.CloseApplication)
