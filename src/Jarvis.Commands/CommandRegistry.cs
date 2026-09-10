@@ -151,7 +151,7 @@ public sealed class CommandRegistry
 
         var normalized = Simplify(Normalize(text));
 
-        if (TimePhrases.Contains(normalized))
+        if (TimePhrases.Contains(normalized) || IsNearPhrase(normalized, TimePhrases, 2))
             return new(CommandIntent.GetTime);
         if (DayPhrases.Contains(normalized))
             return new(CommandIntent.GetDayOfWeek);
@@ -196,6 +196,37 @@ public sealed class CommandRegistry
             return new(CommandIntent.CloseApplication, close.RequestedName);
 
         return null;
+    }
+
+    private static bool IsNearPhrase(string value, IEnumerable<string> phrases, int maxDistance)
+    {
+        if (value.Length < 5 || value.Length > 40) return false;
+        foreach (var phrase in phrases)
+        {
+            if (Math.Abs(value.Length - phrase.Length) > maxDistance) continue;
+            if (LevenshteinDistance(value, phrase, maxDistance) <= maxDistance) return true;
+        }
+        return false;
+    }
+
+    private static int LevenshteinDistance(string a, string b, int cutoff)
+    {
+        var prev = new int[b.Length + 1];
+        var curr = new int[b.Length + 1];
+        for (var j = 0; j <= b.Length; j++) prev[j] = j;
+        for (var i = 1; i <= a.Length; i++)
+        {
+            curr[0] = i; var rowMin = curr[0];
+            for (var j = 1; j <= b.Length; j++)
+            {
+                var cost = a[i - 1] == b[j - 1] ? 0 : 1;
+                curr[j] = Math.Min(Math.Min(curr[j - 1] + 1, prev[j] + 1), prev[j - 1] + cost);
+                if (curr[j] < rowMin) rowMin = curr[j];
+            }
+            if (rowMin > cutoff) return cutoff + 1;
+            (prev, curr) = (curr, prev);
+        }
+        return prev[b.Length];
     }
 
     private static string Simplify(string text)
