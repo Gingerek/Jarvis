@@ -261,8 +261,8 @@ try
 
         if (string.IsNullOrWhiteSpace(result.CommandText)) continue;
 
-        var voiceCommand = CommandRegistry.Normalize(result.CommandText);
-        if (voiceCommand is "obudz sie" or "badz aktywny" or "zostan aktywny")
+        var voiceModeCommand = VoiceModeCommandParser.Parse(result.CommandText);
+        if (voiceModeCommand == VoiceModeCommand.EnableContinuous)
         {
             voice.EnableContinuousListening(DateTimeOffset.UtcNow);
             const string voiceReply = "Jestem aktywny. Nie musisz powtarzać Jarvis.";
@@ -273,7 +273,7 @@ try
             await events.EmitAsync("state", "LISTENING", "Tryb ciągły");
             continue;
         }
-        if (voiceCommand is "idz spac" or "spij" or "zasnij" or "mozesz spac")
+        if (voiceModeCommand == VoiceModeCommand.Sleep)
         {
             voice.Sleep();
             const string voiceReply = "Przechodzę w tryb oczekiwania.";

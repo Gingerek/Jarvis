@@ -23,5 +23,11 @@ public sealed partial class MainWindow : Window
 
         // Navigate the root frame to the main page on startup.
         RootFrame.Navigate(typeof(MainPage));
+        Closed += OnClosed;
+    }
+
+    private async void OnClosed(object sender, WindowEventArgs args)
+    {
+        if (RootFrame.Content is MainPage page) await page.ShutdownAsync();
     }
 }

@@ -11,7 +11,6 @@ public sealed partial class MainPage : Page
     {
         InitializeComponent();
         Loaded += OnLoaded;
-        Unloaded += OnUnloaded;
     }
 
     private async void OnLoaded(object sender, RoutedEventArgs e)
@@ -94,7 +93,7 @@ public sealed partial class MainPage : Page
         ConnectionDot.Opacity = normalized == "ERROR" ? 0.25 : 1.0;
     }
 
-    private async void OnUnloaded(object sender, RoutedEventArgs e)
+    public async Task ShutdownAsync()
     {
         if (_voiceHost is null) return;
         _voiceHost.EventReceived -= OnVoiceHostEvent;
