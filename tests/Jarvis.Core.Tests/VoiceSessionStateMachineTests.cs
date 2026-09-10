@@ -16,6 +16,21 @@ public sealed class VoiceSessionStateMachineTests
     }
 
     [Fact]
+    public void Continuous_Listening_Does_Not_Time_Out_And_Sleep_Disables_It()
+    {
+        var sm = new VoiceSessionStateMachine(TimeSpan.FromSeconds(20));
+        var now = DateTimeOffset.UtcNow;
+        sm.Wake(now);
+        sm.EnableContinuousListening(now.AddSeconds(1));
+        Assert.True(sm.ContinuousListening);
+        Assert.Equal(VoiceSessionTransition.None, sm.Tick(now.AddHours(1)));
+        Assert.Equal(VoiceSessionState.Listening, sm.State);
+        sm.Sleep();
+        Assert.False(sm.ContinuousListening);
+        Assert.Equal(VoiceSessionState.Sleeping, sm.State);
+    }
+
+    [Fact]
     public void Tick_Times_Out_After_Idle_Window()
     {
         var sm = new VoiceSessionStateMachine(TimeSpan.FromSeconds(20));

@@ -19,6 +19,7 @@ public sealed class VoiceSessionStateMachine
 {
     private readonly TimeSpan _idleTimeout;
     private DateTimeOffset? _lastActivity;
+    private bool _continuousListening;
 
     public VoiceSessionStateMachine(TimeSpan? idleTimeout = null)
     {
@@ -29,11 +30,21 @@ public sealed class VoiceSessionStateMachine
 
     public VoiceSessionState State { get; private set; } = VoiceSessionState.Sleeping;
     public DateTimeOffset? LastActivity => _lastActivity;
+    public bool ContinuousListening => _continuousListening;
     public VoiceSessionTransition Wake(DateTimeOffset now)
     {
         State = VoiceSessionState.Listening;
+        _continuousListening = false;
         _lastActivity = now;
         return VoiceSessionTransition.Woke;
+    }
+
+    public VoiceSessionTransition EnableContinuousListening(DateTimeOffset now)
+    {
+        State = VoiceSessionState.Listening;
+        _continuousListening = true;
+        _lastActivity = now;
+        return VoiceSessionTransition.ActivityRefreshed;
     }
 
     public VoiceSessionTransition RegisterActivity(DateTimeOffset now)
@@ -45,7 +56,7 @@ public sealed class VoiceSessionStateMachine
 
     public VoiceSessionTransition Tick(DateTimeOffset now)
     {
-        if (State != VoiceSessionState.Listening || _lastActivity is null)
+        if (State != VoiceSessionState.Listening || _lastActivity is null || _continuousListening)
             return VoiceSessionTransition.None;
         if (now - _lastActivity.Value < _idleTimeout)
             return VoiceSessionTransition.None;
@@ -57,6 +68,7 @@ public sealed class VoiceSessionStateMachine
     public VoiceSessionTransition Sleep()
     {
         State = VoiceSessionState.Sleeping;
+        _continuousListening = false;
         _lastActivity = null;
         return VoiceSessionTransition.Slept;
     }

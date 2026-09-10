@@ -27,6 +27,9 @@ public sealed class VoiceInteractionCoordinator
     }
 
     public VoiceSessionState State => _session.State;
+    public bool ContinuousListening => _session.ContinuousListening;
+    public VoiceSessionTransition EnableContinuousListening(DateTimeOffset now) => _session.EnableContinuousListening(now);
+    public VoiceSessionTransition Sleep() => _session.Sleep();
     public VoiceInputDecision HandleTranscript(string transcript, DateTimeOffset now)
     {
         transcript ??= string.Empty;

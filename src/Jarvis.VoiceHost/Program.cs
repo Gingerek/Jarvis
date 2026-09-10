@@ -260,6 +260,31 @@ try
         }
 
         if (string.IsNullOrWhiteSpace(result.CommandText)) continue;
+
+        var voiceCommand = CommandRegistry.Normalize(result.CommandText);
+        if (voiceCommand is "obudz sie" or "badz aktywny" or "zostan aktywny")
+        {
+            voice.EnableContinuousListening(DateTimeOffset.UtcNow);
+            const string voiceReply = "Jestem aktywny. Nie musisz powtarzać Jarvis.";
+            await events.EmitAsync("execution", text: voiceReply, data: new { status = "ContinuousListening" });
+            await events.EmitAsync("state", "SPEAKING", voiceReply);
+            try { capture.Stop(); segmenter.Reset(); await speech.SpeakAsync(voiceReply, lifetimeCts.Token); }
+            finally { if (!lifetimeCts.IsCancellationRequested) capture.Start(); }
+            await events.EmitAsync("state", "LISTENING", "Tryb ciągły");
+            continue;
+        }
+        if (voiceCommand is "idz spac" or "spij" or "zasnij" or "mozesz spac")
+        {
+            voice.Sleep();
+            const string voiceReply = "Przechodzę w tryb oczekiwania.";
+            await events.EmitAsync("execution", text: voiceReply, data: new { status = "Sleeping" });
+            await events.EmitAsync("state", "SPEAKING", voiceReply);
+            try { capture.Stop(); segmenter.Reset(); await speech.SpeakAsync(voiceReply, lifetimeCts.Token); }
+            finally { if (!lifetimeCts.IsCancellationRequested) capture.Start(); }
+            await events.EmitAsync("state", "SLEEPING", "Czekam na Jarvis");
+            continue;
+        }
+
         await events.EmitAsync("command", "PROCESSING", result.CommandText);
         var execution = await ExecuteCommandAsync(result.CommandText, lifetimeCts.Token);
         if (execution is null)
