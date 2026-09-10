@@ -14,7 +14,7 @@ public sealed class ElevenLabsTtsProvider : ITtsProvider
     public ElevenLabsTtsProvider(
         string apiKey,
         string voiceId,
-        string modelId = "eleven_flash_v2_5")
+        string modelId = "eleven_multilingual_v2")
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(apiKey);
         ArgumentException.ThrowIfNullOrWhiteSpace(voiceId);
@@ -42,7 +42,7 @@ public sealed class ElevenLabsTtsProvider : ITtsProvider
         await SendJsonAsync(socket, new
         {
             text = " ",
-            voice_settings = new { stability = 0.5, similarity_boost = 0.8, speed = 1.0 }
+            voice_settings = new { stability = 0.68, similarity_boost = 0.86, use_speaker_boost = true, style = 0.0, speed = 0.88 }
         }, cancellationToken);
         await SendJsonAsync(socket, new { text = text + " " }, cancellationToken);
         await SendJsonAsync(socket, new { text = "" }, cancellationToken);

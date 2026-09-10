@@ -182,7 +182,7 @@ var deviceName = settings.RootElement.GetProperty("AudioInputDeviceName").GetStr
 var ttsVoiceId = settings.RootElement.GetProperty("TtsVoiceId").GetString()
     ?? throw new InvalidOperationException("TtsVoiceId is not configured.");
 var ttsModelId = settings.RootElement.GetProperty("TtsModelId").GetString()
-    ?? "eleven_flash_v2_5";
+    ?? "eleven_multilingual_v2";
 var ttsApiKey = new WindowsCredentialSecretStore().Read("ElevenLabsApiKey")
     ?? throw new InvalidOperationException("ElevenLabs API key is not configured.");
 

@@ -12,8 +12,8 @@ var voiceId = root.TryGetProperty("TtsVoiceId", out var voiceElement)
     ? voiceElement.GetString()
     : null;
 var modelId = root.TryGetProperty("TtsModelId", out var modelElement)
-    ? modelElement.GetString() ?? "eleven_flash_v2_5"
-    : "eleven_flash_v2_5";
+    ? modelElement.GetString() ?? "eleven_multilingual_v2"
+    : "eleven_multilingual_v2";
 
 var secrets = new WindowsCredentialSecretStore();
 var apiKey = secrets.Read("ElevenLabsApiKey");
