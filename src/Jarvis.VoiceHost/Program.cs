@@ -16,6 +16,7 @@ using Jarvis.Speech;
 using Jarvis.VAD;
 using Jarvis.VoiceHost;
 using Jarvis.WakeWord;
+using Jarvis.Vision;
 
 string? Option(string name)
 {
@@ -32,6 +33,8 @@ var registry = new CommandRegistry();
 var corpusCorrector = CommandCorpusCorrector.Load(Path.Combine(root, "data", "commands", "pl-PL.generated.jsonl"));
 var resolver = new KnownEntityResolver();
 var launcher = new ApplicationLauncher();
+var dynamicLauncher = new StartMenuApplicationLauncher();
+var weather = new WeatherService();
 var windows = new WindowsSystemController();
 var folders = new KnownFolderExecutor(root);
 var browserExecutor = new BrowserCommandExecutor(new BrowserCommandClient());
@@ -41,6 +44,7 @@ var obsSecretStore = new WindowsCredentialSecretStore();
 var obsPassword = obsSecretStore.Read("ObsWebSocketPassword");
 await using var obsClient = new ObsWebSocketClient(obsPassword);
 var obsExecutor = new ObsCommandExecutor(obsClient);
+await using var visionService = new VisionService();
 foreach (var app in KnownApplications.All)
     resolver.Add(app.Id, app.Aliases.Append(app.DisplayName).ToArray());
 
@@ -54,7 +58,17 @@ async Task<CommandExecutionOutcome?> ExecuteCommandAsync(string text, Cancellati
     if (request.Intent is CommandIntent.OpenApplication or CommandIntent.CloseApplication)
     {
         var match = resolver.Resolve(request.Argument ?? string.Empty, 0.55);
-        if (match is null) return null;
+        if (match is null)
+        {
+            if (request.Intent == CommandIntent.OpenApplication)
+            {
+                var dynamicResult = dynamicLauncher.TryLaunch(request.Argument ?? string.Empty);
+                return dynamicResult.Success
+                    ? new($"Otwieram {dynamicResult.DisplayName}.", "StartedDynamic", dynamicResult.DisplayName)
+                    : null;
+            }
+            return null;
+        }
         var target = KnownApplications.All.First(x => x.Id == match.CanonicalName);
         if (request.Intent == CommandIntent.OpenApplication)
         {
@@ -85,6 +99,31 @@ async Task<CommandExecutionOutcome?> ExecuteCommandAsync(string text, Cancellati
 
     var browserOutcome = await browserExecutor.ExecuteAsync(request, cancellationToken);
     if (browserOutcome is not null) return browserOutcome;
+
+    if (request.Intent == CommandIntent.VisionListCameras)
+    {
+        var cameras = await visionService.ListCamerasAsync();
+        return cameras.Count == 0
+            ? new("Nie widzę żadnej podłączonej kamery.", "VisionNoCamera")
+            : new($"Widzę {cameras.Count} kamer: {string.Join(", ", cameras.Select(x => x.Name))}.", "VisionListCameras");
+    }
+    if (request.Intent is CommandIntent.VisionDescribe or CommandIntent.VisionReadText or CommandIntent.VisionDiagnose)
+    {
+        var task = request.Intent switch
+        {
+            CommandIntent.VisionReadText => VisionTask.ReadText,
+            CommandIntent.VisionDiagnose => VisionTask.Diagnose,
+            _ => VisionTask.Describe
+        };
+        var result = await visionService.AnalyzeCameraAsync(task, cancellationToken);
+        return new(result.Message, result.Success ? request.Intent.ToString() : "VisionFailed");
+    }
+
+    if (request.Intent == CommandIntent.GetWeather)
+    {
+        var result = await weather.GetCurrentAsync(request.Argument, cancellationToken);
+        return new(result.Message, result.Success ? "GetWeather" : "GetWeatherFailed", request.Argument ?? "Helmond");
+    }
     return ExecuteBuiltIn(request);
 }
 
@@ -116,6 +155,28 @@ CommandExecutionOutcome? ExecuteBuiltIn(CommandRequest request)
             return new($"Dzisiaj jest {DateTime.Now.ToString("d MMMM yyyy", pl)}.", "GetDate");
         case CommandIntent.GetDayOfWeek:
             return new($"Dzisiaj jest {DateTime.Now.ToString("dddd", pl)}.", "GetDayOfWeek");
+        case CommandIntent.GetVolume:
+            return SystemOutcome(windows.GetVolumeStatus(), "GetVolume");
+        case CommandIntent.GetBattery:
+            return SystemOutcome(windows.GetBatteryStatus(), "GetBattery");
+        case CommandIntent.GetDiskSpace:
+            return SystemOutcome(windows.GetDiskSpace(), "GetDiskSpace");
+        case CommandIntent.GetUptime:
+            return SystemOutcome(windows.GetUptime(), "GetUptime");
+        case CommandIntent.GetActiveWindow:
+            return SystemOutcome(windows.GetActiveWindowTitle(), "GetActiveWindow");
+        case CommandIntent.SwitchWindow:
+            return SystemOutcome(windows.SwitchWindow(), "SwitchWindow");
+        case CommandIntent.MediaPlayPause:
+            return SystemOutcome(windows.MediaPlayPause(), "MediaPlayPause");
+        case CommandIntent.MediaNextTrack:
+            return SystemOutcome(windows.MediaNextTrack(), "MediaNextTrack");
+        case CommandIntent.MediaPreviousTrack:
+            return SystemOutcome(windows.MediaPreviousTrack(), "MediaPreviousTrack");
+        case CommandIntent.KeyboardShortcut:
+            return SystemOutcome(windows.SendShortcut(request.Argument!), "KeyboardShortcut");
+        case CommandIntent.TypeText:
+            return SystemOutcome(windows.TypeText(request.Argument!), "TypeText");
         case CommandIntent.VolumeUp:
             return SystemOutcome(windows.ChangeVolume(10), "VolumeUp");
         case CommandIntent.VolumeDown:

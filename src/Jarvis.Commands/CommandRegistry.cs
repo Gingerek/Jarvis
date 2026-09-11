@@ -15,6 +15,22 @@ public enum CommandIntent
     GetTime,
     GetDate,
     GetDayOfWeek,
+    GetWeather,
+    GetVolume,
+    GetBattery,
+    GetDiskSpace,
+    GetUptime,
+    GetActiveWindow,
+    SwitchWindow,
+    MediaPlayPause,
+    MediaNextTrack,
+    MediaPreviousTrack,
+    KeyboardShortcut,
+    TypeText,
+    VisionDescribe,
+    VisionReadText,
+    VisionDiagnose,
+    VisionListCameras,
     VolumeUp,
     VolumeDown,
     SetVolume,
@@ -118,6 +134,7 @@ public sealed class CommandRegistry
     private readonly LightroomCommandParser _lightroom = new();
     private readonly BrowserCommandParser _browser = new();
     private readonly ObsCommandParser _obs = new();
+    private readonly VisionCommandParser _vision = new();
     private static readonly HashSet<string> TimePhrases = new(StringComparer.Ordinal)
     {
         "ktora godzina", "ktora jest godzina", "ktory jest godzina", "ktory godzina", "jaka jest godzina", "powiedz ktora godzina",
@@ -126,14 +143,22 @@ public sealed class CommandRegistry
 
     private static readonly HashSet<string> DatePhrases = new(StringComparer.Ordinal)
     {
-        "jaka jest data", "jaki dzisiaj dzien", "jaki mamy dzis dzien",
+        "jaka jest data", "jaki dzisiaj dzien", "jaki dzisiaj jest dzien",
+        "jaki jest dzisiaj dzien", "jaki mamy dzis dzien", "ktory dzisiaj mamy",
         "podaj date", "powiedz jaka jest data", "co dzisiaj za dzien"
     };
 
     private static readonly HashSet<string> DayPhrases = new(StringComparer.Ordinal)
     {
-        "jaki dzis dzien tygodnia", "jaki mamy dzien tygodnia",
+        "jaki dzis dzien tygodnia", "jaki dzisiaj jest dzien tygodnia",
+        "jaki jest dzien tygodnia", "jaki mamy dzien tygodnia",
         "powiedz jaki dzis dzien tygodnia", "co dzisiaj za dzien tygodnia"
+    };
+
+    private static readonly HashSet<string> WeatherPhrases = new(StringComparer.Ordinal)
+    {
+        "jaka jest pogoda", "jaka pogoda", "podaj pogode", "powiedz jaka jest pogoda",
+        "jaka jest pogoda dzisiaj", "jak jest na dworze", "czy pada", "czy bedzie padac"
     };
 
     private static readonly Dictionary<string, string> Websites = new(StringComparer.Ordinal)
@@ -153,10 +178,18 @@ public sealed class CommandRegistry
 
         if (TimePhrases.Contains(normalized) || IsNearPhrase(normalized, TimePhrases, 2))
             return new(CommandIntent.GetTime);
-        if (DayPhrases.Contains(normalized))
+        if (DayPhrases.Contains(normalized) || IsNearPhrase(normalized, DayPhrases, 4))
             return new(CommandIntent.GetDayOfWeek);
-        if (DatePhrases.Contains(normalized))
+        if (DatePhrases.Contains(normalized) || IsNearPhrase(normalized, DatePhrases, 4))
             return new(CommandIntent.GetDate);
+        if (WeatherPhrases.Contains(normalized) || IsNearPhrase(normalized, WeatherPhrases, 4))
+            return new(CommandIntent.GetWeather);
+        foreach (var prefix in new[] { "pogoda w ", "jaka jest pogoda w ", "podaj pogode w " })
+            if (normalized.StartsWith(prefix, StringComparison.Ordinal) && normalized.Length > prefix.Length)
+                return new(CommandIntent.GetWeather, normalized[prefix.Length..].Trim());
+
+        var vision = _vision.Parse(normalized);
+        if (vision is not null) return vision;
 
         var system = _system.Parse(normalized);
         if (system is not null) return system;

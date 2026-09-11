@@ -92,16 +92,31 @@ time_phrases = [
     "ile jest godzina", "jaki mamy czas", "Jarvis która godzina", "Jarvis podaj godzinę"
 ]
 date_phrases = [
-    "jaka jest data", "jaki dzisiaj dzień", "jaki mamy dziś dzień", "podaj datę",
-    "powiedz jaka jest data", "co dzisiaj za dzień", "Jarvis jaka jest data", "Jarvis podaj datę"
+    "jaka jest data", "jaki dzisiaj dzień", "jaki dzisiaj jest dzień", "jaki jest dzisiaj dzień",
+    "jaki mamy dziś dzień", "podaj datę", "powiedz jaka jest data", "co dzisiaj za dzień",
+    "Jarvis jaka jest data", "Jarvis podaj datę"
 ]
 day_phrases = [
-    "jaki dziś dzień tygodnia", "jaki mamy dzień tygodnia", "powiedz jaki dziś dzień tygodnia",
-    "co dzisiaj za dzień tygodnia", "Jarvis jaki dziś dzień tygodnia"
+    "jaki dziś dzień tygodnia", "jaki dzisiaj jest dzień tygodnia", "jaki jest dzień tygodnia",
+    "jaki mamy dzień tygodnia", "powiedz jaki dziś dzień tygodnia", "co dzisiaj za dzień tygodnia",
+    "Jarvis jaki dziś dzień tygodnia"
+]
+weather_phrases = [
+    "jaka jest pogoda", "jaka pogoda", "podaj pogodę", "powiedz jaka jest pogoda",
+    "jaka jest pogoda dzisiaj", "jak jest na dworze", "czy pada", "czy będzie padać"
 ]
 for phrase in time_phrases: add("GetTime", None, phrase)
 for phrase in date_phrases: add("GetDate", None, phrase)
 for phrase in day_phrases: add("GetDayOfWeek", None, phrase)
+for phrase in weather_phrases: add("GetWeather", None, phrase)
+vision_phrases = {
+    "VisionDescribe": ["co widzisz", "co teraz widzisz", "co ci pokazuję", "opisz co widzisz", "popatrz na to"],
+    "VisionReadText": ["przeczytaj to", "co tu jest napisane", "przeczytaj ten błąd", "co to za błąd"],
+    "VisionDiagnose": ["co jest nie tak", "zdiagnozuj to", "sprawdź ten błąd", "co oznacza ten błąd"],
+    "VisionListCameras": ["jakie kamery widzisz", "jaka kamera jest podłączona", "lista kamer"]
+}
+for intent, phrases in vision_phrases.items():
+    for phrase in phrases: add(intent, None, phrase)
 
 system_bases = {
     "VolumeUp": ["głośniej", "podgłoś", "zwiększ głośność", "podnieś głośność"],
@@ -113,7 +128,16 @@ system_bases = {
     "RestoreWindow": ["przywróć okno", "normalne okno"],
     "CloseWindow": ["zamknij okno", "zamknij aktywne okno"],
     "ShowDesktop": ["pokaż pulpit", "przejdź na pulpit"],
-    "LockComputer": ["zablokuj komputer", "zablokuj ekran"]
+    "LockComputer": ["zablokuj komputer", "zablokuj ekran"],
+    "GetVolume": ["jaka jest głośność", "ile jest głośności", "podaj głośność", "stan głośności"],
+    "GetBattery": ["ile mam baterii", "stan baterii", "jaki jest poziom baterii", "poziom baterii"],
+    "GetDiskSpace": ["ile miejsca na dysku", "wolne miejsce na dysku", "ile mam wolnego miejsca", "stan dysku"],
+    "GetUptime": ["jak długo komputer działa", "czas pracy komputera", "uptime"],
+    "GetActiveWindow": ["jakie okno jest aktywne", "co mam teraz otwarte", "aktywne okno"],
+    "SwitchWindow": ["następne okno", "przełącz okno", "alt tab"],
+    "MediaPlayPause": ["play pause", "pauza muzyki", "wznów muzykę"],
+    "MediaNextTrack": ["następny utwór", "następna piosenka"],
+    "MediaPreviousTrack": ["poprzedni utwór", "poprzednia piosenka"]
 }
 polite_prefixes = ["", "Jarvis ", "proszę ", "Jarvis proszę ", "czy możesz ", "możesz ", "hej Jarvis "]
 for intent, phrases in system_bases.items():
@@ -121,6 +145,19 @@ for intent, phrases in system_bases.items():
         for prefix in polite_prefixes:
             for suffix in suffixes:
                 add(intent, None, prefix + phrase + suffix)
+shortcut_bases = {
+    "copy": ["kopiuj", "skopiuj"], "paste": ["wklej"], "cut": ["wytnij"],
+    "undo": ["cofnij"], "redo": ["ponów"], "save": ["zapisz", "zapisz plik"],
+    "select_all": ["zaznacz wszystko"], "find": ["znajdź", "szukaj w dokumencie"],
+    "new": ["nowy dokument"], "print": ["drukuj"], "escape": ["escape", "naciśnij escape"],
+    "enter": ["enter", "naciśnij enter"], "delete": ["delete", "usuń"]
+}
+for shortcut, phrases in shortcut_bases.items():
+    for phrase in phrases:
+        for prefix in polite_prefixes:
+            for suffix in suffixes:
+                add("KeyboardShortcut", shortcut, prefix + phrase + suffix)
+
 for value in range(0, 101, 10):
     for phrase in [f"ustaw głośność na {value} procent", f"głośność na {value} procent", f"ustaw dźwięk na {value} procent"]:
         for prefix in polite_prefixes:

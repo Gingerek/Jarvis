@@ -53,8 +53,8 @@ public sealed class PythonFasterWhisperAsrEngine : IAsrEngine
         if (ready.RootElement.GetProperty("type").GetString() != "ready")
             throw new InvalidOperationException($"Unexpected ASR worker response: {readyLine}");
 
-        var prompt = "Polskie polecenia głosowe dla asystenta Jarvis.";
-        var hotwords = "Jarvis Lightroom DaVinci OBS YouTube obudź się idź spać otwórz zamknij włącz wyłącz godzina data";
+        var prompt = "Polskie polecenia gĹ‚osowe dla asystenta Jarvis.";
+        var hotwords = "Jarvis Lightroom DaVinci OBS YouTube obudĹş siÄ™ idĹş spaÄ‡ otwĂłrz zamknij wĹ‚Ä…cz wyĹ‚Ä…cz godzina data dzieĹ„ tygodnia pogoda bateria dysk gĹ‚oĹ›noĹ›Ä‡ okno kopiuj wklej zapisz";
         return new PythonFasterWhisperAsrEngine(process, modelName, prompt, hotwords);
     }
     public async Task<AsrTranscript> TranscribeAsync(
@@ -115,4 +115,3 @@ public sealed class PythonFasterWhisperAsrEngine : IAsrEngine
         _gate.Dispose();
     }
 }
-
